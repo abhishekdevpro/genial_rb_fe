@@ -175,7 +175,7 @@
 //                 Percentage: {Math.floor(results.Percentage)}%
 //               </h3>
 //               <button
-//                 className="p-2 bg-[#00b38d] rounded-md text-white hover:bg-[#00b38d] mt-4"
+//                 className="p-2 bg-[#A810C7] rounded-md text-white hover:bg-[#A810C7] mt-4"
 //                 onClick={handleBack}
 //               >
 //                 Back
@@ -212,10 +212,10 @@
 //             </ul>
 //             <div className="flex justify-between">
 //               <button
-//                 className={`p-2 bg-[#00b38d] rounded-md text-white hover:bg-[#00b38d] mt-4 ${
+//                 className={`p-2 bg-[#A810C7] rounded-md text-white hover:bg-[#A810C7] mt-4 ${
 //                   currentQuestionIndex === 0
 //                     ? "opacity-50 cursor-not-allowed"
-//                     : "hover:bg-[#00b38d]"
+//                     : "hover:bg-[#A810C7]"
 //                 }`}
 //                 onClick={handlePrevious}
 //                 disabled={currentQuestionIndex === 0}
@@ -231,7 +231,7 @@
 //                 </button>
 //               ) : (
 //                 <button
-//                   className="p-2 bg-[#00b38d] rounded-md text-white hover:bg-[#00b38d] mt-4"
+//                   className="p-2 bg-[#A810C7] rounded-md text-white hover:bg-[#A810C7] mt-4"
 //                   onClick={handleNext}
 //                 >
 //                   ↪️ Next
@@ -428,7 +428,7 @@ function Testpaper() {
                 {t("testPaper.percentage")}: {Math.floor(results.Percentage)}%
               </h3>
               <button
-                className="p-2 bg-[#00b38d] rounded-md text-white hover:bg-[#00b38d] mt-4"
+                className="p-2 bg-[#A810C7] rounded-md text-white hover:bg-[#A810C7] mt-4"
                 onClick={handleBack}
               >
                 {t("testPaper.back")}
@@ -442,7 +442,7 @@ function Testpaper() {
             </h1>
             <div className="flex justify-between">
               <button
-                className="p-2 bg-[#00b38d] rounded-md text-white"
+                className="p-2 bg-[#A810C7] rounded-md text-white"
                 onClick={handlePrevious}
                 disabled={currentQuestionIndex === 0}
               >

@@ -200,8 +200,8 @@ function Signup() {
                 disabled={isLoading}
               />
               <Link
-               className="text-[#00b38d] underline"
-              href={"/terms&conditions"}
+                className="text-[#A810C7] underline"
+                href={"/terms&conditions"}
               >
                 {" "}
                 {t("loginpage.agree_terms")}
@@ -211,7 +211,7 @@ function Signup() {
           </div>
           <button
             type="submit"
-            className="w-full bg-[#00b38d] text-white px-4 py-2 rounded-md flex items-center justify-center gap-2 hover:bg-[#00b38d] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full bg-[#A810C7] text-white px-4 py-2 rounded-md flex items-center justify-center gap-2 hover:bg-[#A810C7] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             disabled={isLoading}
           >
             {isLoading ? (

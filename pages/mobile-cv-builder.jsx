@@ -43,7 +43,7 @@ const MobileCoverLetterBuilder = ({
           <div className="sticky bottom-0 w-full p-4 bg-white shadow-t">
             <button
               onClick={togglePreviewMode}
-              className="w-full bg-pink-500 text-white px-6 py-3 rounded-lg text-lg font-medium"
+              className="w-full bg-[#5a23b2] text-white px-6 py-3 rounded-lg text-lg font-medium"
             >
               {t("navigation.next")}
             </button>
@@ -102,14 +102,14 @@ const MobileCoverLetterBuilder = ({
             </button>
             <button
               onClick={handleFinish}
-              className="w-full flex items-center justify-center gap-2 bg-[#369984] text-white px-6 py-3 rounded-lg"
+              className="w-full flex items-center justify-center gap-2 bg-[#A810C7] text-white px-6 py-3 rounded-lg"
             >
               <Save size={20} />
               {/* Save Cover Letter */}
             </button>
             <button
               onClick={downloadAsPDF}
-              className="w-full flex items-center justify-center gap-2 bg-pink-600 text-white px-6 py-3 rounded-lg"
+              className="w-full flex items-center justify-center gap-2 bg-[#5a23b2] text-white px-6 py-3 rounded-lg"
             >
               <Download size={20} />
               {/* Download */}

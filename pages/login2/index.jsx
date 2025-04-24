@@ -189,7 +189,7 @@ const Login2 = () => {
             <div className="text-center py-2">
               <Link
                 href="/signup"
-                className="text-[#00b38d] hover:text-[#00b38d]"
+                className="text-[#A810C7] hover:text-[#A810C7]"
                 // onClick={() => setThirdstepOpen(true)}
                 disabled={isLoading}
               >
@@ -225,7 +225,7 @@ const Login2 = () => {
                 {t("loginpage.agree_terms")}{" "}
                 <Link
                   href="/terms&conditions"
-                  className="text-[#00b38d] underline"
+                  className="text-[#A810C7] underline"
                 >
                   {t("loginpage.terms_conditions")}
                 </Link>
@@ -234,12 +234,12 @@ const Login2 = () => {
 
             <button
               type="submit"
-              // className="w-full bg-[#00b38d] text-white px-4 py-2 rounded-md hover:bg-[#00b38d] transition-colors duration-300 relative"
+              // className="w-full bg-[#A810C7] text-white px-4 py-2 rounded-md hover:bg-[#A810C7] transition-colors duration-300 relative"
               className={`w-full text-white px-4 py-2 rounded-md transition-colors duration-300 relative 
                 ${
                   !isChecked || isLoading
                     ? "bg-gray-400 cursor-not-allowed "
-                    : "bg-[#00b38d] hover:bg-[#008f6f]"
+                    : "bg-[#A810C7] hover:bg-[#5a23b2]"
                 }`}
               disabled={!isChecked || isLoading} // Disabled when terms are not checked or loading
             >
@@ -398,7 +398,7 @@ export default Login2;
 //                 I agree to the{" "}
 //                 <Link
 //                   href="/TermsandConditions"
-//                   className="text-[#00b38d] underline"
+//                   className="text-[#A810C7] underline"
 //                 >
 //                   Terms & Conditions
 //                 </Link>
@@ -407,7 +407,7 @@ export default Login2;
 
 //             <button
 //               type="submit"
-//               className="w-full bg-[#00b38d] text-white px-4 py-2 rounded-md hover:bg-[#00b38d] transition-colors duration-300 relative"
+//               className="w-full bg-[#A810C7] text-white px-4 py-2 rounded-md hover:bg-[#A810C7] transition-colors duration-300 relative"
 //               disabled={isLoading}
 //             >
 //               Send OTP
@@ -415,7 +415,7 @@ export default Login2;
 //           </form>
 //           {/* <button
 //             // type="submit"
-//             className="w-full bg-[#00b38d] text-white px-4 py-2 rounded-md hover:bg-[#00b38d] transition-colors duration-300 relative"
+//             className="w-full bg-[#A810C7] text-white px-4 py-2 rounded-md hover:bg-[#A810C7] transition-colors duration-300 relative"
 //             // disabled={isLoading}
 //           >
 //             Send OTP

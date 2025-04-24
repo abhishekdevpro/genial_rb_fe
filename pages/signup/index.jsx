@@ -294,7 +294,7 @@
 //             </div>
 //             <button
 //               type="submit"
-//               className="w-full bg-[#00b38d] text-white px-4 py-2 rounded-md flex items-center justify-center gap-2 hover:bg-[#00b38d] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+//               className="w-full bg-[#A810C7] text-white px-4 py-2 rounded-md flex items-center justify-center gap-2 hover:bg-[#A810C7] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
 //               disabled={isLoading}
 //             >
 //               {isLoading ? (
@@ -627,7 +627,7 @@ const Signup = () => {
                   {t("loginpage.agree_terms")}{" "}
                   <Link
                     href="/terms&conditions"
-                    className="text-[#00b38d] underline"
+                    className="text-[#A810C7] underline"
                   >
                     {t("loginpage.terms_conditions")}
                   </Link>
@@ -636,7 +636,7 @@ const Signup = () => {
             </div>
             <button
               type="submit"
-              className="w-full bg-[#00b38d] text-white px-4 py-2 rounded-md flex items-center justify-center gap-2 hover:bg-[#00b38d] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full bg-[#A810C7] text-white px-4 py-2 rounded-md flex items-center justify-center gap-2 hover:bg-[#5a23b2] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               disabled={isLoading}
             >
               {isLoading ? (

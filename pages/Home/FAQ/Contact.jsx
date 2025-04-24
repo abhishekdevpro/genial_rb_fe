@@ -48,7 +48,7 @@ const ContactUs = () => {
     <div className="bg-gray-100 py-12 lg:py-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <h2
-          className="text-3xl font-bold text-center mb-8 sm:mb-12 text-[#00b38d]"
+          className="text-3xl font-bold text-center mb-8 sm:mb-12 text-[#A810C7]"
           id="phone"
         >
           {t("getintouch")}
@@ -65,10 +65,10 @@ const ContactUs = () => {
             <div className="">
               <button className="border px-3 p-2 rounded-lg">
                 <a
-                  href="mailto:info@ciblijob.fr"
+                  href="mailto:info@genialcareer.fr"
                   className="text-slate-800 font-semibold text-sm hover:underline flex items-center"
                 >
-                  info@ciblijob.fr
+                  info@genialcareer.fr
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="ml-2 h-4 w-4"
@@ -218,10 +218,10 @@ const ContactUs = () => {
             <div>
               <button className="border px-3 py-2 rounded-lg">
                 <a
-                  href="mailto:bonjour@cibli.fR"
+                  href="mailto:bonjour@genialcareer.fR"
                   className="text-slate-800 font-semibold text-sm hover:underline flex items-center"
                 >
-                  bonjour@cibli.fR
+                  bonjour@genialcareer.fR
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="ml-2 h-4 w-4"

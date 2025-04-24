@@ -765,7 +765,7 @@ function Home_Second() {
         </div>
         <div className="flex justify-center mt-4">
           <Link href="/dashboard/resume-builder">
-            <button className="px-5 py-3 rounded-full text-lg text-white bg-[#00b38d] font-bold hover:px-8 hover:shadow-2xl hover:bg-[#00b38d] hover:shadow-[#00b38d]">
+            <button className="px-5 py-3 rounded-full text-lg text-white bg-[#A810C7] font-bold hover:px-8 hover:shadow-2xl hover:bg-[#A810C7] hover:shadow-[#A810C7]">
               {t("create_resume")}
             </button>
           </Link>

@@ -59,7 +59,7 @@ export default function Payment() {
                   key={planType}
                   className={`border rounded-lg p-4 flex flex-col w-full md:w-64 relative ${
                     selectedPlan === planType
-                      ? "border-[#00b38d] bg-green-50"
+                      ? "border-[#A810C7] bg-green-50"
                       : "bg-white"
                   }`}
                   onClick={() => handlePlanSelection(planType)}
@@ -72,7 +72,7 @@ export default function Payment() {
                       type="checkbox"
                       checked={selectedPlan === planType}
                       onChange={() => {}}
-                      className="h-5 w-5 text-[#00b38d]"
+                      className="h-5 w-5 text-[#A810C7]"
                     />
                   </div>
                   <div className="text-2xl font-bold mb-1">
@@ -169,7 +169,7 @@ export default function Payment() {
               <div className="mt-6">
                 <button
                   onClick={goToNextPage}
-                  className="w-full bg-[#00b38d] text-white text-lg font-semibold py-3 rounded-lg"
+                  className="w-full bg-[#A810C7] text-white text-lg font-semibold py-3 rounded-lg"
                 >
                   {t("paymentplans.Next")}
                 </button>

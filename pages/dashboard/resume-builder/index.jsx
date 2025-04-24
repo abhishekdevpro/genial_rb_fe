@@ -14,7 +14,7 @@ export default function Home() {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
-  const {selectedLang} = useContext(ResumeContext)
+  const { selectedLang } = useContext(ResumeContext);
 
   const handleCreateResume = async () => {
     setLoading(true);
@@ -65,11 +65,10 @@ export default function Home() {
           <button
             onClick={handleCreateResume}
             className={`px-6 py-3 text-white font-semibold rounded-lg ${
-              loading ? "bg-gray-400" : "bg-[#00b38d] hover:bg-[#00b38d]"
+              loading ? "bg-gray-400" : "bg-[#A810C7] hover:bg-[#A810C7]"
             }`}
             disabled={loading}
           >
-            
             {loading ? (
               <SaveLoader loadingText={t("createResume.creating")} />
             ) : (

@@ -15,7 +15,7 @@
 //         <h1 className="text-center font-bold text-3xl py-5">Want To Supercharge Your Career Growth With Our AI Tool?</h1>
 //         <div className="flex justify-center">
 //           <div className="bg-white rounded-lg shadow-md p-4 sm:p-6 md:p-8">
-//             <h1 className="font-bold text-xl mb-4">Cibli Job  Builder</h1>
+//             <h1 className="font-bold text-xl mb-4">Genial Career  Builder</h1>
 //             <div className="flex items-center gap-2 font-medium mb-2">
 //               <i className="fa-solid fa-check border-2 px-2 py-2 rounded-full text-white bg-green-500"></i>
 //               <span>AI Score</span>
@@ -201,7 +201,7 @@ function Home_five() {
         <section className=" ">
           <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
             <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-              <h2 className="mb-4 text-4xl tracking-tight font-extrabold  rounded-2xl text-[#00b38d] border p-3 border-gray">
+              <h2 className="mb-4 text-4xl tracking-tight font-extrabold  rounded-2xl text-[#A810C7] border p-3 border-gray">
                 {t("choose_plan")}
               </h2>
             </div>

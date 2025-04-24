@@ -228,11 +228,11 @@
 //             {/* Terms and Conditions */}
 //             <p className="text-sm text-gray-600 mt-4">
 //               {t("By clicking")} <strong>&quot;{t("Start applying")}&quot;</strong> {t("below, you agree to our")}{" "}
-//               <a href="#" className="text-[#00b38d] underline">
+//               <a href="#" className="text-[#A810C7] underline">
 //                 {t("Terms of Use")}
 //               </a>{" "}
 //               {t("and")}{" "}
-//               <a href="#" className="text-[#00b38d] underline">
+//               <a href="#" className="text-[#A810C7] underline">
 //                 {t("Privacy Policy")}
 //               </a>
 //               . {t("You also understand that you will be billed")}{" "}
@@ -240,7 +240,7 @@
 //             </p>
 
 //             {/* Start Applying Button */}
-//             <button className="mt-6 w-full bg-[#00b38d] text-white text-lg font-semibold py-3 rounded-lg ">
+//             <button className="mt-6 w-full bg-[#A810C7] text-white text-lg font-semibold py-3 rounded-lg ">
 //               {t("Start applying")}
 //             </button>
 
@@ -274,7 +274,7 @@
 //             </ul>
 
 //             {/* Total Price */}
-//             <div className="mt-6 bg-[#00b38d] text-white p-4 rounded-lg text-center text-lg font-semibold">
+//             <div className="mt-6 bg-[#A810C7] text-white p-4 rounded-lg text-center text-lg font-semibold">
 //               {t("Total due today")} <br />
 //               <span className="text-2xl">{planDetails ? formatPrice(planDetails) : ""}</span>
 //             </div>
@@ -581,7 +581,7 @@ export default function PaymentPage() {
                 )}
               </ul>
 
-              <div className="mt-6 bg-[#00b38d] text-white p-4 rounded-lg text-center text-lg font-semibold">
+              <div className="mt-6 bg-[#A810C7] text-white p-4 rounded-lg text-center text-lg font-semibold">
                 {t("Total due today")} <br />
                 <span className="text-2xl">
                   {planDetails ? formatPrice(planDetails) : ""}
@@ -595,14 +595,14 @@ export default function PaymentPage() {
               {t("below, you agree to our")}{" "}
               <Link
                 href="/TermsandConditions"
-                className="text-[#00b38d] underline"
+                className="text-[#A810C7] underline"
               >
                 {t("Terms of Use")}
               </Link>{" "}
               {t("and")}{" "}
               <Link
                 href="/footers/PrivacyPolicy"
-                className="text-[#00b38d] underline"
+                className="text-[#A810C7] underline"
               >
                 {t("Privacy Policy")}
               </Link>
@@ -616,7 +616,7 @@ export default function PaymentPage() {
             {/* Start Applying Button */}
             {/* <button
               onClick={handleCheckout}
-              className="mt-6 w-full bg-[#00b38d] text-white text-lg font-semibold py-3 rounded-lg "
+              className="mt-6 w-full bg-[#A810C7] text-white text-lg font-semibold py-3 rounded-lg "
             >
               {t("Start applying")}
             </button> */}
@@ -625,7 +625,7 @@ export default function PaymentPage() {
               className={`mt-6 w-full text-white text-lg font-semibold py-3 rounded-lg ${
                 selectedPlan === "freePlan"
                   ? "bg-gray-400 cursor-not-allowed"
-                  : "bg-[#00b38d]"
+                  : "bg-[#A810C7]"
               }`}
               disabled={selectedPlan === "freePlan"}
             >
@@ -701,7 +701,7 @@ export default function PaymentPage() {
               )}
             </ul>
 
-            <div className="mt-6 bg-[#00b38d] text-white p-4 rounded-lg text-center text-lg font-semibold">
+            <div className="mt-6 bg-[#A810C7] text-white p-4 rounded-lg text-center text-lg font-semibold">
               {t("Total due today")} <br />
               <span className="text-2xl">
                 {planDetails ? formatPrice(planDetails) : ""}

@@ -58,7 +58,7 @@
 //       <div className="overflow-x-auto">
 //         <table className="min-w-full  bg-dark text-black rounded-md text-center">
 //           <thead>
-//             <tr className="bg-pink-500 text-white">
+//             <tr className="bg-[#5a23b2] text-white">
 //               <th className="py-2 px-4">First Name</th>
 //               <th className="py-2 px-4">Last Name</th>
 //               <th className="py-2 px-4">Email</th>
@@ -91,7 +91,7 @@
 //         <button
 //           onClick={handlePreviousPage}
 //           disabled={currentPage === 1}
-//           className="px-4 py-2 bg-gray-300 rounded-md mx-2 hover:bg-pink-500 hover:text-white"
+//           className="px-4 py-2 bg-gray-300 rounded-md mx-2 hover:bg-[#5a23b2] hover:text-white"
 //         >
 //           Previous
 //         </button>
@@ -101,7 +101,7 @@
 //         <button
 //           onClick={handleNextPage}
 //           disabled={currentPage === totalPages}
-//           className="px-4 py-2 bg-gray-300 rounded-md mx-2  hover:bg-pink-500 hover:text-white"
+//           className="px-4 py-2 bg-gray-300 rounded-md mx-2  hover:bg-[#5a23b2] hover:text-white"
 //         >
 //           Next
 //         </button>
@@ -191,7 +191,7 @@ const MyResume1 = () => {
         </select>
         <button
           onClick={handleSearch}
-          className="px-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600"
+          className="px-4 py-2 bg-[#5a23b2] text-white rounded-md hover:bg-[#5a23b2]"
         >
           {t("admin.customers.search")}
         </button>
@@ -200,7 +200,7 @@ const MyResume1 = () => {
       <div className="overflow-x-auto">
         <table className="min-w-full bg-dark text-black rounded-md text-center">
           <thead>
-            <tr className="bg-pink-500 text-white">
+            <tr className="bg-[#5a23b2] text-white">
               <th className="py-2 px-4">Sr No.</th> {/* 👈 New Sr No. header */}
               <th className="py-2 px-4">{t("admin.customers.firstName")}</th>
               <th className="py-2 px-4">{t("admin.customers.lastName")}</th>

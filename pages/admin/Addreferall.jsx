@@ -9,49 +9,49 @@ function Addreferall() {
 
   const boxes = [
     // <Link href="#" key="box1">
-    //   <div className="bg-pink-500 hover:bg-gray-300 hover:text-black rounded-lg shadow-md pt-16 w-80 h-60 text-center text-white cursor-pointer text-3xl font-semibold">
+    //   <div className="bg-[#5a23b2] hover:bg-gray-300 hover:text-black rounded-lg shadow-md pt-16 w-80 h-60 text-center text-white cursor-pointer text-3xl font-semibold">
     //     <div className="text-5xl">👥</div>
     //     <br />
     //     Referrals By Customers
     //   </div>
     // </Link>,
     // <Link href="#" key="box2">
-    //   <div className="bg-pink-500 hover:bg-gray-300 hover:text-black rounded-lg shadow-md pt-16 w-80 h-60 text-center text-white cursor-pointer text-3xl font-semibold">
+    //   <div className="bg-[#5a23b2] hover:bg-gray-300 hover:text-black rounded-lg shadow-md pt-16 w-80 h-60 text-center text-white cursor-pointer text-3xl font-semibold">
     //     <div className="text-5xl">🤳🏽</div>
     //     <br />
     //     Self
     //   </div>
     // </Link>,
     <Link href="#" key="box1">
-      <div className="bg-pink-500 hover:bg-gray-300 hover:text-black rounded-lg shadow-md pt-16 w-80 h-60 text-center text-white cursor-pointer text-3xl font-semibold">
+      <div className="bg-[#5a23b2] hover:bg-gray-300 hover:text-black rounded-lg shadow-md pt-16 w-80 h-60 text-center text-white cursor-pointer text-3xl font-semibold">
         <div className="text-5xl">📫</div>
         <br />
         {t("admin.leads.requestService")}
       </div>
     </Link>,
     <Link href="#" key="box2">
-      <div className="bg-pink-500 hover:bg-gray-300 hover:text-black rounded-lg shadow-md pt-16 w-80 h-60 text-center text-white cursor-pointer text-3xl font-semibold">
+      <div className="bg-[#5a23b2] hover:bg-gray-300 hover:text-black rounded-lg shadow-md pt-16 w-80 h-60 text-center text-white cursor-pointer text-3xl font-semibold">
         <div className="text-5xl">📑</div>
         <br />
         {t("admin.leads.newTemplate")}
       </div>
     </Link>,
     <Link href="#" key="box1">
-      <div className="bg-pink-500 hover:bg-gray-300 hover:text-black rounded-lg shadow-md pt-16 w-80 h-60 text-center text-white cursor-pointer text-3xl font-semibold">
+      <div className="bg-[#5a23b2] hover:bg-gray-300 hover:text-black rounded-lg shadow-md pt-16 w-80 h-60 text-center text-white cursor-pointer text-3xl font-semibold">
         <div className="text-5xl">📝</div>
         <br />
         {t("admin.leads.newCoverLetter")}
       </div>
     </Link>,
     <Link href="#" key="box2">
-      <div className="bg-pink-500 hover:bg-gray-300 hover:text-black rounded-lg shadow-md pt-16 w-80 h-60 text-center text-white cursor-pointer text-3xl font-semibold">
+      <div className="bg-[#5a23b2] hover:bg-gray-300 hover:text-black rounded-lg shadow-md pt-16 w-80 h-60 text-center text-white cursor-pointer text-3xl font-semibold">
         <div className="text-5xl">🛠️</div>
         <br />
         {t("admin.leads.support")}
       </div>
     </Link>,
     // <Link href="#" key="box2">
-    //   <div className="bg-pink-500 hover:bg-gray-300 hover:text-black rounded-lg shadow-md pt-16 w-80 h-60 text-center text-white cursor-pointer text-3xl font-semibold">
+    //   <div className="bg-[#5a23b2] hover:bg-gray-300 hover:text-black rounded-lg shadow-md pt-16 w-80 h-60 text-center text-white cursor-pointer text-3xl font-semibold">
     //     <div className="text-5xl">🌍</div>
     //     <br />
     //     Other

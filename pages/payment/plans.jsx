@@ -224,7 +224,7 @@
 //                 )}
 //               </ul>
 
-//               <div className="mt-6 bg-[#00b38d] text-white p-4 rounded-lg text-center text-lg font-semibold">
+//               <div className="mt-6 bg-[#A810C7] text-white p-4 rounded-lg text-center text-lg font-semibold">
 //                 {t("plans.Total due today")} <br />
 //                 <span className="text-2xl">
 //                   {planDetails ? formatPrice(planDetails) : ""}
@@ -238,14 +238,14 @@
 //               {t("plans.below, you agree to our")}{" "}
 //               <Link
 //                 href="/TermsandConditions"
-//                 className="text-[#00b38d] underline"
+//                 className="text-[#A810C7] underline"
 //               >
 //                 {t("plans.Terms of Use")}
 //               </Link>{" "}
 //               {t("plans.and")}{" "}
 //               <Link
 //                 href="/footers/PrivacyPolicy"
-//                 className="text-[#00b38d] underline"
+//                 className="text-[#A810C7] underline"
 //               >
 //                 {t("plans.Privacy Policy")}
 //               </Link>
@@ -261,7 +261,7 @@
 //               className={`mt-6 w-full text-white text-lg font-semibold py-3 rounded-lg ${
 //                 selectedPlan === "freePlan"
 //                   ? "bg-gray-400 cursor-not-allowed"
-//                   : "bg-[#00b38d]"
+//                   : "bg-[#A810C7]"
 //               }`}
 //               disabled={selectedPlan === "freePlan"}
 //             >
@@ -493,7 +493,7 @@ export default function PaymentPage() {
                 )}
               </ul>
 
-              <div className="mt-6 bg-[#00b38d] text-white p-4 rounded-lg text-center text-lg font-semibold">
+              <div className="mt-6 bg-[#A810C7] text-white p-4 rounded-lg text-center text-lg font-semibold">
                 {t("plans.Total due today")} <br />
                 <span className="text-2xl">
                   {selectedPlan ? formatPrice(selectedPlan) : ""}
@@ -507,14 +507,14 @@ export default function PaymentPage() {
               {t("plans.below, you agree to our")}{" "}
               <Link
                 href="/TermsandConditions"
-                className="text-[#00b38d] underline"
+                className="text-[#A810C7] underline"
               >
                 {t("plans.Terms of Use")}
               </Link>{" "}
               {t("plans.and")}{" "}
               <Link
                 href="/footers/PrivacyPolicy"
-                className="text-[#00b38d] underline"
+                className="text-[#A810C7] underline"
               >
                 {t("plans.Privacy Policy")}
               </Link>
@@ -530,7 +530,7 @@ export default function PaymentPage() {
               className={`mt-6 w-full text-white text-lg font-semibold py-3 rounded-lg ${
                 selectedPlan === "freePlan"
                   ? "bg-gray-400 cursor-not-allowed"
-                  : "bg-[#00b38d]"
+                  : "bg-[#A810C7]"
               }`}
               disabled={selectedPlan === "freePlan"}
             >

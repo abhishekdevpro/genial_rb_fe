@@ -41,7 +41,7 @@ const CoverLetterSection = ({ letterCount }) => {
         </div>
         <button
           onClick={handleClick}
-          className="px-6 py-2 border border-[#00b38d] text-[#00b38d] rounded-lg hover:bg-blue-50"
+          className="px-6 py-2 border border-[#A810C7] text-[#A810C7] rounded-lg hover:bg-blue-50"
         >
           {t("dashboard_cvletter.viewCoverLetters")}
         </button>

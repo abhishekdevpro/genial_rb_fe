@@ -145,7 +145,7 @@
 //             <p className="text-xl font-medium mb-4">
 //               {value ? value.name : 'Drag and drop your resume here'}
 //             </p>
-//             <button className="px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-[#00b38d] transition-colors">
+//             <button className="px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-[#A810C7] transition-colors">
 //               Select PDF File
 //             </button>
 //             <p className="mt-4 text-sm text-gray-500">
@@ -331,7 +331,7 @@
 //       >
 //         <input {...getInputProps()} disabled={isUploading} />
 //         <div className="w-20 h-20 mx-auto mb-6 bg-blue-100 rounded-full flex items-center justify-center">
-//           <Upload className="w-10 h-10 text-[#00b38d]" />
+//           <Upload className="w-10 h-10 text-[#A810C7]" />
 //         </div>
 
 //         {isUploading ? (
@@ -339,7 +339,7 @@
 //             <div className="text-lg font-medium">Uploading your resume...</div>
 //             <div className="w-64 h-3 bg-gray-200 rounded-full mx-auto overflow-hidden">
 //               <div
-//                 className="h-full bg-[#00b38d] rounded-full transition-all duration-300"
+//                 className="h-full bg-[#A810C7] rounded-full transition-all duration-300"
 //                 style={{ width: `${uploadProgress}%` }}
 //               />
 //             </div>
@@ -350,7 +350,7 @@
 //             <p className="text-xl font-medium mb-4">
 //               {value ? value.name : "Drag and drop your resume here"}
 //             </p>
-//             <button className="px-6 py-3 bg-[#00b38d] text-white rounded-lg hover:bg-[#00b38d] transition-colors">
+//             <button className="px-6 py-3 bg-[#A810C7] text-white rounded-lg hover:bg-[#A810C7] transition-colors">
 //               Select PDF File
 //             </button>
 //             <p className="mt-4 text-sm text-gray-500">
@@ -383,8 +383,8 @@
 //         <button
 //           onClick={() => router.push(`/dashboard/aibuilder/${resumeId}`)}
 //           disabled={!uploadSuccess || isUploading} // Button is enabled only after successful upload
-//           className="px-8 py-3 bg-[#00b38d] text-white rounded-lg font-medium hover:bg-[#00b38d] transition-colors
-//             disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-[#00b38d]"
+//           className="px-8 py-3 bg-[#A810C7] text-white rounded-lg font-medium hover:bg-[#A810C7] transition-colors
+//             disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-[#A810C7]"
 //         >
 //           Next
 //         </button>
@@ -537,7 +537,7 @@ export default function FileUploadStep({ onNext, onBack, onChange, value }) {
       >
         <input {...getInputProps()} disabled={isUploading} />
         <div className="w-20 h-20 mx-auto mb-6 bg-blue-100 rounded-full flex items-center justify-center">
-          <Upload className="w-10 h-10 text-[#00b38d]" />
+          <Upload className="w-10 h-10 text-[#A810C7]" />
         </div>
 
         {isUploading ? (
@@ -547,7 +547,7 @@ export default function FileUploadStep({ onNext, onBack, onChange, value }) {
             </div>
             <div className="w-64 h-3 bg-gray-200 rounded-full mx-auto overflow-hidden">
               <div
-                className="h-full bg-[#00b38d] rounded-full transition-all duration-300"
+                className="h-full bg-[#A810C7] rounded-full transition-all duration-300"
                 style={{ width: `${uploadProgress}%` }}
               />
             </div>
@@ -558,7 +558,7 @@ export default function FileUploadStep({ onNext, onBack, onChange, value }) {
             <p className="text-xl font-medium mb-4">
               {value ? value.name : t("fileUploadStep.dragDrop")}
             </p>
-            <button className="px-6 py-3 bg-[#00b38d] text-white rounded-lg hover:bg-[#008f6b]">
+            <button className="px-6 py-3 bg-[#A810C7] text-white rounded-lg hover:bg-[#008f6b]">
               {t("fileUploadStep.selectFile")}
             </button>
             <p className="mt-4 text-sm text-gray-500">
@@ -595,7 +595,7 @@ export default function FileUploadStep({ onNext, onBack, onChange, value }) {
         <button
           onClick={() => router.push(`/dashboard/aibuilder/${resumeId}`)}
           disabled={!uploadSuccess || isUploading}
-          className="px-8 py-3 bg-[#00b38d] text-white rounded-lg font-medium hover:bg-[#008f6b] disabled:opacity-50 disabled:cursor-not-allowed"
+          className="px-8 py-3 bg-[#A810C7] text-white rounded-lg font-medium hover:bg-[#008f6b] disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {t("fileUploadStep.next")}
         </button>

@@ -33,7 +33,7 @@
 //                   <ul className="list-disc ml-5 text-gray-700">
 //                     <li>📞 855-695-3235</li>
 //                     <li className="text-[15px]">
-//                       📧 customersupport@CibliJob.fr
+//                       📧 customersupport@GenialCareer.fr
 //                     </li>
 //                   </ul>
 //                 </div>
@@ -73,7 +73,7 @@
 //                   </p>
 //                   <Link href="/payment">
 //                     <button
-//                       className="mt-3 md:mt-0 text-[#00b38d] font-medium underline"
+//                       className="mt-3 md:mt-0 text-[#A810C7] font-medium underline"
 //                       // onClick={() => setStatus("Active")}
 //                     >
 //                       Subscribe
@@ -84,9 +84,9 @@
 //                 <p className="mt-4 text-gray-700">
 //                   For more information or changes to your subscription, contact
 //                   us at
-//                   <span className="text-[#00b38d] cursor-pointer">
+//                   <span className="text-[#A810C7] cursor-pointer">
 //                     {" "}
-//                     customersupport@CibliJob.fr
+//                     customersupport@GenialCareer.fr
 //                   </span>
 //                   .
 //                 </p>
@@ -274,13 +274,13 @@ export default function Subscription() {
                     </span>
                   </p>
                   {/* <Link href="/payment">
-                    <button className="mt-3 md:mt-0 text-[#00b38d] font-medium underline">
+                    <button className="mt-3 md:mt-0 text-[#A810C7] font-medium underline">
                       {t("subscription.subscribe")}
                     </button>
                   </Link> */}
                   <div className="flex space-x-4">
                     <Link href="/payment">
-                      <button className="mt-3 md:mt-0 px-4 py-2 bg-[#00b38d] text-white rounded-md">
+                      <button className="mt-3 md:mt-0 px-4 py-2 bg-[#A810C7] text-white rounded-md">
                         {t("subscription.upgrade")}
                       </button>
                     </Link>
@@ -357,8 +357,8 @@ export default function Subscription() {
                 </p>
                 <p className="mt-4 text-gray-700">
                   {t("subscription.more_info")}{" "}
-                  <a href="mailto:customersupport@CibliJob.fr.">
-                    <span className="text-[#00b38d] cursor-pointer">
+                  <a href="mailto:customersupport@GenialCareer.fr.">
+                    <span className="text-[#A810C7] cursor-pointer">
                       {t("subscription.email")}
                     </span>
                   </a>

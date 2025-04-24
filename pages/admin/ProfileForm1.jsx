@@ -12,20 +12,20 @@ const ProfileForm1 = () => {
       </div>
     </Link>,
     <Link href="/admin/templatelist" key="box2">
-      <div className="bg-pink-500 hover:bg-gray-300 hover:text-black rounded-lg shadow-md pt-16 w-96 h-60 text-center text-white cursor-pointer text-3xl font-semibold">
+      <div className="bg-[#5a23b2] hover:bg-gray-300 hover:text-black rounded-lg shadow-md pt-16 w-96 h-60 text-center text-white cursor-pointer text-3xl font-semibold">
         <div className="text-5xl">📋</div>
         <br />
         <span>{t("admin.sidebar.templates")}</span>
       </div>
     </Link>,
     <Link href="/admin/addreferall1" key="box3">
-      <div className="bg-pink-500 hover:bg-gray-300 rounded-lg shadow-md pt-16 w-96 h-60 text-center cursor-pointer text-white text-3xl font-semibold">
+      <div className="bg-[#5a23b2] hover:bg-gray-300 rounded-lg shadow-md pt-16 w-96 h-60 text-center cursor-pointer text-white text-3xl font-semibold">
         <div className="text-5xl"> 📊</div>
         <br /> <span>{t("admin.sidebar.leads")}</span>
       </div>
     </Link>,
     <Link href="/admin/payment1" key="box4">
-      <div className="bg-pink-500 hover:bg-gray-300 hover:text-black rounded-lg shadow-md pt-16 w-96 h-60 text-center text-white cursor-pointer text-3xl font-semibold">
+      <div className="bg-[#5a23b2] hover:bg-gray-300 hover:text-black rounded-lg shadow-md pt-16 w-96 h-60 text-center text-white cursor-pointer text-3xl font-semibold">
         <div className="text-5xl">💷</div>
         <br />
         <span>{t("admin.sidebar.payment")}</span>

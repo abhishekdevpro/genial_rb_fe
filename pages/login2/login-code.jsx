@@ -69,7 +69,7 @@ const LoginCode = () => {
         {/* Back Button */}
         <Link
           href="/login2"
-          className="text-[#00b38d] flex items-center mb-6 hover:text-[#00b38d]"
+          className="text-[#A810C7] flex items-center mb-6 hover:text-[#A810C7]"
         >
           <span className="mr-2">←</span> Back
         </Link>
@@ -127,7 +127,7 @@ const LoginCode = () => {
           Didn&apos;t receive your code?{" "}
           <Link href="/login2">
             {" "}
-            <button className="text-[#00b38d] font-semibold hover:text-[#00b38d]">
+            <button className="text-[#A810C7] font-semibold hover:text-[#A810C7]">
               Send new code
             </button>
           </Link>
@@ -136,13 +136,13 @@ const LoginCode = () => {
         {/* Sign In Button */}
         <button
           onClick={handleSignIn}
-          className="w-full bg-[#00b38d] text-white py-2 px-4 rounded-md hover:bg-[#00b38d] flex items-center justify-center"
+          className="w-full bg-[#A810C7] text-white py-2 px-4 rounded-md hover:bg-[#A810C7] flex items-center justify-center"
         >
           Sign in <span className="ml-2">→</span>
         </button>
 
         {/* Alternative Option */}
-        <p className="mt-6 text-center text-sm text-[#00b38d] font-semibold">
+        <p className="mt-6 text-center text-sm text-[#A810C7] font-semibold">
           Don&apos;t have access to this email?
         </p>
       </div>

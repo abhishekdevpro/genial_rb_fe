@@ -140,8 +140,8 @@ const TemplateSelector = ({ selectedTemplate, setSelectedTemplate }) => {
                           mt-2 text-center py-2 px-4 rounded-md transition-colors duration-300
                           ${
                             template.key === templateId
-                              ? "bg-pink-500 text-white font-semibold"
-                              : "text-gray-600 group-hover:text-[#00b38d]"
+                              ? "bg-[#5a23b2] text-white font-semibold"
+                              : "text-gray-600 group-hover:text-[#A810C7]"
                           }
                         `}
                         >

@@ -15,8 +15,8 @@ const Sidebar = () => {
 
   const getLinkClassName = (path) => {
     return router.pathname === path
-      ? "flex items-center p-2 bg-[#00b38d] border-b-2 rounded font-semibold text-white"
-      : "flex items-center p-2 hover:bg-[#00b38d] border-b-2 rounded font-semibold";
+      ? "flex items-center p-2 bg-[#A810C7] border-b-2 rounded font-semibold text-white"
+      : "flex items-center p-2 hover:bg-[#A810C7] border-b-2 rounded font-semibold";
   };
 
   return (
@@ -30,7 +30,7 @@ const Sidebar = () => {
       </button> */}
       {!isOpen && (
         <button
-          className="md:hidden p-2 fixed top-[7rem] left-4 z-50 bg-pink-600 text-white rounded-full"
+          className="md:hidden p-2 fixed top-[7rem] left-4 z-50 bg-[#5a23b2] text-white rounded-full"
           onClick={toggleSidebar}
         >
           <Menu size={24} />
@@ -56,7 +56,7 @@ const Sidebar = () => {
           <li>
             <Link
               href="/settings/account"
-              className="flex items-center p-2 bg-pink-600 border-b-2 border-black font-semibold text-white"
+              className="flex items-center p-2 bg-[#5a23b2] border-b-2 border-black font-semibold text-white"
               onClick={toggleSidebar}
             >
               <User className="mr-2" size={20} />

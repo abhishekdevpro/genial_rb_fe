@@ -55,9 +55,9 @@
 //     },
 //     {
 //       name: "Blue",
-//       class: "bg-[#00b38d]",
+//       class: "bg-[#A810C7]",
 //       selectedClass: "ring-blue-400",
-//       hexCode: "#00b38d",
+//       hexCode: "#A810C7",
 //     },
 //     {
 //       name: "Purple",
@@ -85,7 +85,7 @@
 //     },
 //     {
 //       name: "Pink",
-//       class: "bg-pink-500",
+//       class: "bg-[#5a23b2]",
 //       selectedClass: "ring-pink-400",
 //       hexCode: "#EC4899",
 //     },
@@ -453,7 +453,7 @@
 //                           hasPhoto: option === t("templateStep.with_photo"),
 //                         })
 //                       }
-//                       className="w-5 h-5 text-[#00b38d] border-gray-300 focus:ring-blue-500"
+//                       className="w-5 h-5 text-[#A810C7] border-gray-300 focus:ring-blue-500"
 //                     />
 //                     <span className="ml-3 text-gray-700 font-medium">
 //                       {option}
@@ -592,9 +592,9 @@ const TemplateStep = ({ onNext, onBack, onChange, value }) => {
     },
     {
       name: "Blue",
-      class: "bg-[#00b38d]",
+      class: "bg-[#A810C7]",
       selectedClass: "ring-blue-400",
-      hexCode: "#00b38d",
+      hexCode: "#A810C7",
     },
     {
       name: "Purple",
@@ -622,7 +622,7 @@ const TemplateStep = ({ onNext, onBack, onChange, value }) => {
     },
     {
       name: "Pink",
-      class: "bg-pink-500",
+      class: "bg-[#5a23b2]",
       selectedClass: "ring-pink-400",
       hexCode: "#EC4899",
     },

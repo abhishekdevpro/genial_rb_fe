@@ -85,7 +85,7 @@ function Home_third() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-5  my-8 rounded-xl items-center justify-center px-5 py-10  md:mx-auto md:w-full">
+        <div className="flex flex-col gap-5  my-8 rounded-xl items-center justify-center px-5 py-10  md:mx-auto md:w-full ">
           <div className="flex flex-col items-center justify-center max-w-6xl">
             <h2 className=" text-3xl md:text-5xl font-bold text-[#A810C7] text-center py-6">
               {t("explore_templates")}

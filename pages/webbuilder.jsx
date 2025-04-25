@@ -802,7 +802,7 @@ export default function WebBuilder() {
                   {/* <select
                     value={selectedFont}
                     onChange={handleFontChange}
-                    className="w-40 h-10 rounded-lg border border-[#5a23b2] px-4 font-bold text-black bg-white focus:ring-2 focus:ring-green-600"
+                    className="w-40 h-10 rounded-lg border border-[#5a23b2] px-4 font-bold text-black bg-white focus:ring-2 focus:ring-[#A810C7]"
                   >
                     <option value="Ubuntu">Ubuntu</option>
                     <option value="Calibri">Calibri</option>
@@ -851,7 +851,7 @@ export default function WebBuilder() {
                             className={`px-4 py-2 cursor-pointer transition rounded-lg border-2 ${
                               currentSection === index
                                 ? "border-[#5a23b2] font-semibold bg-[#5a23b2] text-white"
-                                : "border-[#5a23b2] bg-white text-black hover:bg-blue-50"
+                                : "border-[#5a23b2] bg-white text-black hover:bg-purple-50"
                             }`}
                             onClick={() => handleSectionClick(index)}
                           >
@@ -1075,7 +1075,7 @@ export default function WebBuilder() {
                               <button
                                 onClick={downloadAsPDF}
                                 type="submit"
-                                className="w-full bg-yellow-400 text-black font-bold  rounded-[50px] hover:bg-yellow-500 transition duration-200"
+                                className="w-full bg-yellow-400 text-black font-bold  rounded-[50px] hover:bg-[#A810C7] transition duration-200"
                               >
                                 <Image
                                   src={paypal}

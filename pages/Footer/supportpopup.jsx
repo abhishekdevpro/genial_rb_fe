@@ -187,7 +187,7 @@ const SupportPopup = ({ isOpen, onClose }) => {
           <div className="text-center">
             <button
               type="submit"
-              className="bg-[#A810C7] text-white px-6 py-2 rounded font-semibold hover:bg-green-600 disabled:opacity-50"
+              className="bg-[#A810C7] text-white px-6 py-2 rounded font-semibold hover:bg-[#A810C7] disabled:opacity-50"
               disabled={loading}
             >
               {loading ? "Submitting..." : "SUBMIT FORM"}

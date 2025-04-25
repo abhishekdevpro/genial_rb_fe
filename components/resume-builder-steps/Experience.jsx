@@ -25,7 +25,7 @@
 //               }}
 //               className={`p-4 rounded-lg border-2 transition-all ${
 //                 value === exp.id
-//                   ? 'border-green-500 bg-blue-50'
+//                   ? 'border-green-500 bg-purple-50'
 //                   : 'border-gray-200 hover:border-green-400'
 //               }`}
 //             >
@@ -241,7 +241,7 @@ export default function ExperienceStep({ onNext, onBack, onChange, value }) {
             }}
             className={`p-6 rounded-lg border-2 transition-all hover:shadow-md ${
               value.experience === experience.id
-                ? "border-green-600 bg-greeb-50"
+                ? "border-[#A810C7] bg-greeb-50"
                 : "border-gray-200 hover:border-green-400"
             }`}
           >
@@ -265,7 +265,7 @@ export default function ExperienceStep({ onNext, onBack, onChange, value }) {
           onClick={handleSaveExperience}
           // disabled={loading || !value.experience}
           disabled={loading}
-          className={`px-8 py-3 bg-green-600 text-white rounded-xl font-medium transition-all shadow-lg 
+          className={`px-8 py-3 bg-[#A810C7] text-white rounded-xl font-medium transition-all shadow-lg 
               ${
                 loading
                   ? // || !value.experience

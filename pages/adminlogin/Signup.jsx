@@ -162,7 +162,7 @@ function Signup() {
                 name="password"
                 value={formData.password}
                 onChange={handleInputChange}
-                className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#A810C7]"
                 placeholder="Enter your password"
                 required
                 minLength={6}
@@ -189,7 +189,7 @@ function Signup() {
           </div>
           <button
             type="submit"
-            className="w-full bg-yellow-500 text-black px-4 py-2 rounded-md"
+            className="w-full bg-[#A810C7] text-black px-4 py-2 rounded-md"
           >
             Signup
           </button>

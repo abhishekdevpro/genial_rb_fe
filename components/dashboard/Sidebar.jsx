@@ -359,10 +359,10 @@ const Sidebar = ({ score, resumeId }) => {
               {t("dashboard_sidebar.resumeStrength")}
             </span>
             <div className="flex items-center gap-2">
-              <span className="bg-teal-100 text-teal-800 px-2 py-1 rounded-full text-sm">
+              <span className="bg-[#A810C7] text-white px-2 py-1 rounded-full text-sm">
                 {score}
               </span>
-              <button className="text-[#A810C7] hover:text-blue-700 text-sm">
+              <button className="text-[#A810C7] hover:text-[#5a23b2] text-sm">
                 {t("dashboard_sidebar.improve")}
               </button>
             </div>

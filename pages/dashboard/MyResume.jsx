@@ -222,7 +222,7 @@ const MyResume = () => {
                         </span>
                         <button
                           onClick={() => handleOpenEditModal(resume)}
-                          className="text-[#A810C7] hover:text-[#A810C7]"
+                          className="text-[#A810C7] hover:text-[#5a23b2]"
                         >
                           🖍
                         </button>
@@ -241,7 +241,7 @@ const MyResume = () => {
                             className={`px-3 py-1 rounded-full text-lg font-semibold ${
                               resume.resume_strenght_details.resume_strenght >
                               60
-                                ? "bg-green-100 text-[#A810C7]"
+                                ? "bg-purple-100 text-[#A810C7]"
                                 : "bg-red-100 text-red-800"
                             }`}
                           >
@@ -256,7 +256,7 @@ const MyResume = () => {
                       <div className="flex items-center space-x-3">
                         <button
                           onClick={() => handleEdit(resume.id)}
-                          className="text-[#A810C7] hover:text-[#A810C7] transition-colors duration-200"
+                          className="text-[#A810C7] hover:text-[#5a23b2] transition-colors duration-200"
                         >
                           <Edit className="w-5 h-5" />
                         </button>
@@ -317,7 +317,7 @@ const MyResume = () => {
             </h2>
             <input
               type="text"
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
               value={newResumeTitle}
               onChange={(e) => setNewResumeTitle(e.target.value)}
               placeholder={t("myresume.enter_new_resume_title")}
@@ -331,7 +331,7 @@ const MyResume = () => {
               </button>
               <button
                 onClick={handleUpdateResumeTitle}
-                className="px-4 py-2 text-sm font-medium text-white bg-[#A810C7] rounded-md hover:bg-[#A810C7] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                className="px-4 py-2 text-sm font-medium text-white bg-[#A810C7] rounded-md hover:bg-[#5a23b2] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
               >
                 {t("myresume.save")}
               </button>

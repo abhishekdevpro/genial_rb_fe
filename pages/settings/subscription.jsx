@@ -267,7 +267,7 @@ export default function Subscription() {
                     Status:{" "}
                     <span
                       className={`font-medium ${
-                        status === "Active" ? "text-green-600" : "text-red-600"
+                        status === "Active" ? "text-[#A810C7]" : "text-red-600"
                       }`}
                     >
                       {status}

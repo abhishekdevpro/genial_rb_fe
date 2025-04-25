@@ -223,9 +223,9 @@ const Testpaper = () => {
                     (option, index) => (
                       <div
                         key={index}
-                        className={`p-4 border rounded-lg cursor-pointer transition-all duration-200 hover:bg-blue-50 ${
+                        className={`p-4 border rounded-lg cursor-pointer transition-all duration-200 hover:bg-purple-50 ${
                           questions[currentQuestionIndex].user_answer === option
-                            ? "border-[#A810C7] bg-blue-50 ring-2 ring-blue-200"
+                            ? "border-[#A810C7] bg-purple-50 ring-2 ring-blue-200"
                             : "border-gray-200"
                         }`}
                         onClick={() =>

@@ -259,7 +259,7 @@
 //                   name="password"
 //                   value={formData.password}
 //                   onChange={handleInputChange}
-//                   className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+//                   className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#A810C7]"
 //                   placeholder={t("signuppage.password_placeholder")}
 //                   required
 //                   minLength={6}
@@ -597,7 +597,7 @@ const Signup = () => {
                   name="password"
                   value={formData.password}
                   onChange={handleInputChange}
-                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#A810C7]"
                   placeholder={t("signuppage.password_placeholder")}
                   required
                   minLength={6}

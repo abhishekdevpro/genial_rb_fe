@@ -396,7 +396,7 @@ function Home_five() {
                           <div className="flex justify-center mt-6">
                             <button
                               type="submit"
-                              className="w-full bg-yellow-400 text-black font-bold  rounded-[50px] hover:bg-yellow-500 transition duration-200"
+                              className="w-full bg-yellow-400 text-black font-bold  rounded-[50px] hover:bg-[#A810C7] transition duration-200"
                             >
                               {/* <Image
                                 src={paypal}
@@ -523,7 +523,7 @@ function Home_five() {
                           <div className="flex justify-center mt-6">
                             <button
                               type="submit"
-                              className="w-full bg-yellow-400 text-black font-bold  rounded-[50px] hover:bg-yellow-500 transition duration-200"
+                              className="w-full bg-yellow-400 text-black font-bold  rounded-[50px] hover:bg-[#A810C7] transition duration-200"
                             >
                               {/* <Image
                                 src={paypal}

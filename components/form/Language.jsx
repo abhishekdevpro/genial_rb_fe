@@ -130,7 +130,7 @@ const Language = () => {
                     className={`w-full border rounded-md p-2 transition-all duration-200 focus:ring-2 ${
                       improve && hasErrors(index, "language")
                         ? "border-red-500 focus:ring-red-500"
-                        : "border-gray-400 focus:ring-blue-500"
+                        : "border-gray-400 focus:ring-purple-500"
                     }`}
                     value={skill.language}
                     onChange={(e) => handleSkills(e, index, "language")}
@@ -200,7 +200,7 @@ const Language = () => {
                   {t("builder_forms.language.proficiency")}
                 </label>
                 <select
-                  className="w-full border border-gray-400 rounded-md p-2 transition-all duration-200 focus:ring-2 focus:ring-blue-500"
+                  className="w-full border border-gray-400 rounded-md p-2 transition-all duration-200 focus:ring-2 focus:ring-purple-500"
                   value={skill.proficiency}
                   onChange={(e) => handleSkills(e, index, "proficiency")}
                 >

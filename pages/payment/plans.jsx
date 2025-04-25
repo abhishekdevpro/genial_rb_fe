@@ -547,7 +547,7 @@ export default function PaymentPage() {
                   <div className="flex justify-center gap-4">
                     <button
                       onClick={() => {
-                        handleCheckout();
+                        // handleCheckout();
                         setShowPlanPurchase(false);
                       }}
                       className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded"

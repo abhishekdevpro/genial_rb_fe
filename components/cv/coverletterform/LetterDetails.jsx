@@ -42,7 +42,7 @@
 //             }
 //             onChange={handleDateChange}
 //             dateFormat="MMMM d, yyyy"
-//             className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+//             className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
 //             placeholderText="Select a date"
 //           />
 //         </div>
@@ -62,7 +62,7 @@
 //                 },
 //               }))
 //             }
-//             className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+//             className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
 //             placeholder="Enter the job title"
 //           />
 //         </div>
@@ -82,7 +82,7 @@
 //                 },
 //               }))
 //             }
-//             className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+//             className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
 //             placeholder="Enter the reference (e.g., Ref#123)"
 //           />
 //         </div>
@@ -104,7 +104,7 @@
 //                 },
 //               }))
 //             }
-//             className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+//             className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
 //             placeholder="Enter the company's name"
 //           />
 //         </div>
@@ -126,7 +126,7 @@
 //                 },
 //               }))
 //             }
-//             className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+//             className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
 //             placeholder="Enter the salutation (e.g., Ms. Smith)"
 //           />
 //         </div>
@@ -196,7 +196,7 @@ const LetterDetails = () => {
             }
             onChange={handleDateChange}
             dateFormat="MMMM d, yyyy"
-            className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
             placeholderText={t("letterDetails.datePlaceholder")}
           />
         </div>
@@ -218,7 +218,7 @@ const LetterDetails = () => {
                 },
               }))
             }
-            className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
             placeholder={t("letterDetails.jobTitlePlaceholder")}
           />
         </div>
@@ -240,7 +240,7 @@ const LetterDetails = () => {
                 },
               }))
             }
-            className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
             placeholder={t("letterDetails.referencePlaceholder")}
           />
         </div>
@@ -262,7 +262,7 @@ const LetterDetails = () => {
                 },
               }))
             }
-            className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
             placeholder={t("letterDetails.companyNamePlaceholder")}
           />
         </div>
@@ -284,7 +284,7 @@ const LetterDetails = () => {
                 },
               }))
             }
-            className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
             placeholder={t("letterDetails.salutationPlaceholder")}
           />
         </div>

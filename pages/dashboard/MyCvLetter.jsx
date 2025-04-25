@@ -275,7 +275,7 @@ const MyCvLetter = () => {
     //         </h2>
     //         <input
     //           type="text"
-    //           className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+    //           className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
     //           value={newCoverLetterTitle}
     //           onChange={(e) => setNewCoverLetterTitle(e.target.value)}
     //           placeholder="Enter new cover letter title"
@@ -306,7 +306,7 @@ const MyCvLetter = () => {
         </h1>
         <button
           onClick={handleCreate}
-          className="flex items-center px-4 py-2 bg-[#A810C7] text-white rounded-lg hover:bg-[#A810C7] transition-colors duration-200 font-medium shadow-sm"
+          className="flex items-center px-4 py-2 bg-[#A810C7] text-white rounded-lg hover:bg-[#5a23b2] transition-colors duration-200 font-medium shadow-sm"
         >
           <Plus className="w-5 h-5 mr-2" />{" "}
           {t("mycvletter.create_new_coverletter")}
@@ -365,7 +365,7 @@ const MyCvLetter = () => {
                       <div className="flex items-center space-x-3">
                         <button
                           onClick={() => handleEdit(coverletter.id)}
-                          className="text-[#A810C7] hover:text-[#A810C7] transition-colors duration-200"
+                          className="text-[#A810C7] hover:text-[#5a23b2] transition-colors duration-200"
                         >
                           <Edit className="w-5 h-5" />
                         </button>
@@ -380,7 +380,7 @@ const MyCvLetter = () => {
                         </button>
                         <button
                           onClick={() => handleDownload(coverletter.id)}
-                          className="text-[#A810C7] hover:text-[#A810C7] transition-colors duration-200"
+                          className="text-[#A810C7] hover:text-[#5a23b2] transition-colors duration-200"
                         >
                           <Download className="w-5 h-5" />
                         </button>
@@ -437,7 +437,7 @@ const MyCvLetter = () => {
             </h2>
             <input
               type="text"
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
               value={newCoverLetterTitle}
               onChange={(e) => setNewCoverLetterTitle(e.target.value)}
               placeholder={t("mycvletter.enter_new_title")}
@@ -451,7 +451,7 @@ const MyCvLetter = () => {
               </button>
               <button
                 onClick={handleUpdateCvLetterTitle}
-                className="px-4 py-2 text-sm font-medium text-white bg-[#A810C7] rounded-md hover:bg-[#A810C7]"
+                className="px-4 py-2 text-sm font-medium text-white bg-[#A810C7] rounded-md hover:bg-[#5a23b2]"
               >
                 {t("mycvletter.save")}
               </button>

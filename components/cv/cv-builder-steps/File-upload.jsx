@@ -91,7 +91,7 @@ export default function FileUploadStep({ onNext, onBack }) {
         className={`border-2 border-dashed rounded-xl p-12 text-center cursor-pointer transition-all
           ${
             isDragActive
-              ? "border-blue-400 bg-blue-50"
+              ? "border-blue-400 bg-purple-50"
               : "border-gray-300 hover:border-blue-400"
           }
           ${isUploading ? "cursor-not-allowed opacity-75" : ""}`}

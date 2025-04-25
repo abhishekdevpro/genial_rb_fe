@@ -200,7 +200,7 @@
 //             </div>
 //             <Link href="/dashboard/ai-resume-builder">
 //               <button
-//                 className="bg-blue-500 text-white px-1 py-2 rounded-lg hover:bg-[#A810C7] w-full md:w-auto"
+//                 className="bg-purple-500 text-white px-1 py-2 rounded-lg hover:bg-[#A810C7] w-full md:w-auto"
 //           >
 //             Upload Resume
 //           </button>
@@ -215,13 +215,13 @@
 //           <div className="flex mt-4">
 //             <button
 //               onClick={copyToClipboard}
-//               className="bg-blue-500 text-white py-1 px-4 rounded mr-2"
+//               className="bg-purple-500 text-white py-1 px-4 rounded mr-2"
 //             >
 //               Copy
 //             </button>
 //             <button
 //               onClick={() => setIsModalOpen(false)}
-//               className="bg-yellow-500 text-white py-1 px-4 rounded"
+//               className="bg-[#A810C7] text-white py-1 px-4 rounded"
 //             >
 //               Close
 //             </button>
@@ -596,7 +596,7 @@ const ProfilePage = () => {
                 />
                 <label
                   htmlFor="fileInput"
-                  className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-[#A810C7] cursor-pointer w-full md:w-auto text-center"
+                  className="bg-purple-500 text-white px-4 py-2 rounded-lg hover:bg-[#A810C7] cursor-pointer w-full md:w-auto text-center"
                 >
                   {isLoading ? (
                     <span className="flex items-center justify-center">
@@ -647,13 +647,13 @@ const ProfilePage = () => {
                 <div className="flex mt-4">
                   <button
                     onClick={copyToClipboard}
-                    className="bg-blue-500 text-white py-1 px-4 rounded mr-2 hover:bg-[#A810C7]"
+                    className="bg-purple-500 text-white py-1 px-4 rounded mr-2 hover:bg-[#A810C7]"
                   >
                     Copy
                   </button>
                   <button
                     onClick={() => setIsModalOpen(false)}
-                    className="bg-yellow-500 text-white py-1 px-4 rounded hover:bg-yellow-600"
+                    className="bg-[#A810C7] text-white py-1 px-4 rounded hover:bg-[#5a23b2]"
                   >
                     Close
                   </button>

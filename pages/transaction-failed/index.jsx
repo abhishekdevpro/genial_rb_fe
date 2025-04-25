@@ -43,7 +43,7 @@ const PaymentFailed = () => {
             </button>
 
             <button
-              className="w-full py-2 px-4 border border-blue-700 text-blue-700 rounded-lg hover:bg-blue-50 transition-colors"
+              className="w-full py-2 px-4 border border-blue-700 text-blue-700 rounded-lg hover:bg-purple-50 transition-colors"
               onClick={() => window.history.back()}
             >
               Go Back

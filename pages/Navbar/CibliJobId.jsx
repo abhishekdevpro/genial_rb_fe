@@ -65,7 +65,7 @@
 //                 marginRight: "10px",
 //                 width: "250px",
 //               }}
-//               className=" px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+//               className=" px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#A810C7]"
 //               placeholder="Enter your email ID"
 //             />
 //             <button
@@ -154,7 +154,7 @@ function CibliJobId({ isOpen, onClose }) {
                 marginRight: "10px",
                 width: "250px",
               }}
-              className="px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+              className="px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#A810C7]"
               placeholder={t("modal.email_placeholder")}
             />
             <button

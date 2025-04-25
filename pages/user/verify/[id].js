@@ -89,14 +89,14 @@ const VerificationPage = () => {
             {isLoading ? (
               <div className="flex flex-col items-center gap-4">
                 {/* Custom loader using only Tailwind */}
-                <div className="w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
+                <div className="w-8 h-8 border-4 border-purple-500 border-t-transparent rounded-full animate-spin"></div>
                 <p className="text-gray-600">Verifying your account...</p>
               </div>
             ) : (
               <div className="mt-6">
                 <button
                   onClick={() => router.reload()}
-                  className="px-4 py-2 bg-green-400 text-white rounded-lg hover:bg-green-500 transition-colors"
+                  className="px-4 py-2 bg-[#A810C7] text-white rounded-lg hover:bg-[#5a23b2] transition-colors"
                 >
                   Try Again
                 </button>
@@ -104,7 +104,7 @@ const VerificationPage = () => {
                   If the problem persists, please{" "}
                   <a
                     href="mailto:support@genialcareer.fr"
-                    className="text-blue-500 hover:underline"
+                    className="text-purple-500 hover:underline"
                   >
                     contact support
                   </a>

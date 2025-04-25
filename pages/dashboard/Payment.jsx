@@ -123,7 +123,7 @@ function Payment() {
                     {t("payments.per_resume")}{" "}
                   </span>
                   <br />
-                  <button className="bg-yellow-500 text-white p-2 px-5 rounded-lg m-4 disabled:">
+                  <button className="bg-[#A810C7] text-white p-2 px-5 rounded-lg m-4 disabled:">
                     {t("payments.choose_plan")}
                   </button>
                 </div>

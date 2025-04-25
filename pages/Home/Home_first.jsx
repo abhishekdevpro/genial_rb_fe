@@ -76,11 +76,11 @@ function Home_first() {
                   </Link>
                 </div>
                 <div className="font-bold text-base">
-                  <i className="fa-solid fa-star text-yellow-500"></i>{" "}
-                  <i className="fa-solid fa-star text-yellow-500"></i>{" "}
-                  <i className="fa-solid fa-star text-yellow-500"></i>{" "}
-                  <i className="fa-solid fa-star text-yellow-500"></i>{" "}
-                  <i className="fa-solid fa-star text-yellow-500"></i>{" "}
+                  <i className="fa-solid fa-star text-[#A810C7]"></i>{" "}
+                  <i className="fa-solid fa-star text-[#A810C7]"></i>{" "}
+                  <i className="fa-solid fa-star text-[#A810C7]"></i>{" "}
+                  <i className="fa-solid fa-star text-[#A810C7]"></i>{" "}
+                  <i className="fa-solid fa-star text-[#A810C7]"></i>{" "}
                   {t("reviews_certified")}
                 </div>
                 <div className="flex items-center align-middle">

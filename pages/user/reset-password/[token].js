@@ -80,7 +80,7 @@
 //                 name="newPassword"
 //                 value={formData.newPassword}
 //                 onChange={handleInputChange}
-//                 className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+//                 className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#A810C7]"
 //                 placeholder="Enter your new password"
 //                 required
 //               />
@@ -90,14 +90,14 @@
 //                 name="newPassword"
 //                 value={formData.confirmPassword}
 //                 onChange={handleInputChange}
-//                 className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+//                 className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#A810C7]"
 //                 placeholder="Enter your new password"
 //                 required
 //               />
 //             </div>
 //             <button
 //               type="submit"
-//               className="w-full bg-yellow-500 text-black px-4 py-2 rounded-md hover:bg-yellow-600 transition-colors duration-300"
+//               className="w-full bg-[#A810C7] text-black px-4 py-2 rounded-md hover:bg-[#5a23b2] transition-colors duration-300"
 //             >
 //               Reset Password
 //             </button>
@@ -194,7 +194,7 @@ import axiosInstance from "../../../components/utils/axiosInstance";
 //               name="newPassword"
 //               value={formData.newPassword}
 //               onChange={handleInputChange}
-//               className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+//               className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#A810C7]"
 //               placeholder="Enter your new password"
 //               required
 //             />
@@ -204,14 +204,14 @@ import axiosInstance from "../../../components/utils/axiosInstance";
 //               name="confirmPassword"
 //               value={formData.confirmPassword}
 //               onChange={handleInputChange}
-//               className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+//               className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#A810C7]"
 //               placeholder="Confirm your new password"
 //               required
 //             />
 //           </div>
 //           <button
 //             type="submit"
-//             className="w-full bg-yellow-500 text-black px-4 py-2 rounded-md hover:bg-yellow-600 transition-colors duration-300"
+//             className="w-full bg-[#A810C7] text-black px-4 py-2 rounded-md hover:bg-[#5a23b2] transition-colors duration-300"
 //           >
 //             Reset Password
 //           </button>
@@ -344,7 +344,7 @@ function ResetPassword() {
               name="newPassword"
               value={formData.newPassword}
               onChange={handleInputChange}
-              className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+              className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#A810C7]"
               placeholder="Enter your new password"
               required
               minLength={6}
@@ -358,7 +358,7 @@ function ResetPassword() {
               name="confirmPassword"
               value={formData.confirmPassword}
               onChange={handleInputChange}
-              className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+              className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#A810C7]"
               placeholder="Confirm your new password"
               required
               minLength={6}
@@ -367,7 +367,7 @@ function ResetPassword() {
           </div>
           <button
             type="submit"
-            className="w-full bg-yellow-500 text-black px-4 py-2 rounded-md hover:bg-yellow-600 transition-colors duration-300"
+            className="w-full bg-[#A810C7] text-black px-4 py-2 rounded-md hover:bg-[#5a23b2] transition-colors duration-300"
           >
             Reset Password
           </button>

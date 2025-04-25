@@ -320,7 +320,7 @@ const Footer = () => {
               </h2>
               <div>
                 {/* <button
-                  className="bg-blue-500 text-white px-4 py-2 rounded"
+                  className="bg-purple-500 text-white px-4 py-2 rounded"
                   onClick={() => setShowPopup(true)}
                 >
                   Open Support Form

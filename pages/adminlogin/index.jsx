@@ -78,7 +78,7 @@ function AdminLogin() {
                 name="email"
                 value={formData.email}
                 onChange={handleInputChange}
-                className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#A810C7]"
                 placeholder={t("admin.login.enterEmail")}
               />
             </div>
@@ -91,14 +91,14 @@ function AdminLogin() {
                 name="password"
                 value={formData.password}
                 onChange={handleInputChange}
-                className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#A810C7]"
                 placeholder={t("admin.login.enterPassword")}
               />
             </div>
 
             <button
               type="submit"
-              className="w-full bg-yellow-500 mt-10 text-black font-bold px-4 py-2 rounded-md hover:bg-yellow-600 transition-colors duration-300"
+              className="w-full bg-[#A810C7] mt-10 text-white font-bold px-4 py-2 rounded-md hover:bg-[#5a23b2] transition-colors duration-300"
             >
               {t("admin.login.login")}
             </button>

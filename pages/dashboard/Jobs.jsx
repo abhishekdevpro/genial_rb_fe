@@ -15,7 +15,7 @@ const JobsToggle = () => {
           <button
             className={`flex-1 py-2 text-center text-lg font-medium transition-all duration-300 ${
               activeTab === "myJobs"
-                ? "border-b-4 border-blue-500 text-blue-500"
+                ? "border-b-4 border-purple-500 text-purple-500"
                 : "text-gray-500"
             }`}
             onClick={() => setActiveTab("myJobs")}
@@ -25,7 +25,7 @@ const JobsToggle = () => {
           <button
             className={`flex-1 py-2 text-center text-lg font-medium transition-all duration-300 ${
               activeTab === "savedJobs"
-                ? "border-b-4 border-blue-500 text-blue-500"
+                ? "border-b-4 border-purple-500 text-purple-500"
                 : "text-gray-500"
             }`}
             onClick={() => setActiveTab("savedJobs")}

@@ -104,7 +104,7 @@ const LoginCode = () => {
             value={otp}
             onChange={handleOtpChange}
             maxLength={6}
-            className="w-full text-center text-xl py-2 px-4 border rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+            className="w-full text-center text-xl py-2 px-4 border rounded-md focus:ring-2 focus:ring-purple-500 focus:border-purple-500 outline-none"
             placeholder="______"
           />
         </div>

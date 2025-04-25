@@ -156,7 +156,7 @@ const ColorPicker = ({ selectedColor, onChange }) => {
         //           onClick={() => handleColorSelect(color.value)}
         //           className={`w-6 h-6 rounded-full cursor-pointer border transition-all duration-300 ease-in-out ${
         //             isSelected
-        //               ? "border-blue-80 shadow-lg shadow-blue-500"
+        //               ? "border-blue-80 shadow-lg shadow-purple-500"
         //               : "border-gray-300"
         //           } hover:border-black`}
         //           style={hoverStyle}
@@ -180,7 +180,7 @@ const ColorPicker = ({ selectedColor, onChange }) => {
                   onClick={() => handleColorSelect(color.value)}
                   className={`w-8 h-8 rounded-full cursor-pointer border transition-all duration-300 ease-in-out ${
                     isSelected
-                      ? "border-blue-500 shadow-md shadow-blue-500 scale-110"
+                      ? "border-purple-500 shadow-md shadow-purple-500 scale-110"
                       : "border-gray-300"
                   } hover:border-black`}
                   style={hoverStyle}

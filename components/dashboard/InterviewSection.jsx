@@ -32,7 +32,7 @@
 //           </div>
 //         </div>
 //         <Link href={`https://blog.genialcareer.fr/`}>
-//           <button className="px-6 py-2 border border-[#A810C7] text-[#A810C7] rounded-lg hover:bg-blue-50">
+//           <button className="px-6 py-2 border border-[#A810C7] text-[#A810C7] rounded-lg hover:bg-purple-50">
 //             {t("dashboard_interview.visitResources")}
 //           </button>
 //         </Link>
@@ -78,7 +78,7 @@ const InterviewSection = () => {
 
         <div className="w-full md:w-auto">
           <Link href={`https://blog.genialcareer.fr/`}>
-            <button className="w-full md:w-auto px-6 py-2 border border-[#A810C7] text-[#A810C7] rounded-lg hover:bg-blue-50">
+            <button className="w-full md:w-auto px-6 py-2 border border-[#A810C7] text-[#A810C7] rounded-lg hover:bg-purple-50">
               {t("dashboard_interview.visitResources")}
             </button>
           </Link>

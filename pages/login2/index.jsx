@@ -152,7 +152,7 @@ const Login2 = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleInputChange}
-                className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#A810C7]"
                 placeholder={t("loginpage.email_placeholder")}
                 required
                 disabled={isLoading}
@@ -169,7 +169,7 @@ const Login2 = () => {
                   name="password"
                   value={formData.password}
                   onChange={handleInputChange}
-                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#A810C7]"
                   placeholder={t("loginpage.password_placeholder")}
                   required
                   disabled={isLoading}
@@ -210,7 +210,7 @@ const Login2 = () => {
                 name="terms"
                 // checked={isChecked}
                 // onChange={(e) => setIsChecked(e.target.checked)}
-                className="w-4 h-4 text-yellow-500 border-gray-300 rounded focus:ring-yellow-500"
+                className="w-4 h-4 text-[#A810C7] border-gray-300 rounded focus:ring-[#A810C7]"
               /> */}
               <input
                 type="checkbox"
@@ -218,7 +218,7 @@ const Login2 = () => {
                 name="terms"
                 checked={isChecked}
                 onChange={handleCheckboxChange}
-                className="w-4 h-4 text-yellow-500 border-gray-300 rounded focus:ring-yellow-500"
+                className="w-4 h-4 text-[#A810C7] border-gray-300 rounded focus:ring-[#A810C7]"
               />
 
               <label htmlFor="terms" className="text-gray-700 text-sm">
@@ -378,7 +378,7 @@ export default Login2;
 //                 name="email"
 //                 value={formData.email}
 //                 onChange={handleInputChange}
-//                 className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+//                 className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#A810C7]"
 //                 placeholder="Enter your email ID"
 //                 required
 //                 disabled={isLoading}
@@ -392,7 +392,7 @@ export default Login2;
 //                 name="terms"
 //                 // checked={isChecked}
 //                 // onChange={(e) => setIsChecked(e.target.checked)}
-//                 className="w-4 h-4 text-yellow-500 border-gray-300 rounded focus:ring-yellow-500"
+//                 className="w-4 h-4 text-[#A810C7] border-gray-300 rounded focus:ring-[#A810C7]"
 //               />
 //               <label htmlFor="terms" className="text-gray-700 text-sm">
 //                 I agree to the{" "}

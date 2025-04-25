@@ -605,7 +605,7 @@
 //                           className={`w-full p-2 pl-2 border rounded-md outline-none transition-colors ${
 //                             improve && hasErrors(field)
 //                               ? "border-red-500 focus:border-red-600"
-//                               : "border-gray-300 focus:border-blue-500"
+//                               : "border-gray-300 focus:border-purple-500"
 //                           }`}
 //                           value={
 //                             resumeData[field]
@@ -656,7 +656,7 @@
 //                         className={`w-full p-2 border rounded-md outline-none transition-colors ${
 //                           improve && hasErrors(field)
 //                             ? "border-red-500 focus:border-red-600"
-//                             : "border-gray-300 focus:border-blue-500"
+//                             : "border-gray-300 focus:border-purple-500"
 //                         }`}
 //                         value={resumeData[field] || ""}
 //                         onChange={handleInputChange}
@@ -1232,7 +1232,7 @@ const PersonalInformation = () => {
                           className={`w-full p-2 pl-2 border rounded-md outline-none transition-colors ${
                             improve && hasErrors(field)
                               ? "border-red-500 focus:border-red-600"
-                              : "border-gray-300 focus:border-blue-500"
+                              : "border-gray-300 focus:border-purple-500"
                           }`}
                           value={
                             resumeData[field]
@@ -1281,7 +1281,7 @@ const PersonalInformation = () => {
                         className={`w-full p-2 border rounded-md outline-none transition-colors ${
                           improve && hasErrors(field)
                             ? "border-red-500 focus:border-red-600"
-                            : "border-gray-300 focus:border-blue-500"
+                            : "border-gray-300 focus:border-purple-500"
                         }`}
                         value={resumeData[field] || ""}
                         onChange={handleInputChange}
@@ -1384,7 +1384,7 @@ const PersonalInformation = () => {
                           )}
                           <button
                             onClick={() => markAsResolved(field)}
-                            className="px-3 py-1 text-sm font-medium text-white bg-green-600 rounded-md shadow hover:bg-green-700 transition-all"
+                            className="px-3 py-1 text-sm font-medium text-white bg-[#A810C7] rounded-md shadow hover:bg-green-700 transition-all"
                           >
                             {t("builder_forms.personal_info.mark_resolved")}
                           </button>

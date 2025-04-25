@@ -176,7 +176,7 @@
 //           conditions, please contact us at:
 //           <br />
 //           Email:{" "}
-//           <a href="mailto:bonjour@genialcareer.fR" className="text-blue-500">
+//           <a href="mailto:bonjour@genialcareer.fR" className="text-purple-500">
 //             bonjour@genialcareer.fR
 //           </a>
 //         </p>
@@ -219,7 +219,7 @@
 //           {t.contact}:
 //           <br />
 //           Email:{" "}
-//           <a href="mailto:bonjour@genialcareer.fR" className="text-blue-500">
+//           <a href="mailto:bonjour@genialcareer.fR" className="text-purple-500">
 //             bonjour@genialcareer.fR
 //           </a>
 //         </p>
@@ -267,7 +267,7 @@ function TermsandConditions() {
           {termsData.contact}:
           <br />
           Email:{" "}
-          <a href="mailto:bonjour@genialcareer.fR" className="text-blue-500">
+          <a href="mailto:bonjour@genialcareer.fR" className="text-purple-500">
             bonjour@genialcareer.fR
           </a>
         </p>

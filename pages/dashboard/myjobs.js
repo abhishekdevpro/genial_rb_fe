@@ -98,7 +98,7 @@
 
 //         {item.job_type && (
 //           <div className="flex items-center">
-//             <span className="px-3 py-1 text-sm text-[#A810C7] bg-blue-50 rounded-full">
+//             <span className="px-3 py-1 text-sm text-[#A810C7] bg-purple-50 rounded-full">
 //               {item.job_type}
 //             </span>
 //           </div>
@@ -249,7 +249,7 @@
 //               <select
 //                 value={sort}
 //                 onChange={handleSort}
-//                 className="block w-full rounded-md border-gray-300 text-sm focus:border-blue-500 focus:ring-blue-500"
+//                 className="block w-full rounded-md border-gray-300 text-sm focus:border-purple-500 focus:ring-purple-500"
 //               >
 //                 <option value="">Sort by (default)</option>
 //                 <option value="asc">Newest</option>
@@ -259,7 +259,7 @@
 //               <select
 //                 onChange={handlePerPage}
 //                 value={JSON.stringify(perPage)}
-//                 className="block w-full rounded-md border-gray-300 text-sm focus:border-blue-500 focus:ring-blue-500"
+//                 className="block w-full rounded-md border-gray-300 text-sm focus:border-purple-500 focus:ring-purple-500"
 //               >
 //                 <option value={JSON.stringify({ start: 0, end: 0 })}>
 //                   All

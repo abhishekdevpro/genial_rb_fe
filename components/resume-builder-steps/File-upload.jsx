@@ -121,7 +121,7 @@
 //       <div
 //         {...getRootProps()}
 //         className={`border-2 border-dashed rounded-xl p-12 text-center cursor-pointer transition-all
-//           ${isDragActive ? 'border-green-400 bg-blue-50' : 'border-gray-300 hover:border-green-400'}
+//           ${isDragActive ? 'border-green-400 bg-purple-50' : 'border-gray-300 hover:border-green-400'}
 //           ${isUploading ? 'cursor-not-allowed opacity-75' : ''}`}
 //       >
 //         <input {...getInputProps()} disabled={isUploading} />
@@ -178,7 +178,7 @@
 //         <button
 //           onClick={() => router.push(`/dashboard/aibuilder/${resumeId}`)}
 //           disabled={!value && !isUploading}
-//           className="px-8 py-3 bg-green-500 text-black rounded-lg font-medium hover:bg-green-600 transition-colors
+//           className="px-8 py-3 bg-green-500 text-black rounded-lg font-medium hover:bg-[#A810C7] transition-colors
 //             disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-green-500"
 //         >
 //           Next
@@ -324,7 +324,7 @@
 //         className={`border-2 border-dashed rounded-xl p-12 text-center cursor-pointer transition-all
 //           ${
 //             isDragActive
-//               ? "border-blue-400 bg-blue-50"
+//               ? "border-blue-400 bg-purple-50"
 //               : "border-gray-300 hover:border-blue-400"
 //           }
 //           ${isUploading ? "cursor-not-allowed opacity-75" : ""}`}
@@ -530,7 +530,7 @@ export default function FileUploadStep({ onNext, onBack, onChange, value }) {
         className={`border-2 border-dashed rounded-xl p-12 text-center cursor-pointer transition-all
           ${
             isDragActive
-              ? "border-blue-400 bg-blue-50"
+              ? "border-blue-400 bg-purple-50"
               : "border-gray-300 hover:border-blue-400"
           }
           ${isUploading ? "cursor-not-allowed opacity-75" : ""}`}

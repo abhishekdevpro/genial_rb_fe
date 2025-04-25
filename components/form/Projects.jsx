@@ -1035,7 +1035,7 @@ const Projects = () => {
       ) : (
         <p className="text-black mt-2  mb-4">{t("project.no_project")}</p>
       )}
-      {/* <button onClick={addProjects} className="bg-blue-500 text-white px-4 py-2 rounded mt-4" type="button">
+      {/* <button onClick={addProjects} className="bg-purple-500 text-white px-4 py-2 rounded mt-4" type="button">
         Add Project
       </button> */}
       <FormButton

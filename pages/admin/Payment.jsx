@@ -197,7 +197,7 @@ function Payment() {
 
   return (
     <div className="container mx-auto p-4">
-      <div className="bg-gradient-to-r from-pink-500 to-pink-700 p-6 rounded-lg shadow-lg mb-8">
+      <div className="bg-gradient-to-r from-[#5a23b2] to-[#A810C7] p-6 rounded-lg shadow-lg mb-8">
         <h2 className="text-start text-3xl text-white font-bold">
           {t("admin.payment.paymentHistory")}
         </h2>
@@ -205,12 +205,12 @@ function Payment() {
 
       {loading ? (
         <div className="flex justify-center items-center h-64">
-          <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-pink-500"></div>
+          <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#5a23b2]"></div>
         </div>
       ) : users.length === 0 ? (
         <div className="bg-white p-8 rounded-lg shadow-md text-center">
           <svg
-            className="w-16 h-16 mx-auto text-pink-500 mb-4"
+            className="w-16 h-16 mx-auto text-[#5a23b2] mb-4"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -235,28 +235,28 @@ function Payment() {
           <table className="min-w-full divide-y divide-gray-200">
             <thead>
               <tr>
-                <th className="px-6 py-4 bg-gradient-to-r from-pink-500 to-pink-700 text-white text-left text-sm font-medium uppercase tracking-wider rounded-tl-lg">
+                <th className="px-6 py-4 bg-gradient-to-r from-[#5a23b2] to-[#A810C7] text-white text-left text-sm font-medium uppercase tracking-wider rounded-tl-lg">
                   {t("admin.payment.id")}
                 </th>
-                <th className="px-6 py-4 bg-gradient-to-r from-pink-500 to-pink-700 text-white text-left text-sm font-medium uppercase tracking-wider">
+                <th className="px-6 py-4 bg-gradient-to-r from-[#5a23b2] to-[#A810C7] text-white text-left text-sm font-medium uppercase tracking-wider">
                   {t("admin.payment.name")}
                 </th>
-                <th className="px-6 py-4 bg-gradient-to-r from-pink-500 to-pink-700 text-white text-left text-sm font-medium uppercase tracking-wider">
+                <th className="px-6 py-4 bg-gradient-to-r from-[#5a23b2] to-[#A810C7] text-white text-left text-sm font-medium uppercase tracking-wider">
                   {t("admin.payment.email")}
                 </th>
-                {/* <th className="px-6 py-4 bg-gradient-to-r from-pink-500 to-pink-700 text-white text-left text-sm font-medium uppercase tracking-wider">
+                {/* <th className="px-6 py-4 bg-gradient-to-r from-[#5a23b2] to-[#A810C7] text-white text-left text-sm font-medium uppercase tracking-wider">
                  {t("admin.payment.phone")}
                 </th> */}
-                <th className="px-6 py-4 bg-gradient-to-r from-pink-500 to-pink-700 text-white text-left text-sm font-medium uppercase tracking-wider">
+                <th className="px-6 py-4 bg-gradient-to-r from-[#5a23b2] to-[#A810C7] text-white text-left text-sm font-medium uppercase tracking-wider">
                   {t("admin.payment.planName")}
                 </th>
-                <th className="px-6 py-4 bg-gradient-to-r from-pink-500 to-pink-700 text-white text-left text-sm font-medium uppercase tracking-wider">
+                <th className="px-6 py-4 bg-gradient-to-r from-[#5a23b2] to-[#A810C7] text-white text-left text-sm font-medium uppercase tracking-wider">
                   {t("admin.payment.status")}
                 </th>
-                <th className="px-6 py-4 bg-gradient-to-r from-pink-500 to-pink-700 text-white text-left text-sm font-medium uppercase tracking-wider">
+                <th className="px-6 py-4 bg-gradient-to-r from-[#5a23b2] to-[#A810C7] text-white text-left text-sm font-medium uppercase tracking-wider">
                   {t("admin.payment.remark")}
                 </th>
-                <th className="px-6 py-4 bg-gradient-to-r from-pink-500 to-pink-700 text-white text-left text-sm font-medium uppercase tracking-wider rounded-tr-lg">
+                <th className="px-6 py-4 bg-gradient-to-r from-[#5a23b2] to-[#A810C7] text-white text-left text-sm font-medium uppercase tracking-wider rounded-tr-lg">
                   {t("admin.payment.action")}
                 </th>
               </tr>
@@ -288,7 +288,7 @@ function Payment() {
                       className={`px-3 py-1 inline-flex text-xs leading-5 font-semibold rounded-full 
                       ${
                         user.status === "Completed"
-                          ? "bg-green-100 text-green-800"
+                          ? "bg-purple-100 text-[#A810C7]"
                           : user.status === "Pending"
                           ? "bg-yellow-100 text-yellow-800"
                           : "bg-red-100 text-red-800"
@@ -300,7 +300,7 @@ function Payment() {
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
                     <input
                       type="text"
-                      className="border border-gray-300 rounded-md p-2 w-full text-sm focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                      className="border border-gray-300 rounded-md p-2 w-full text-sm focus:outline-none focus:ring-2 focus:ring-[#5a23b2] focus:border-transparent"
                       placeholder="Add remark..."
                       value={
                         remarks[user.id] !== undefined
@@ -315,7 +315,7 @@ function Payment() {
                   <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
                     <button
                       onClick={() => handleRemarkSubmit(user.id)}
-                      className="bg-gradient-to-r from-pink-500 to-pink-700 hover:from-pink-600 hover:to-pink-800 text-white px-4 py-2 rounded-md transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50"
+                      className="bg-gradient-to-r from-[#5a23b2] to-[#A810C7] hover:from-pink-600 hover:to-pink-800 text-white px-4 py-2 rounded-md transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#5a23b2] focus:ring-opacity-50"
                     >
                       {t("admin.payment.submit")}
                     </button>

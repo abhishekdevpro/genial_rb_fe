@@ -28,7 +28,7 @@
 //             type="text"
 //             value={coverLetterData.personalDetails.name}
 //             onChange={(e) => handleChange("name", e.target.value)}
-//             className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+//             className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
 //             placeholder="Enter your name"
 //           />
 //         </div>
@@ -40,7 +40,7 @@
 //             type="email"
 //             value={coverLetterData.personalDetails.email}
 //             onChange={(e) => handleChange("email", e.target.value)}
-//             className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+//             className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
 //             placeholder="Enter your email"
 //           />
 //         </div>
@@ -51,7 +51,7 @@
 //           <textarea
 //             value={coverLetterData.personalDetails.address}
 //             onChange={(e) => handleChange("address", e.target.value)}
-//             className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+//             className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
 //             placeholder="Enter your address"
 //             rows="3"
 //           ></textarea>
@@ -64,7 +64,7 @@
 //             type="tel"
 //             value={coverLetterData.personalDetails.contact}
 //             onChange={(e) => handleChange("contact", e.target.value)}
-//             className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+//             className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
 //             placeholder="Enter your contact number"
 //           />
 //         </div>
@@ -109,7 +109,7 @@ const PersonalInformation = () => {
             type="text"
             value={coverLetterData.personalDetails.name}
             onChange={(e) => handleChange("name", e.target.value)}
-            className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
             placeholder={t("personalInformation.namePlaceholder")}
           />
         </div>
@@ -123,7 +123,7 @@ const PersonalInformation = () => {
             type="email"
             value={coverLetterData.personalDetails.email}
             onChange={(e) => handleChange("email", e.target.value)}
-            className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
             placeholder={t("personalInformation.emailPlaceholder")}
           />
         </div>
@@ -136,7 +136,7 @@ const PersonalInformation = () => {
           <textarea
             value={coverLetterData.personalDetails.address}
             onChange={(e) => handleChange("address", e.target.value)}
-            className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
             placeholder={t("personalInformation.addressPlaceholder")}
             rows="3"
           ></textarea>
@@ -151,7 +151,7 @@ const PersonalInformation = () => {
             type="tel"
             value={coverLetterData.personalDetails.contact}
             onChange={(e) => handleChange("contact", e.target.value)}
-            className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
             placeholder={t("personalInformation.contactPlaceholder")}
           />
         </div>

@@ -29,7 +29,7 @@ export default function Payment() {
       <Navbar />
       <div className="p-6 max-w-7xl w-full mx-auto font-sans">
         {/* Intro Section */}
-        <div className="bg-green-100 p-4 rounded-lg text-center">
+        <div className="bg-purple-100 p-4 rounded-lg text-center">
           <h2 className="text-lg md:text-xl font-semibold">
             ✨ {t("paymentplans.Cast a wider net – 10x your job applications")}
           </h2>

@@ -187,7 +187,7 @@
 //         </div>
 //         <div className="container text-base md:mx-auto text-center border-t border-white pt-6 mt-6">
 //           <p className="text-[#A810C7] text-right">
-//             &copy; Copyright By GenialCareer.fr All Rights Reserved
+//             &copy; Copyright By GenialCareer.ca All Rights Reserved
 //           </p>
 //         </div>
 //       </footer>

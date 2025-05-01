@@ -24,7 +24,7 @@
 //         <textarea
 //           value={coverLetterData.closing}
 //           onChange={(e) => handleChange("closing", e.target.value)}
-//           className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+//           className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
 //           rows="4"
 //           placeholder="Write your closing statement here"
 //         ></textarea>
@@ -36,7 +36,7 @@
 //         <textarea
 //           value={coverLetterData.gratitude}
 //           onChange={(e) => handleChange("gratitude", e.target.value)}
-//           className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+//           className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
 //           rows="4"
 //           placeholder="Write your gratitude statement here"
 //         ></textarea>
@@ -49,7 +49,7 @@
 //           type="text"
 //           value={coverLetterData.signature}
 //           onChange={(e) => handleChange("signature", e.target.value)}
-//           className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+//           className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
 //           placeholder="Enter your signature (e.g., Sincerely, John Doe)"
 //         />
 //       </div>
@@ -76,37 +76,37 @@ const ClosingGratitudeAndSignatureForm = () => {
 
   return (
     <div className="p-4 md:p-8 rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold mb-6 text-black">
+      {/* <h2 className="text-2xl font-bold mb-6 text-black">
         {t("closingGratitude.title")}
-      </h2>
+      </h2> */}
 
       {/* Closing Section */}
-      <div className="mb-6">
+      {/* <div className="mb-6">
         <label className="block text-black font-medium mb-2">
           {t("closingGratitude.closing")}
         </label>
         <textarea
           value={coverLetterData.closing}
           onChange={(e) => handleChange("closing", e.target.value)}
-          className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+          className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           rows="4"
           placeholder={t("closingGratitude.closingPlaceholder")}
         ></textarea>
-      </div>
+      </div> */}
 
       {/* Gratitude Section */}
-      <div className="mb-6">
+      {/* <div className="mb-6">
         <label className="block text-black font-medium mb-2">
           {t("closingGratitude.gratitude")}
         </label>
         <textarea
           value={coverLetterData.gratitude}
           onChange={(e) => handleChange("gratitude", e.target.value)}
-          className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+          className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           rows="4"
           placeholder={t("closingGratitude.gratitudePlaceholder")}
         ></textarea>
-      </div>
+      </div> */}
 
       {/* Signature Section */}
       <div>
@@ -117,7 +117,7 @@ const ClosingGratitudeAndSignatureForm = () => {
           type="text"
           value={coverLetterData.signature}
           onChange={(e) => handleChange("signature", e.target.value)}
-          className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+          className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           placeholder={t("closingGratitude.signaturePlaceholder")}
         />
       </div>

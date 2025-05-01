@@ -605,7 +605,7 @@
 //                           className={`w-full p-2 pl-2 border rounded-md outline-none transition-colors ${
 //                             improve && hasErrors(field)
 //                               ? "border-red-500 focus:border-red-600"
-//                               : "border-gray-300 focus:border-purple-500"
+//                               : "border-gray-300 focus:border-blue-500"
 //                           }`}
 //                           value={
 //                             resumeData[field]
@@ -656,7 +656,7 @@
 //                         className={`w-full p-2 border rounded-md outline-none transition-colors ${
 //                           improve && hasErrors(field)
 //                             ? "border-red-500 focus:border-red-600"
-//                             : "border-gray-300 focus:border-purple-500"
+//                             : "border-gray-300 focus:border-blue-500"
 //                         }`}
 //                         value={resumeData[field] || ""}
 //                         onChange={handleInputChange}
@@ -997,6 +997,18 @@ const PersonalInformation = () => {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
+    const maxLengths = {
+      name: 30,
+      position: 20,
+      contactInformation: 10,
+      email: 50,
+      address: 50,
+    };
+
+    // Check if value exceeds max length for the field
+    if (maxLengths[name] && value.length > maxLengths[name]) {
+      return;
+    }
     handleChange(e);
 
     if (name === "position") {
@@ -1147,7 +1159,7 @@ const PersonalInformation = () => {
   };
 
   return (
-    <div className="flex flex-col gap-3 w-full items-center md:mt-10 md:px-10">
+    <div className="flex flex-col gap-3 w-full items-center md:mt-10 md:px-10 max-h-[400px] overflow-y-auto">
       <h2 className="text-2xl md:text-3xl font-semibold text-black">
         {t("builder_forms.personal_info.details_info")}
       </h2>
@@ -1232,7 +1244,7 @@ const PersonalInformation = () => {
                           className={`w-full p-2 pl-2 border rounded-md outline-none transition-colors ${
                             improve && hasErrors(field)
                               ? "border-red-500 focus:border-red-600"
-                              : "border-gray-300 focus:border-purple-500"
+                              : "border-gray-300 focus:border-blue-500"
                           }`}
                           value={
                             resumeData[field]
@@ -1281,7 +1293,7 @@ const PersonalInformation = () => {
                         className={`w-full p-2 border rounded-md outline-none transition-colors ${
                           improve && hasErrors(field)
                             ? "border-red-500 focus:border-red-600"
-                            : "border-gray-300 focus:border-purple-500"
+                            : "border-gray-300 focus:border-blue-500"
                         }`}
                         value={resumeData[field] || ""}
                         onChange={handleInputChange}
@@ -1384,7 +1396,7 @@ const PersonalInformation = () => {
                           )}
                           <button
                             onClick={() => markAsResolved(field)}
-                            className="px-3 py-1 text-sm font-medium text-white bg-[#A810C7] rounded-md shadow hover:bg-green-700 transition-all"
+                            className="px-3 py-1 text-sm font-medium text-white bg-green-600 rounded-md shadow hover:bg-green-700 transition-all"
                           >
                             {t("builder_forms.personal_info.mark_resolved")}
                           </button>

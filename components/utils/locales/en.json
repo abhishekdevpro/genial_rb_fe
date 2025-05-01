@@ -6,7 +6,7 @@
   "ai_resume_builder": "AI Resume Builder",
   "jobs": "Jobs",
   "resources": "Resources",
-  "cibli_job_id": "GenialCareer ID",
+  "cibli_job_id": "Genial Career ID",
   "home": "Home",
   "profile": "Profile",
   "logout": "Logout",
@@ -151,7 +151,7 @@
         "ai_resume_accuracy": "AI - Resume Accuracy",
         "ai_resume_enhancer": "AI - Resume Enhancer",
         "ai_job_match_apply": "AI - Job Match & Apply",
-        "copyright": "© Copyright By GenialCareer.fr All Rights Reserved",
+        "copyright": "© Copyright By genialcareer.ca All Rights Reserved",
         "toast_success":"Subscribed successfully!"
       
       },
@@ -213,7 +213,7 @@
           
           "how_to_apply": "How to Apply",
           "how_to_apply_description": "If you’re passionate about helping others succeed and want to be part of a dynamic, growth-oriented team, we’d love to hear from you. To apply for a position at Genial Career, please send your resume and a cover letter to",
-          "apply_email": "career@GenialCareer.ca",
+          "apply_email": "career@genialcareer.ca",
           
           "join_us": "Join Us and Make a Difference",
           "join_us_description": "At Genial Career, you’ll have the opportunity to make a meaningful impact every day. Join us and help shape the future of job seekers around the world. We look forward to welcoming you to our team!",
@@ -285,7 +285,7 @@
               "childrensPrivacy": "Our services are not intended for individuals under 18. If a child provides personal data, we will delete it.",
               "changesPolicy": "We may update this Privacy Policy. Continued use of our services after changes means acceptance of the revised policy.",
               "contactUs": "If you have any questions, contact us at:",
-              "email_name": "bonjour@genialcareer.fR",
+              "email_name": "bonjour@genialcareer.ca",
               
                 "title": "AI Resume Builder",
                 "introduction": "Revolutionizing the Job Application Process",
@@ -494,7 +494,7 @@
                           "title": "10. Contact Information",
                           "list": [
                             "If you have any questions or concerns about these terms and conditions, please contact us at:",
-                            "Email: bonjour@genialcareer.fR"
+                            "Email: bonjour@genialcareer.ca"
                           ]
                         }
                       ],
@@ -799,13 +799,13 @@
   },
   
     "modal": {
-      "title": "GenialCareer ID",
+      "title": "Genial Career ID",
       "subtitle": "Your One-Stop Access to Career Solutions",
       "coming_soon": "Coming Soon!",
       "status": "Development Status:",
       "progress": "90% Complete",
-      "description": "GenialCareer ID will allow you to seamlessly connect to all our services with a single account. Stay tuned for the launch!",
-      "signup": "Want to know when GenialCareer ID is live? Sign up for updates!",
+      "description": "Genial Career ID will allow you to seamlessly connect to all our services with a single account. Stay tuned for the launch!",
+      "signup": "Want to know when Genial Career ID is live? Sign up for updates!",
       "email_placeholder": "Enter your email ID",
       "notify_button": "Notify Me",
       "close_button": "Close",
@@ -849,7 +849,8 @@
     "improvements": {
       "title": "Areas for Improvement",
       "file_format": "File Formatting",
-      "keyword_optimization": "Keyword Optimization"
+      "keyword_optimization": "Keyword Optimization",
+      "sectionOrder": "Section Order"
     },
     "formatting": {
       "title": "Formatting Checklist",
@@ -860,7 +861,11 @@
       "consistent_font": "Consistent Font",
       "consistent_font_desc": "Consistent font usage throughout the resume",
       "contact_info": "Contact Info Visible",
-      "contact_info_desc": "Contact information is clearly visible"
+      "contact_info_desc": "Contact information is clearly visible",
+       "clear_exp": "Clear Experience",
+      "clear_exp_desc": "Work experience section is clearly structured and readable",
+        "clear_summary": "Clear Summary",
+      "clear_summary_desc": "Summary section is well-written and clearly presented"
     },
     "overall_comments": "Overall Comments",
     "button": {
@@ -904,7 +909,16 @@
           },
           "back": "Back",
              "next": "Next",
-              "saving": "Saving"
+              "saving": "Saving",
+              "toast": {
+                "selectExperience": "Please select an experience level before proceeding.",
+                "resumeDataNotLoaded": "Resume data not loaded yet. Please wait.",
+                "resumeIdNotFound": "Resume ID not found.",
+                "experienceSaved": "Experience saved successfully.",
+                "errorSavingExperience": "Error while saving the experience.",
+                "errorUpdatingResume": "Error updating resume!",
+                "errorFetchingResume": "Error fetching resume data."
+              }
         },
         
           "templateStep": {
@@ -917,6 +931,7 @@
             "back": "Back",
             "next": "Next",
             "loading": "Loading...",
+            "usethistemplate":"Use This Template",
             "toast": {
               "resume_not_found": "Resume ID or token not found",
               "fetch_error": "Error fetching resume data",
@@ -1042,6 +1057,7 @@
                     "address_placeholder": "Address",
                     "suggestions": "Suggestions",
                     "auto_fix": "Auto Fix",
+                    "fixing": "Fixing...",
                     "add_section": "✙ Add section",
                      "mark_resolved": "Mark Resolved",
                     "placeholders": {
@@ -1098,7 +1114,28 @@
     "location": "Location",
     "save_button": "Save",
     "cancel_button": "Cancel",
-    "add_section": "✙ Add section"
+    "add_section": "✙ Add section",
+    "company":"Company",
+    "companySuggestions": "Company Suggestions",
+    "position": "Position",
+    "positionSuggestions": "Position Suggestions",
+  
+    "locationSuggestions": "Location Suggestions",
+   
+    "descriptionSuggestions": "Description Suggestions",
+    "keyAchievementsPlaceholder": "Enter key achievements (one per line)",
+    "keyAchievementsSuggestions": "Key Achievement Suggestions",
+    "removeWorkExperience": "Remove Work Experience",
+    "popup": {
+    "selectDescription": "Select Description",
+    "selectKeyAchievements": "Select Key Achievements",
+    "noDescriptions": "No descriptions available.",
+    "noKeyAchievements": "No key achievements available.",
+    "retry": "Retry",
+    "retrying": "Retrying...",
+    "saveSelection": "Save Selection",
+    "close": "Close"
+  }
   },
   "skill":{
     "noSkillsFound": "No skills found.",
@@ -1131,7 +1168,26 @@
     "good": "Good",
     "basicKnowledge": "Basic Knowledge",
     "justStarting": "Just Starting"
+  },
+  "project":{
+     "placeholderName": "Project Name",
+      "placeholderLink": "Link",
+      "project":"Project",
+       "nameSuggestion": "Project Name Suggestion",
+         "link": "Project Link",
+         "popup": {
+          "select_description": "Select Description",
+          "select_key_achievements": "Select Key Achievements",
+          "no_descriptions": "No descriptions available.",
+          "no_key_achievements": "No key achievements available.",
+          "retrying": "Retrying...",
+          "retry": "Retry",
+          "save_selection": "Save Selection",
+          "close": "Close"
+        }
   }
+
+  
                 },
                 "summaryperosnal": {
     "sections": {
@@ -1408,6 +1464,17 @@
     "addSection": "✙ Add section",
     "remove": "Remove"
   },
+  "coverLetterSection": {
+    "title": "Cover Letter Sections",
+    "sections": [
+      "Introduction: Stating Intent Clearly",
+      "Hook: Why You’re a Fit",
+      "Proof & Sign-Off: Show Value and Close Strong"
+    ],
+    "placeholder": "Write {{sectionTitle}}",
+   
+  "aiAssist": "AI Assist"
+  },
   "closingGratitude": {
     "title": "Closing & Gratitude",
     "closing": "Closing",
@@ -1419,7 +1486,11 @@
   },
   "navigation": {
     "previous": "Previous",
-    "next": "Next"
+    "next": "Next",
+     "finish": "Finish",
+     "toast":{
+      "pleaseSaveCoverLetter":"Please save your cover letter"
+     }
   },
   
     "cvBuilder": {
@@ -1486,7 +1557,7 @@
     "help_support": "Need help or want to change your subscription?",
     "contact_us": "Contact us at:",
     "phone": "📞 855-695-3235",
-    "email": "📧 customersupport@GenialCareer.fr",
+    "email": "📧 customersupport@genialcareer.ca",
     "availability": "Available 7 days a week:",
     "monday_friday": "Monday-Friday: 8 AM - 8 PM (CST)",
     "saturday": "Saturday: 8 AM - 5 PM (CST)",
@@ -1705,7 +1776,25 @@
   "redirecting": "Redirecting to payment...",
   "alreadySubscribed": "You already have an active subscription for this plan.",
   "genericError": "Error processing payment."
-}
+},
+
+  "job_title_required": "Job Title is required",
+  "resumePreview":{
+     "summary": "Summary",
+     "education":"Education",
+      "workExperience": "Work Experience",
+       "projects": "Projects",
+        "skills": "Skills",
+         "languages": "Languages"
+  },
+  "errorPopup": {
+    "title": "Error",
+    "message": "An error occurred. Please try again.",
+    "cancel": "Cancel",
+    "upgradePlan": "Upgrade Plan"
+  }
+
+
 
   }
   

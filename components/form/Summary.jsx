@@ -8,6 +8,7 @@ import { useRouter } from "next/router";
 import { toast } from "react-toastify";
 import { BASE_URL } from "../Constant/constant";
 import { useTranslation } from "react-i18next";
+import ErrorPopup from "../utility/ErrorPopUp";
 const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
 
 const Summary = () => {
@@ -19,6 +20,7 @@ const Summary = () => {
     selectedLang,
   } = useContext(ResumeContext);
   const { i18n, t } = useTranslation();
+
   const language = i18n.language;
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -29,6 +31,11 @@ const Summary = () => {
   const [isAutoFixLoading, setIsAutoFixLoading] = useState(false);
   const router = useRouter();
   const { id, improve } = router.query;
+  const [limitExceeded, setLimitExceeded] = useState(false);
+  const [errorPopup, setErrorPopup] = useState({
+    show: false,
+    message: "",
+  });
   // console.log(resumeStrength.personal_summery_strenght.summery, ">>>>");
   const hasErrors = () => {
     return (
@@ -197,6 +204,12 @@ const Summary = () => {
         error?.response?.data?.message ||
         "An error occurred while fetching summaries.";
       toast.error(errorMessage);
+      setErrorPopup({
+        show: true,
+        message:
+          error.response?.data?.message ||
+          "Your API Limit is Exhausted. Please upgrade your plan.",
+      });
       setError(errorMessage);
     } finally {
       setLoading(false);
@@ -217,11 +230,29 @@ const Summary = () => {
     }
   };
 
+  // const handleQuillChange = (content) => {
+  //   setResumeData({
+  //     ...resumeData,
+  //     summary: content,
+  //   });
+  // };
   const handleQuillChange = (content) => {
-    setResumeData({
-      ...resumeData,
-      summary: content,
-    });
+    const plainText = content.replace(/<[^>]*>/g, ""); // Remove HTML tags
+    if (plainText.length <= 1000) {
+      setResumeData({
+        ...resumeData,
+        summary: content,
+      });
+      setLimitExceeded(false);
+    } else {
+      // Limit reached, cut off extra characters
+      const allowedText = plainText.substring(0, 1000);
+      setResumeData({
+        ...resumeData,
+        summary: allowedText,
+      });
+      setLimitExceeded(true);
+    }
   };
 
   return (
@@ -262,7 +293,7 @@ const Summary = () => {
             {loading ? (
               <span className="flex items-center gap-2">
                 <Loader />
-                Loading...
+                {t("loading")}
               </span>
             ) : (
               t("smartAssist")
@@ -328,8 +359,8 @@ const Summary = () => {
 
       {/* ReactQuill Editor */}
       <div className="grid-1 w-full">
-        {/* <ReactQuill
-          placeholder="Enter your professional summary or use Smart Assist to generate one"
+        <ReactQuill
+          placeholder={t("summary.placeholder")}
           value={resumeData.summary || ""}
           onChange={handleQuillChange}
           className="w-full other-input h-100 border-black border rounded"
@@ -338,30 +369,19 @@ const Summary = () => {
             toolbar: [["bold", "italic", "underline"], ["clean"]],
           }}
         />
-        <div className="text-sm text-gray-500 mt-1 text-right">
-          {resumeData.summary?.length || 0}/1000
-        </div> */}
-        <ReactQuill
-          placeholder={t("summary.placeholder")}
-          value={resumeData.summary || ""}
-          onChange={(content) => {
-            if (content.replace(/<[^>]*>/g, "").length <= 1000) {
-              handleQuillChange(content);
-            }
-          }}
-          className="w-full other-input h-100 border-black border rounded"
-          theme="snow"
-          modules={{
-            toolbar: [["bold", "italic", "underline"], ["clean"]],
-          }}
-        />
 
         <div className="text-sm text-gray-500 mt-1 text-right">
-          {/* {resumeData.summary?.replace(/<[^>]*>/g, "").length || 0}/1000 */}
           {t("summary.charCount", {
             count: resumeData.summary?.replace(/<[^>]*>/g, "").length || 0,
           })}
         </div>
+
+        {limitExceeded && (
+          <div className="text-red-500 text-sm mt-1">
+            {t("summary.charLimitExceeded") ||
+              "Only 1000 characters are allowed."}
+          </div>
+        )}
       </div>
 
       {/* Popup/Modal for AI Summaries */}
@@ -394,7 +414,7 @@ const Summary = () => {
               </button>
               <button
                 onClick={handleAddSummary}
-                className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-purple-500"
+                className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500"
                 disabled={selectedSummaryIndex === null}
               >
                 {t("popup.add")}
@@ -402,6 +422,12 @@ const Summary = () => {
             </div>
           </div>
         </div>
+      )}
+      {errorPopup.show && (
+        <ErrorPopup
+          message={errorPopup.message}
+          onClose={() => setErrorPopup({ show: false, message: "" })}
+        />
       )}
     </div>
   );

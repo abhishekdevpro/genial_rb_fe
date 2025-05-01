@@ -72,6 +72,7 @@ export default function MobileBuilder() {
     selectedFont,
     backgroundColorss,
     headerColor,
+    resumeStrength,
   } = useContext(ResumeContext);
   const [showModal, setShowModal] = useState(false);
 
@@ -214,23 +215,36 @@ export default function MobileBuilder() {
     {
       label: t("resumeStrength.sections.personalInformation"),
       component: <PersonalInformation />,
+      showErrorIcon: resumeStrength?.is_personal_info === false,
     },
     {
       label: t("resumeStrength.sections.socialLinks"),
       component: <SocialMedia />,
+      showErrorIcon: resumeStrength?.is_social === false,
     },
     {
       label: t("resumeStrength.sections.personalSummary"),
       component: <Summary />,
+      showErrorIcon: resumeStrength?.is_personal_summery === false,
     },
-    { label: t("resumeStrength.sections.education"), component: <Education /> },
+    {
+      label: t("resumeStrength.sections.education"),
+      component: <Education />,
+      showErrorIcon: resumeStrength?.is_education === false,
+    },
     {
       label: t("resumeStrength.sections.workHistory"),
       component: <WorkExperience />,
+      showErrorIcon: resumeStrength?.is_work_history === false,
     },
-    { label: t("resumeStrength.sections.projects"), component: <Projects /> },
+    {
+      label: t("resumeStrength.sections.projects"),
+      component: <Projects />,
+      showErrorIcon: resumeStrength?.is_project === false,
+    },
     {
       label: t("resumeStrength.sections.skills"),
+      showErrorIcon: resumeStrength?.is_skills === false,
       component: Array.isArray(resumeData?.skills) ? (
         resumeData.skills.map((skill, index) => (
           <Skill title={skill.title} currentSkillIndex={index} key={index} />
@@ -239,32 +253,17 @@ export default function MobileBuilder() {
         <p>No skills available</p>
       ),
     },
-    { label: t("resumeStrength.sections.languages"), component: <Language /> },
+    {
+      label: t("resumeStrength.sections.languages"),
+      component: <Language />,
+      showErrorIcon: resumeStrength?.is_languages === false,
+    },
     {
       label: t("resumeStrength.sections.certification"),
       component: <Certification />,
+      showErrorIcon: resumeStrength?.is_certifications === false,
     },
   ];
-  // const sections = [
-  //   { label: "Personal Details", component: <PersonalInformation /> },
-  //   { label: "Social Links", component: <SocialMedia /> },
-  //   { label: "Summary", component: <Summary /> },
-  //   { label: "Education", component: <Education /> },
-  //   { label: "Experience", component: <WorkExperience /> },
-  //   { label: "Projects", component: <Projects /> },
-  //   {
-  //     label: "Skills",
-  //     component: Array.isArray(resumeData?.skills) ? (
-  //       resumeData.skills.map((skill, index) => (
-  //         <Skill title={skill.title} currentSkillIndex={index} key={index} />
-  //       ))
-  //     ) : (
-  //       <p>No skills available</p>
-  //     ),
-  //   },
-  //   { label: "Languages", component: <Language /> },
-  //   { label: "Certifications", component: <Certification /> },
-  // ];
 
   const handleNext = () => {
     handleFinish(false);
@@ -536,9 +535,14 @@ export default function MobileBuilder() {
             company: exp.company || "",
             position: exp.position || "",
             description: exp.description,
-            KeyAchievements: Array.isArray(exp.KeyAchievements)
-              ? exp.KeyAchievements
-              : [exp.KeyAchievements],
+            // KeyAchievements: Array.isArray(exp.KeyAchievements)
+            //   ? exp.KeyAchievements
+            //   : [exp.KeyAchievements],
+            keyAchievements: Array.isArray(exp.keyAchievements)
+              ? exp.keyAchievements.filter((item) => item?.trim?.()) // filter out empty strings or undefined
+              : exp.keyAchievements && exp.keyAchievements.trim?.()
+              ? [exp.keyAchievements.trim()]
+              : [],
             startYear: exp.startYear,
             endYear: exp.endYear,
             location: exp.location || "",
@@ -548,9 +552,14 @@ export default function MobileBuilder() {
             title: project.title || "",
             link: project.link || "",
             description: project.description,
+            // keyAchievements: Array.isArray(project.keyAchievements)
+            //   ? project.keyAchievements
+            //   : [project.keyAchievements],
             keyAchievements: Array.isArray(project.keyAchievements)
-              ? project.keyAchievements
-              : [project.keyAchievements],
+              ? project.keyAchievements.filter((item) => item?.trim?.()) // filter out empty strings or undefined
+              : project.keyAchievements && project.keyAchievements.trim?.()
+              ? [project.keyAchievements.trim()]
+              : [],
             startYear: project.startYear,
             endYear: project.endYear,
             name: project.name || "",

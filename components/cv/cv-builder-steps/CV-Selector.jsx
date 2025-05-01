@@ -34,7 +34,7 @@ const CVSelector = ({ onNext, onBack, onChange, value }) => {
       name: "Blue",
       class: "bg-[#A810C7]",
       selectedClass: "ring-blue-400",
-      hexCode: "#A810C7",
+      hexCode: "#00b38d",
     },
     {
       name: "Purple",
@@ -44,7 +44,7 @@ const CVSelector = ({ onNext, onBack, onChange, value }) => {
     },
     {
       name: "Green",
-      class: "bg-[#A810C7]",
+      class: "bg-green-600",
       selectedClass: "ring-green-400",
       hexCode: "#16A34A",
     },
@@ -56,13 +56,13 @@ const CVSelector = ({ onNext, onBack, onChange, value }) => {
     },
     {
       name: "Yellow",
-      class: "bg-[#A810C7]",
+      class: "bg-yellow-500",
       selectedClass: "ring-yellow-400",
       hexCode: "#EAB308",
     },
     {
       name: "Pink",
-      class: "bg-[#5a23b2]",
+      class: "bg-pink-500",
       selectedClass: "ring-pink-400",
       hexCode: "#EC4899",
     },
@@ -291,7 +291,7 @@ const CVSelector = ({ onNext, onBack, onChange, value }) => {
       }
 
       const response = await axios.put(
-        `${BASE_URL}/api/user/coverletter/${coverletterId}`,
+        `${BASE_URL}/api/user/coverletter/${coverletterId}?lang=${language}`,
         coverletterInfo,
         {
           headers: {
@@ -383,7 +383,7 @@ const CVSelector = ({ onNext, onBack, onChange, value }) => {
                       w-full text-left px-4 py-2 rounded-lg
                       ${
                         value.category === category
-                          ? "bg-purple-50 text-[#A810C7]"
+                          ? "bg-blue-50 text-[#A810C7]"
                           : "text-gray-600 hover:bg-gray-50"
                       }
                     `}

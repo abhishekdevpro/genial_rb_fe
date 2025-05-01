@@ -26,7 +26,7 @@ import { toast } from "react-toastify";
 import LoaderButton from "../components/utility/LoaderButton";
 import useLoader from "../hooks/useLoader";
 import Modal from "./adminlogin/Modal";
-import { Menu, X } from "lucide-react";
+import { AlertCircle, Menu, X } from "lucide-react";
 import Image from "next/image";
 import resumeImg from "./builderImages/GraphicDesignerResume.jpg";
 import poweredbypaypal from "./builderImages/poweredbypaypal.png";
@@ -69,6 +69,7 @@ export default function WebBuilder() {
   const [loading, setLoading] = useState(null);
   const { i18n, t } = useTranslation();
   const language = i18n.language;
+  const { improve } = router.query;
   const {
     setResumeStrength,
     resumeData,
@@ -79,6 +80,7 @@ export default function WebBuilder() {
     selectedFont,
     backgroundColorss,
     headerColor,
+    resumeStrength,
   } = useContext(ResumeContext);
 
   useEffect(() => {
@@ -218,23 +220,36 @@ export default function WebBuilder() {
     {
       label: t("resumeStrength.sections.personalInformation"),
       component: <PersonalInformation />,
+      showErrorIcon: resumeStrength?.is_personal_info === false,
     },
     {
       label: t("resumeStrength.sections.socialLinks"),
       component: <SocialMedia />,
+      showErrorIcon: resumeStrength?.is_social === false,
     },
     {
       label: t("resumeStrength.sections.personalSummary"),
       component: <Summary />,
+      showErrorIcon: resumeStrength?.is_personal_summery === false,
     },
-    { label: t("resumeStrength.sections.education"), component: <Education /> },
+    {
+      label: t("resumeStrength.sections.education"),
+      component: <Education />,
+      showErrorIcon: resumeStrength?.is_education === false,
+    },
     {
       label: t("resumeStrength.sections.workHistory"),
       component: <WorkExperience />,
+      showErrorIcon: resumeStrength?.is_work_history === false,
     },
-    { label: t("resumeStrength.sections.projects"), component: <Projects /> },
+    {
+      label: t("resumeStrength.sections.projects"),
+      component: <Projects />,
+      showErrorIcon: resumeStrength?.is_project === false,
+    },
     {
       label: t("resumeStrength.sections.skills"),
+      showErrorIcon: resumeStrength?.is_skills === false,
       component: Array.isArray(resumeData?.skills) ? (
         resumeData.skills.map((skill, index) => (
           <Skill title={skill.title} currentSkillIndex={index} key={index} />
@@ -243,44 +258,17 @@ export default function WebBuilder() {
         <p>No skills available</p>
       ),
     },
-    { label: t("resumeStrength.sections.languages"), component: <Language /> },
+    {
+      label: t("resumeStrength.sections.languages"),
+      component: <Language />,
+      showErrorIcon: resumeStrength?.is_languages === false,
+    },
     {
       label: t("resumeStrength.sections.certification"),
       component: <Certification />,
+      showErrorIcon: resumeStrength?.is_certifications === false,
     },
   ];
-  // const sections = [
-  //   { label: sections.personalInformation, component: <PersonalInformation /> },
-  //   { label: t.sections.socialLinks, component: <SocialMedia /> },
-  //   { label: t.sections.personalSummary, component: <Summary /> },
-  //   { label: t.sections.education, component: <Education /> },
-  //   { label: t.sections.workHistory, component: <WorkExperience /> },
-  //   { label: t.sections.projects, component: <Projects /> },
-
-  //   {
-  //     label:  t.sections.skills,
-  //     component: Array.isArray(resumeData?.skills) ? (
-  //       resumeData.skills.map((skill, index) => (
-  //         <Skill title={skill.title} currentSkillIndex={index} key={index} />
-  //       ))
-  //     ) : (
-  //       <p>No skills available</p>
-  //     ),
-  //   },
-  //   { label: t.sections.languages, component: <Language /> },
-  //   { label: t.sections.certifications, component: <Certification /> },
-  // ];
-
-  // const handleProfilePicture = (e) => {
-  //   const file = e.target.files[0];
-  //   if (file instanceof Blob) {
-  //     const reader = new FileReader();
-  //     reader.onload = (event) => {
-  //       setResumeData({ ...resumeData, profilePicture: event.target.result });
-  //     };
-  //     reader.readAsDataURL(file);
-  //   }
-  // };
 
   const handleChange = (e) => {
     setResumeData({ ...resumeData, [e.target.name]: e.target.value });
@@ -366,64 +354,6 @@ export default function WebBuilder() {
   const handleCloseModal = () => setShowModal(false);
   const handleShowModal = () => setShowModal(true);
 
-  // const downloadAsPDF = async () => {
-  //   handleFinish();
-  //   if (!templateRef.current) {
-  //     toast.error("Template reference not found");
-  //     return;
-  //   }
-  //   setLoading("download");
-  //   try {
-  //     // Get the HTML content from the template
-  //     const htmlContent = templateRef.current.innerHTML;
-
-  //     // Generate the full HTML for the PDF
-  //     const fullContent = `
-  //       <style>
-  //         @import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
-  //       </style>
-  //       ${htmlContent}
-  //     `;
-
-  //     // API call to generate the PDF
-  //     const response = await axios.post(
-  //       `${BASE_URL}/api/user/generate-pdf-py`,
-  //       // { html: fullContent },
-  //       { html: fullContent, pdf_type: selectedPdfType },
-  //       {
-  //         headers: {
-  //           "Content-Type": "application/json",
-  //           Authorization: token,
-  //         },
-  //       }
-  //     );
-
-  //     // Check if the file path was returned
-  //     // const filePath = response.data.data?.file_path;
-  //     // if (!filePath) {
-  //     //   throw new Error('PDF file path not received');
-  //     // }
-
-  //     // Construct the URL
-  //     // const downloadUrl = `${BASE_URL}${filePath}`;
-
-  //     // Open the URL in a new tab
-  //     // createPayment();
-  //     // window.open(downloadUrl, '_blank');
-
-  //     // toast.success('PDF generated and opened in a new tab!');
-  //     // initiateCheckout();
-  //     downloadPDF();
-  //     // toast.success("PDF generation request sent successfully!");
-  //   } catch (error) {
-  //     console.error("PDF generation error:", error);
-  //     toast.error(
-  //       error.response?.data?.message || "Failed to generate and open PDF"
-  //     );
-  //   } finally {
-  //     setLoading(null);
-  //   }
-  // };
   const downloadAsPDF = async () => {
     handleFinish();
     if (!templateRef.current) {
@@ -628,9 +558,14 @@ export default function WebBuilder() {
             company: exp.company || "",
             position: exp.position || "",
             description: exp.description,
-            KeyAchievements: Array.isArray(exp.KeyAchievements)
-              ? exp.KeyAchievements
-              : [exp.KeyAchievements],
+            // KeyAchievements: Array.isArray(exp.KeyAchievements)
+            //   ? exp.KeyAchievements
+            //   : [exp.KeyAchievements],
+            keyAchievements: Array.isArray(exp.keyAchievements)
+              ? exp.keyAchievements.filter((item) => item?.trim?.()) // filter out empty strings or undefined
+              : exp.keyAchievements && exp.keyAchievements.trim?.()
+              ? [exp.keyAchievements.trim()]
+              : [],
             startYear: exp.startYear,
             endYear: exp.endYear,
             location: exp.location || "",
@@ -640,9 +575,14 @@ export default function WebBuilder() {
             title: project.title || "",
             link: project.link || "",
             description: project.description,
+            // keyAchievements: Array.isArray(project.keyAchievements)
+            //   ? project.keyAchievements
+            //   : [project.keyAchievements],
             keyAchievements: Array.isArray(project.keyAchievements)
-              ? project.keyAchievements
-              : [project.keyAchievements],
+              ? project.keyAchievements.filter((item) => item?.trim?.()) // filter out empty strings or undefined
+              : project.keyAchievements && project.keyAchievements.trim?.()
+              ? [project.keyAchievements.trim()]
+              : [],
             startYear: project.startYear,
             endYear: project.endYear,
             name: project.name || "",
@@ -799,23 +739,8 @@ export default function WebBuilder() {
                 </div>
 
                 <div className="hidden lg:flex items-center gap-4">
-                  {/* <select
-                    value={selectedFont}
-                    onChange={handleFontChange}
-                    className="w-40 h-10 rounded-lg border border-[#5a23b2] px-4 font-bold text-black bg-white focus:ring-2 focus:ring-[#A810C7]"
-                  >
-                    <option value="Ubuntu">Ubuntu</option>
-                    <option value="Calibri">Calibri</option>
-                    <option value="Georgia">Georgia</option>
-                    <option value="Roboto">Roboto</option>
-                    <option value="Poppins">Poppins</option>
-                  </select> */}
                   <FontSelector />
                   <div className="flex items-center gap-4">
-                    {/* <ColorPicker
-                      selectedColor={headerColor}
-                      onChange={setHeaderColor}
-                    /> */}
                     <ColorPickers
                       selectmultiplecolor={backgroundColorss}
                       onChange={setBgColor}
@@ -848,14 +773,17 @@ export default function WebBuilder() {
                         {sections.map((section, index) => (
                           <li
                             key={index}
-                            className={`px-4 py-2 cursor-pointer transition rounded-lg border-2 ${
+                            className={`flex items-center justify-between gap-2 px-4 py-2 cursor-pointer transition-all duration-200 rounded-lg border-2 ${
                               currentSection === index
                                 ? "border-[#5a23b2] font-semibold bg-[#5a23b2] text-white"
                                 : "border-[#5a23b2] bg-white text-black hover:bg-purple-50"
                             }`}
                             onClick={() => handleSectionClick(index)}
                           >
-                            {section.label}
+                            <span> {section.label} </span>
+                            {improve && section.showErrorIcon && (
+                              <AlertCircle className="text-red-500 w-5 h-5" />
+                            )}
                           </li>
                         ))}
                       </ul>
@@ -865,27 +793,13 @@ export default function WebBuilder() {
                       onClick={() => nextSection()}
                       className="p-2 hover:bg-gray-200 rounded-lg "
                       disabled={currentSection === sections.length - 1}
-                    >
-                      {/* Chevron Right Icon Here */}
-                    </button>
+                    ></button>
                   </div>
                 </nav>
               </div>
             </div>
 
             <div className="flex flex-col md:flex-row flex-grow ">
-              {/* <aside
-                className={`fixed md:static left-0 top-0 h-full z-10 transform 
-                                
-                                md:translate-x-0 transition-transform duration-300 ease-in-out 
-                                w-64 bg-gray-100 border-r`}
-              >
-                <div className="sticky top-20 p-4 overflow-y-auto h-full">
-                  <div className="mt-12 md:mt-0">
-                    <Sidebar />
-                  </div>
-                </div>
-              </aside> */}
               <div className="flex flex-col md:flex-row flex-grow p-4">
                 <div className="w-[40%]  bg-gray-100">
                   <main className="w-full mx-auto md:p-4">
@@ -902,42 +816,16 @@ export default function WebBuilder() {
                   </div>
                 </aside>
               </div>
-              {/* <main className="flex-1 max-w-2xl mx-auto md:p-4">
-                <form>{sections[currentSection].component}</form>
-              </main>
-
-              <aside className="  w-1/2 min-h-screen border-l bg-gray-50">
-                <div className="sticky top-20 p-4">
-                  <Preview
-                    ref={templateRef}
-                    selectedTemplate={selectedTemplate}
-                  />
-                </div>
-              </aside> */}
             </div>
           </div>
         ) : (
           <div className=" flex flex-col">
             <div className="hidden md:flex w-screen px-8 py-4 justify-between items-center bg-white shadow">
               <div className="flex gap-4 ">
-                {/* <select
-                  value={selectedFont}
-                  onChange={handleFontChange}
-                  className="w-40 h-10 rounded-lg border-2 border-[#5a23b2] px-8 p-1 font-bold  bg-white text-black mt-2"
-                >
-                  <option value="Ubuntu">Ubuntu</option>
-                  <option value="Calibri">Calibri</option>
-                  <option value="Georgia">Georgia</option>
-                  <option value="Roboto">Roboto</option>
-                  <option value="Poppins">Poppins</option>
-                </select> */}
                 <div className="mt-3">
                   <FontSelector />
                 </div>
-                {/* <ColorPicker
-                  selectedColor={headerColor}
-                  onChange={setHeaderColor}
-                /> */}
+
                 <ColorPickers
                   selectmultiplecolor={backgroundColorss}
                   onChange={setBgColor}
@@ -978,134 +866,6 @@ export default function WebBuilder() {
                 >
                   {t("buttons.backToDashboard")}
                 </button>
-
-                {/* <PayAndDownload
-                  resumeId={resumeId}
-                  token={token}
-                  PayerID={PayerID}
-                /> */}
-                {/* {showModal && (
-                  <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
-                    <div className=" w-full max-w-4xl bg-white rounded-lg shadow-lg ">
-                      <div className="flex justify-between items-center p-2">
-                        <Image src={logo} alt="logo" className="h-10 w-auto" />
-                        <button
-                          className=" text-gray-600 hover:text-gray-800 z-20"
-                          onClick={handleCloseModal}
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth="2"
-                            stroke="currentColor"
-                            className="w-6 h-6"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              d="M6 18L18 6M6 6l12 12"
-                            />
-                          </svg>
-                        </button>
-                      </div>
-                      <div className="flex flex-col md:flex-row">
-                        <div className="md:w-1/2 w-full p-4  ">
-                          <div className="w-[400px] h-[400px]">
-                            <Image
-                              src={resumeImg}
-                              alt="resumeimg"
-                              className="w- full h-full rounded-l-lg"
-                            />
-                          </div>
-                        </div>
-
-                        <div className="md:w-1/2 w-full p-4 ">
-                          <div className="text-center mb-6">
-                            <h2 className="text-2xl font-bold text-gray-900">
-                              €49
-                            </h2>
-                            <p className="text-sm text-gray-500">
-                              Total Amount
-                            </p>
-                          </div>
-
-                          <form>
-                            <div className="mb-4">
-                              <label className="block text-gray-800 mb-2">
-                                👨🏻‍💼 Name
-                              </label>
-                              <input
-                                type="text"
-                                className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#5a23b2]"
-                                value={`${formData.first_name} ${formData.last_name}`.trim()}
-                                name="full name"
-                                required
-                                disabled
-                              />
-                            </div>
-                            <div className="mb-4">
-                              <label className="block text-gray-800 mb-2">
-                                📧 Email
-                              </label>
-                              <input
-                                type="email"
-                                className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#5a23b2]"
-                                value={formData.email}
-                                required
-                                name="email"
-                                disabled
-                              />
-                            </div>
-                            <div className="mb-4">
-                              <label className="block text-gray-800 mb-2">
-                                ☎️ Phone
-                              </label>
-                              <input
-                                className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#5a23b2]"
-                                required
-                                disabled
-                                type="number"
-                                name="phone"
-                                value={formData.phone}
-                              />
-                            </div>
-
-                            <div className="flex justify-center mt-6">
-                              <button
-                                onClick={downloadAsPDF}
-                                type="submit"
-                                className="w-full bg-yellow-400 text-black font-bold  rounded-[50px] hover:bg-[#A810C7] transition duration-200"
-                              >
-                                <Image
-                                  src={paypal}
-                                  alt="paypal"
-                                  className="h-10 w-auto m-auto"
-                                />
-                              </button>
-                            </div>
-                            <div className="flex justify-center mt-6">
-                              <button className="w-full bg-black text-white font-bold  rounded-[50px] transition duration-200  ">
-                                <Image
-                                  src={applepay}
-                                  alt="apple pay"
-                                  className=" w-auto m-auto h-10"
-                                />
-                              </button>
-                            </div>
-                            <div className="flex justify-center mt-6 ">
-                              <Image
-                                src={poweredbypaypal}
-                                alt="poweredbypaypal"
-                                className="h-10 w-auto"
-                              />
-                            </div>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                )} */}
               </div>
             </div>
 

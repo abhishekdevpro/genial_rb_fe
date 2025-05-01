@@ -105,7 +105,7 @@ function App({ Component, pageProps }) {
   const router = useRouter();
 
   const googleTranslateElementInit = () => {
-    let savedLanguage = localStorage.getItem("selectedLang") || "fr"; // Default to French
+    let savedLanguage = localStorage.getItem("selectedLang") || "en"; // Default to French
 
     new window.google.translate.TranslateElement(
       {
@@ -171,7 +171,7 @@ function App({ Component, pageProps }) {
     <>
       <ResumeProvider>
         <CoverLetterProvider>
-          <LanguageSelector />
+          {/* <LanguageSelector /> */}
           <Component {...pageProps} />
           <CookieConsent />
           <ToastContainer position="top-right" autoClose={3000} pauseOnHover />

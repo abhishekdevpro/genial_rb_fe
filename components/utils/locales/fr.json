@@ -144,7 +144,7 @@
       "ai_resume_accuracy": "IA - Précision du CV",
       "ai_resume_enhancer": "IA - Amélioration du CV",
       "ai_job_match_apply": "IA - Correspondance et candidature aux emplois",
-      "copyright": "© Copyright By GenialCareer.fr Tous droits réservés",
+      "copyright": "© Copyright By GenialCareer.ca Tous droits réservés",
        "toast_success":"Abonné avec succès !"
     },
     
@@ -277,7 +277,7 @@
             "childrensPrivacy": "Nos services ne sont pas destinés aux personnes de moins de 18 ans. Si un enfant fournit des données personnelles, nous les supprimerons.",
             "changesPolicy": "Nous pouvons mettre à jour cette Politique de Confidentialité. La poursuite de l'utilisation de nos services après des modifications signifie l'acceptation de la politique révisée.",
             "contactUs": "Si vous avez des questions, contactez-nous à :",
-            "email_name": "bonjour@genialcareer.fR",
+            "email_name": "bonjour@genialcareer.ca",
           
             
               "title": "Générateur de CV IA",
@@ -487,7 +487,7 @@
                           "title": "10. Contact",
                           "list": [
                             "Si vous avez des questions concernant ces conditions générales, veuillez nous contacter à :",
-                            "Email : bonjour@genialcareer.fR"
+                            "Email : bonjour@genialcareer.ca"
                           ]
                         }
                       ],

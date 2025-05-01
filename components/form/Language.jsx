@@ -11,6 +11,7 @@ import {
   Globe2,
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { toast } from "react-toastify";
 
 const Language = () => {
   const { resumeData, setResumeData, resumeStrength } =
@@ -79,7 +80,7 @@ const Language = () => {
         [skillType]: newLanguages,
       });
     } else {
-      alert("At least one language is required.");
+      toast.warn("At least one language is required.");
     }
   };
 
@@ -100,7 +101,7 @@ const Language = () => {
   };
 
   return (
-    <div className="flex-col-gap-3 w-full mt-10 px-10">
+    <div className="flex-col-gap-3 w-full mt-10 px-10 max-h-[400px] overflow-y-auto">
       <div className="flex items-center gap-3 mb-4">
         {/* <Globe2 className="w-8 h-8 text-black" /> */}
         <h2 className="input-title text-black text-3xl">
@@ -130,7 +131,7 @@ const Language = () => {
                     className={`w-full border rounded-md p-2 transition-all duration-200 focus:ring-2 ${
                       improve && hasErrors(index, "language")
                         ? "border-red-500 focus:ring-red-500"
-                        : "border-gray-400 focus:ring-purple-500"
+                        : "border-gray-400 focus:ring-blue-500"
                     }`}
                     value={skill.language}
                     onChange={(e) => handleSkills(e, index, "language")}
@@ -200,7 +201,7 @@ const Language = () => {
                   {t("builder_forms.language.proficiency")}
                 </label>
                 <select
-                  className="w-full border border-gray-400 rounded-md p-2 transition-all duration-200 focus:ring-2 focus:ring-purple-500"
+                  className="w-full border border-gray-400 rounded-md p-2 transition-all duration-200 focus:ring-2 focus:ring-blue-500"
                   value={skill.proficiency}
                   onChange={(e) => handleSkills(e, index, "proficiency")}
                 >

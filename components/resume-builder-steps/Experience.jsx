@@ -242,7 +242,7 @@ export default function ExperienceStep({ onNext, onBack, onChange, value }) {
             className={`p-6 rounded-lg border-2 transition-all hover:shadow-md ${
               value.experience === experience.id
                 ? "border-[#A810C7] bg-greeb-50"
-                : "border-gray-200 hover:border-green-400"
+                : "border-gray-200 hover:border-[#A810C7]"
             }`}
           >
             <span className="block text-lg font-medium">
@@ -270,7 +270,7 @@ export default function ExperienceStep({ onNext, onBack, onChange, value }) {
                 loading
                   ? // || !value.experience
                     "opacity-70 cursor-not-allowed"
-                  : "hover:bg-green-700 hover:shadow-xl"
+                  : "hover:bg-[#A810C7] hover:shadow-xl"
               }`}
         >
           {isLoading ? (

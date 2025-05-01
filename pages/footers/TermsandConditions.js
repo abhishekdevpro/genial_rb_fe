@@ -267,8 +267,8 @@ function TermsandConditions() {
           {termsData.contact}:
           <br />
           Email:{" "}
-          <a href="mailto:bonjour@genialcareer.fR" className="text-purple-500">
-            bonjour@genialcareer.fR
+          <a href="mailto:bonjour@genialcareer.ca" className="text-purple-500">
+            bonjour@genialcareer.ca
           </a>
         </p>
       </div>

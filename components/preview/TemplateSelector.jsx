@@ -193,7 +193,7 @@ const TemplateSelector = ({
                         w-64 p-2 rounded-lg transition-all duration-300
                         ${
                           template.key === templateId
-                            ? "bg-[#5a23b2]-100 ring-4 ring-[#5a23b2] ring-offset-2"
+                            ? "bg-pink-100 ring-4 ring-pink-500 ring-offset-2"
                             : "hover:bg-gray-50"
                         }
                       `}
@@ -208,13 +208,13 @@ const TemplateSelector = ({
                               w-full h-80 object-cover rounded-lg shadow-md transition-transform duration-300
                               ${
                                 template.key === templateId
-                                  ? "ring-2 ring-[#5a23b2]-400"
-                                  : "group-hover:ring-2 group-hover:ring-[#5a23b2]-300"
+                                  ? "ring-2 ring-pink-400"
+                                  : "group-hover:ring-2 group-hover:ring-pink-300"
                               }
                             `}
                           />
                           {template.key === templateId && (
-                            <div className="absolute inset-0 border-4 border-[#5a23b2] rounded-lg pointer-events-none" />
+                            <div className="absolute inset-0 border-4 border-pink-500 rounded-lg pointer-events-none" />
                           )}
                         </div>
                         <div className="flex flex-col gap-1">
@@ -223,7 +223,7 @@ const TemplateSelector = ({
                             mt-2 text-center py-2 px-4 rounded-md transition-colors duration-300
                             ${
                               template.key === templateId
-                                ? "bg-[#5a23b2] text-white font-semibold"
+                                ? "bg-pink-500 text-white font-semibold"
                                 : "text-gray-600 group-hover:text-[#A810C7]"
                             }
                           `}
@@ -263,7 +263,7 @@ const TemplateSelector = ({
           w-64 p-2 rounded-lg transition-all duration-300
           ${
             template.key === templateId
-              ? "bg-[#5a23b2]-100 ring-4 ring-[#5a23b2] ring-offset-2"
+              ? "bg-pink-100 ring-4 ring-pink-500 ring-offset-2"
               : "hover:bg-gray-50"
           }
         `}
@@ -278,8 +278,8 @@ const TemplateSelector = ({
               w-full h-80 object-cover rounded-lg shadow-md transition-transform duration-300
               ${
                 template.key === templateId
-                  ? "ring-2 ring-[#5a23b2]-400"
-                  : "group-hover:ring-2 group-hover:ring-[#5a23b2]-300"
+                  ? "ring-2 ring-pink-400"
+                  : "group-hover:ring-2 group-hover:ring-pink-300"
               }
             `}
                             />
@@ -289,7 +289,7 @@ const TemplateSelector = ({
                               </div>
                             )}
                             {template.key === templateId && (
-                              <div className="absolute inset-0 border-4 border-[#5a23b2] rounded-lg pointer-events-none" />
+                              <div className="absolute inset-0 border-4 border-pink-500 rounded-lg pointer-events-none" />
                             )}
                           </div>
                           <div className="flex flex-col gap-1">
@@ -298,7 +298,7 @@ const TemplateSelector = ({
               mt-2 text-center py-2 px-4 rounded-md transition-colors duration-300
               ${
                 template.key === templateId
-                  ? "bg-[#5a23b2] text-white font-semibold"
+                  ? "bg-pink-500 text-white font-semibold"
                   : "text-gray-600 group-hover:text-[#A810C7]"
               }
             `}

@@ -7,6 +7,7 @@ import { MdRemoveCircle } from "react-icons/md";
 import { BASE_URL } from "../Constant/constant";
 import { useTranslation } from "react-i18next";
 import axiosInstance from "../utils/axiosInstance";
+import { toast } from "react-toastify";
 const Education = () => {
   const { i18n, t } = useTranslation();
   const language = i18n.language;
@@ -229,6 +230,17 @@ const Education = () => {
   };
 
   const removeEducation = (index) => {
+    if (resumeData.education.length <= 1) {
+      toast.warn("At least one Education is required");
+
+      // Clear the error message after 3 seconds
+      // setTimeout(() => {
+      //   // const updatedErrors = {...validationErrors};
+      //   delete updatedErrors.general;
+      //   setValidationErrors(updatedErrors);
+      // }, 3000);
+      return; // Don't remove if it's the last one
+    }
     const newEducation = [...resumeData.education];
     newEducation.splice(index, 1);
     setResumeData({ ...resumeData, education: newEducation });
@@ -307,7 +319,7 @@ const Education = () => {
   const renderTooltip = (index, field, title) => {
     if (activeTooltip === `${field}-${index}`) {
       return (
-        <div className="absolute z-50 right-0 w-80 bg-white rounded-lg shadow-xl transform transition-all duration-200 ease-in-out border border-gray-700">
+        <div className="absolute z-50 right-0 w-80 bg-white rounded-lg shadow-xl transform transition-all duration-200 ease-in-out border border-gray-700 ">
           <div className="p-4 border-b border-gray-700">
             <div className="flex items-center justify-between">
               <div className="flex items-center space-x-2">
@@ -342,7 +354,7 @@ const Education = () => {
   };
 
   return (
-    <div className="flex-col gap-3 w-full mt-10 px-10">
+    <div className="flex-col gap-3 w-full mt-10 px-10 max-h-[400px] overflow-y-auto">
       <h2 className="input-title text-black text-3xl">
         {t("resumeStrength.sections.education")}
       </h2>

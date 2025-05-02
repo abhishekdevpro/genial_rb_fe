@@ -130,17 +130,17 @@ const Login2 = () => {
           <p className="text-black text-base text-center mb-6">
             {t("loginpage.description")}
           </p>
-          <button
+          {/* <button
             onClick={handleGoogleSignin}
             type="button"
             className="w-full flex items-center justify-center bg-white border border-gray-300 text-gray-700 px-4 py-2 rounded-md mt-4 shadow-sm hover:bg-gray-100 focus:outline-none"
           >
             <FcGoogle className="h-6 w-6 mr-2" />
             {t("loginpage.continue_google")}
-          </button>
-          <div className="p-4 flex justify-center items-center">
+          </button> */}
+          {/* <div className="p-4 flex justify-center items-center">
             <p> {t("loginpage.or")}</p>
-          </div>
+          </div> */}
 
           <form onSubmit={handleLogin}>
             <div className="mb-4">
@@ -186,7 +186,7 @@ const Login2 = () => {
                 </button>
               </div>
             </div>
-            <div className="text-center py-2">
+            {/* <div className="text-center py-2">
               <Link
                 href="/signup"
                 className="text-[#A810C7] hover:text-[#A810C7]"
@@ -195,7 +195,7 @@ const Login2 = () => {
               >
                 {t("loginpage.new_user")}
               </Link>
-            </div>
+            </div> */}
             <div className="text-center py-2">
               <Link href="/forgotpassword">
                 <label className="text-black cursor-pointer">

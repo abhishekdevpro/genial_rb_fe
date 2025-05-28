@@ -55,7 +55,7 @@
 //     },
 //     {
 //       name: "Blue",
-//       class: "bg-[#A810C7]",
+//       class: "bg-emerald-500",
 //       selectedClass: "ring-blue-400",
 //       hexCode: "#A810C7",
 //     },
@@ -67,7 +67,7 @@
 //     },
 //     {
 //       name: "Green",
-//       class: "bg-[#A810C7]",
+//       class: "bg-emerald-500",
 //       selectedClass: "ring-green-400",
 //       hexCode: "#16A34A",
 //     },
@@ -79,7 +79,7 @@
 //     },
 //     {
 //       name: "Yellow",
-//       class: "bg-[#A810C7]",
+//       class: "bg-emerald-500",
 //       selectedClass: "ring-yellow-400",
 //       hexCode: "#EAB308",
 //     },
@@ -453,7 +453,7 @@
 //                           hasPhoto: option === t("templateStep.with_photo"),
 //                         })
 //                       }
-//                       className="w-5 h-5 text-[#A810C7] border-gray-300 focus:ring-purple-500"
+//                       className="w-5 h-5 text-emerald-500 border-gray-300 focus:ring-purple-500"
 //                     />
 //                     <span className="ml-3 text-gray-700 font-medium">
 //                       {option}
@@ -592,7 +592,7 @@ const TemplateStep = ({ onNext, onBack, onChange, value }) => {
     },
     {
       name: "Blue",
-      class: "bg-[#A810C7]",
+      class: "bg-emerald-500",
       selectedClass: "ring-blue-400",
       hexCode: "#A810C7",
     },
@@ -604,7 +604,7 @@ const TemplateStep = ({ onNext, onBack, onChange, value }) => {
     },
     {
       name: "Green",
-      class: "bg-[#A810C7]",
+      class: "bg-emerald-500",
       selectedClass: "ring-green-400",
       hexCode: "#16A34A",
     },
@@ -616,7 +616,7 @@ const TemplateStep = ({ onNext, onBack, onChange, value }) => {
     },
     {
       name: "Yellow",
-      class: "bg-[#A810C7]",
+      class: "bg-emerald-500",
       selectedClass: "ring-yellow-400",
       hexCode: "#EAB308",
     },

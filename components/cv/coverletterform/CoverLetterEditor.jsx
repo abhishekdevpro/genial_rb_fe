@@ -189,7 +189,7 @@ const CoverLetterEditor = () => {
           className={`px-4 py-2 rounded-lg ${
             step === 0
               ? "bg-gray-300 cursor-not-allowed"
-              : "bg-[#A810C7] text-white"
+              : "bg-emerald-500 text-white"
           }`}
         >
           {t("navigation.previous")}
@@ -198,8 +198,8 @@ const CoverLetterEditor = () => {
           onClick={step === steps.length - 1 ? handleFinish : nextStep}
           className={`px-4 py-2 rounded-lg ${
             step === steps.length - 1
-              ? "bg-[#A810C7] text-white"
-              : "bg-[#A810C7] text-white"
+              ? "bg-emerald-500 text-white"
+              : "bg-emerald-500 text-white"
           }`}
         >
           {step === steps.length - 1
@@ -214,7 +214,7 @@ const CoverLetterEditor = () => {
               nextStep();
             }
           }}
-          className="px-4 py-2 rounded-lg bg-[#A810C7] text-white"
+          className="px-4 py-2 rounded-lg bg-emerald-500 text-white"
         >
           {step === steps.length - 1
             ? t("navigation.finish")

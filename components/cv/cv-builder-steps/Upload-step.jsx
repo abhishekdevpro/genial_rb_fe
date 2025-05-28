@@ -43,7 +43,7 @@
 //           className="p-6 border-2 rounded-lg text-center hover:border-blue-400"
 //         >
 //           <div className="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
-//             <FaUpload className="text-[#A810C7] w-8 h-8" />
+//             <FaUpload className="text-emerald-500 w-8 h-8" />
 //           </div>
 //           <h3 className="font-bold mb-2">Yes, upload from my cover letter</h3>
 //           <p className="text-gray-600 text-sm">
@@ -57,7 +57,7 @@
 //           className="p-6 border-2 rounded-lg text-center hover:border-blue-400"
 //         >
 //           <div className="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
-//             <FaFileAlt className="text-[#A810C7] w-8 h-8" />
+//             <FaFileAlt className="text-emerald-500 w-8 h-8" />
 //           </div>
 //           <h3 className="font-bold mb-2">No, start from scratch</h3>
 //           <p className="text-gray-600 text-sm">
@@ -71,7 +71,7 @@
 //           className="p-6 border-2 rounded-lg text-center hover:border-blue-400"
 //         >
 //           <div className="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
-//             <FaFileAlt className="text-[#A810C7] w-8 h-8" />
+//             <FaFileAlt className="text-emerald-500 w-8 h-8" />
 //           </div>
 //           <h3 className="font-bold mb-2">No, start from scratch</h3>
 //           <p className="text-gray-600 text-sm">
@@ -132,10 +132,10 @@ export default function UploadStep({ onNext, onBack, onChange, value }) {
       <div className="flex justify-center items-center">
         <button
           onClick={handleStartFromScratch}
-          className="p-6 border-2 rounded-lg text-center hover:border-[#A810C7]"
+          className="p-6 border-2 rounded-lg text-center hover:border-emerald-500"
         >
           <div className="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
-            <FaFileAlt className="text-[#A810C7] w-8 h-8" />
+            <FaFileAlt className="text-emerald-500 w-8 h-8" />
           </div>
           <h3 className="font-bold mb-2">
             {t("cvUploadStep.startFromScratch")}

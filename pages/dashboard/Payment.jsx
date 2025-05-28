@@ -85,7 +85,7 @@ function Payment() {
                   </span>
                   <span className=" text-violet-900 font-bold text-lg">
                     {" "}
-                    € 0
+                    $ 0
                   </span>{" "}
                   <br />
                   <button className="bg-blue-900 text-white p-2 rounded-lg m-2 mt-3">
@@ -100,7 +100,7 @@ function Payment() {
                   </p>
                   <span className=" text-violet-900 font-bold text-lg">
                     {" "}
-                    €19
+                    $19
                   </span>{" "}
                   <span className=" text-violet-900 ">
                     {t("payments.per_resume")}{" "}
@@ -117,13 +117,13 @@ function Payment() {
                   <p className="text-lg font-bold">{t("payments.combo")} </p>
                   <span className=" text-violet-900 font-bold text-lg">
                     {" "}
-                    €29
+                    $29
                   </span>{" "}
                   <span className=" text-violet-900 ">
                     {t("payments.per_resume")}{" "}
                   </span>
                   <br />
-                  <button className="bg-[#A810C7] text-white p-2 px-5 rounded-lg m-4 disabled:">
+                  <button className="bg-emerald-500 text-white p-2 px-5 rounded-lg m-4 disabled:">
                     {t("payments.choose_plan")}
                   </button>
                 </div>

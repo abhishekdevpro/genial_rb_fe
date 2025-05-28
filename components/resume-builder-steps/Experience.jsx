@@ -241,8 +241,8 @@ export default function ExperienceStep({ onNext, onBack, onChange, value }) {
             }}
             className={`p-6 rounded-lg border-2 transition-all hover:shadow-md ${
               value.experience === experience.id
-                ? "border-[#A810C7] bg-greeb-50"
-                : "border-gray-200 hover:border-[#A810C7]"
+                ? "border-emerald-500 bg-greeb-50"
+                : "border-gray-200 hover:border-emerald-500"
             }`}
           >
             <span className="block text-lg font-medium">
@@ -265,12 +265,12 @@ export default function ExperienceStep({ onNext, onBack, onChange, value }) {
           onClick={handleSaveExperience}
           // disabled={loading || !value.experience}
           disabled={loading}
-          className={`px-8 py-3 bg-[#A810C7] text-white rounded-xl font-medium transition-all shadow-lg 
+          className={`px-8 py-3 bg-emerald-500 text-white rounded-xl font-medium transition-all shadow-lg 
               ${
                 loading
                   ? // || !value.experience
                     "opacity-70 cursor-not-allowed"
-                  : "hover:bg-[#A810C7] hover:shadow-xl"
+                  : "hover:bg-emerald-500 hover:shadow-xl"
               }`}
         >
           {isLoading ? (

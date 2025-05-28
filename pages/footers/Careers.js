@@ -117,7 +117,7 @@
 //           apply for a position at Genial Career, please send your resume and a cover
 //           letter to{" "}
 //           <a href="mailto:bonjour@genialcareer.fR" className="text-purple-500">
-//             career@GenialCareer.ca
+//             career@genialcareer.com
 //           </a>
 //           .
 //         </p>
@@ -223,7 +223,7 @@ function Careers() {
         </h3>
         <p className="text-base sm:text-lg">
           {t("how_to_apply_description")}{" "}
-          <a href="mailto:career@GenialCareer.ca" className="text-purple-500">
+          <a href="mailto:career@genialcareer.com" className="text-purple-500">
             {t("apply_email")}
           </a>
           .

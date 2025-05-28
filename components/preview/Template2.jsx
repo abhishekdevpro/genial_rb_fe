@@ -316,7 +316,7 @@
 //                             href={item.link}
 //                             target="_blank"
 //                             rel="noopener noreferrer"
-//                             className="text-[#A810C7] hover:underline"
+//                             className="text-emerald-500 hover:underline"
 //                           >
 //                             {item.link}
 //                           </Link>

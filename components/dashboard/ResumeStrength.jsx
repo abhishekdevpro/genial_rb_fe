@@ -165,7 +165,7 @@ const TooltipContent = ({ improvements, resumeId, onClose }) => {
                 <div
                   className={`rounded-full p-1.5 ${
                     item.value
-                      ? "bg-purple-100 text-[#A810C7]"
+                      ? "bg-purple-100 text-emerald-500"
                       : "bg-red-100 text-red-600"
                   }`}
                 >
@@ -187,7 +187,7 @@ const TooltipContent = ({ improvements, resumeId, onClose }) => {
 
       {/* Keywords Section */}
       <div className="w-full flex flex-col md:flex-row justify-between items-start gap-2 md:gap-6 mt-6">
-        <div className="w-full md:w-1/2 p-4 bg-purple-100 text-[#A810C7] rounded-lg">
+        <div className="w-full md:w-1/2 p-4 bg-purple-100 text-emerald-500 rounded-lg">
           <h4 className="font-bold text-lg">Keywords Found</h4>
           {improvements.keywords_found?.length > 0 ? (
             <ul className="list-disc list-inside">
@@ -213,7 +213,7 @@ const TooltipContent = ({ improvements, resumeId, onClose }) => {
         </div>
       </div>
       {/* Overall Comments */}
-      <div className="bg-gradient-to-r from-[#5a23b2] to-[#A810C7] rounded-xl p-6 mt-6 text-white">
+      <div className="bg-gradient-to-r from-[#5a23b2] to-emerald-500 rounded-xl p-6 mt-6 text-white">
         <h3 className="text-lg font-bold">{t("overall_comments")}</h3>
         <p>{improvements?.overall_comments}</p>
       </div>
@@ -229,7 +229,7 @@ const TooltipContent = ({ improvements, resumeId, onClose }) => {
             value="jobtitle"
             checked={improveBy === "jobtitle"}
             onChange={() => setImproveBy("jobtitle")}
-            className="text-[#5a23b2] focus:ring-[#A810C7]"
+            className="text-[#5a23b2] focus:ring-emerald-500"
           />
           Improve by Job Title
         </label>
@@ -240,14 +240,14 @@ const TooltipContent = ({ improvements, resumeId, onClose }) => {
             value="overall"
             checked={improveBy === "overall"}
             onChange={() => setImproveBy("overall")}
-            className="text-[#5a23b2] focus:ring-[#A810C7]"
+            className="text-[#5a23b2] focus:ring-emerald-500"
           />
           Improve Overall
         </label>
       </div> */}
       <button
         onClick={handleATS}
-        className={`mt-6 px-6 py-2 w-full bg-[#A810C7] text-white rounded-lg hover:bg-[#5a23b2] transition-colors ${
+        className={`mt-6 px-6 py-2 w-full bg-emerald-500 text-white rounded-lg hover:bg-[#5a23b2] transition-colors ${
           improvements.ats_score === 10 || Loading
             ? "opacity-50 cursor-not-allowed"
             : ""
@@ -452,7 +452,7 @@ const ResumeStrength = ({ score, strength, resumeId }) => {
               <button
                 disabled={!resumeId}
                 onClick={() => setIsModalOpen(true)}
-                className={`px-6 py-2 bg-[#A810C7] text-white rounded-lg hover:bg-green-700 transition-colors ${
+                className={`px-6 py-2 bg-emerald-500 text-white rounded-lg hover:bg-green-700 transition-colors ${
                   !resumeId ? "opacity-50 cursor-not-allowed" : ""
                 }`}
               >
@@ -490,7 +490,7 @@ const ResumeStrength = ({ score, strength, resumeId }) => {
               <button
                 onClick={handleImproveResume}
                 disabled={!resumeId}
-                className={`w-full sm:w-auto px-6 py-2 bg-[#5a23b2] text-white rounded-lg hover:bg-[#A810C7] transition-colors ${
+                className={`w-full sm:w-auto px-6 py-2 bg-[#5a23b2] text-white rounded-lg hover:bg-emerald-500 transition-colors ${
                   !resumeId ? "opacity-50 cursor-not-allowed" : ""
                 }`}
               >
@@ -499,7 +499,7 @@ const ResumeStrength = ({ score, strength, resumeId }) => {
               <button
                 disabled={!resumeId}
                 onClick={() => setIsModalOpen(true)}
-                className={`w-full sm:w-auto px-6 py-2 bg-[#A810C7] text-white rounded-lg hover:bg-[#5a23b2] transition-colors ${
+                className={`w-full sm:w-auto px-6 py-2 bg-emerald-500 text-white rounded-lg hover:bg-[#5a23b2] transition-colors ${
                   !resumeId ? "opacity-50 cursor-not-allowed" : ""
                 }`}
               >

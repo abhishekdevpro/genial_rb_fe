@@ -78,7 +78,7 @@
         "resume_builder": "Resume Builder",
         "resume_description": "Relevant for automation & one time download.",
         "starting_price": "Starting",
-        "price_currency": "€",
+        "price_currency": "$",
         "price_amount": "0",
         "feature1": "Create optimized resumes",
         "feature2": "Copy and paste content from site",
@@ -100,7 +100,7 @@
   
     "combo_title": "French English Combo",
     "combo_description": "Built by expert resume writers",
-    "combo_price_currency": "€",
+    "combo_price_currency": "$",
     "combo_price_amount": "29",
     "combo_price_per_resume": "/Resume",
     "feature1_c": "Create optimized resumes",
@@ -151,7 +151,7 @@
         "ai_resume_accuracy": "AI - Resume Accuracy",
         "ai_resume_enhancer": "AI - Resume Enhancer",
         "ai_job_match_apply": "AI - Job Match & Apply",
-        "copyright": "© Copyright By genialcareer.ca All Rights Reserved",
+        "copyright": "© Copyright By genialcareer.com All Rights Reserved",
         "toast_success":"Subscribed successfully!"
       
       },
@@ -213,7 +213,7 @@
           
           "how_to_apply": "How to Apply",
           "how_to_apply_description": "If you’re passionate about helping others succeed and want to be part of a dynamic, growth-oriented team, we’d love to hear from you. To apply for a position at Genial Career, please send your resume and a cover letter to",
-          "apply_email": "career@genialcareer.ca",
+          "apply_email": "career@genialcareer.com",
           
           "join_us": "Join Us and Make a Difference",
           "join_us_description": "At Genial Career, you’ll have the opportunity to make a meaningful impact every day. Join us and help shape the future of job seekers around the world. We look forward to welcoming you to our team!",
@@ -285,7 +285,7 @@
               "childrensPrivacy": "Our services are not intended for individuals under 18. If a child provides personal data, we will delete it.",
               "changesPolicy": "We may update this Privacy Policy. Continued use of our services after changes means acceptance of the revised policy.",
               "contactUs": "If you have any questions, contact us at:",
-              "email_name": "bonjour@genialcareer.ca",
+              "email_name": "support@genialcareer.com",
               
                 "title": "AI Resume Builder",
                 "introduction": "Revolutionizing the Job Application Process",
@@ -494,7 +494,7 @@
                           "title": "10. Contact Information",
                           "list": [
                             "If you have any questions or concerns about these terms and conditions, please contact us at:",
-                            "Email: bonjour@genialcareer.ca"
+                            "Email: support@genialcareer.com"
                           ]
                         }
                       ],
@@ -615,8 +615,8 @@
                     "professional_title": "Professional Title",
                     "languages": "Languages",
                     "age": "Age",
-                    "current_salary": "Current Salary (€)",
-                    "expected_salary": "Expected Salary (€)",
+                    "current_salary": "Current Salary ($)",
+                    "expected_salary": "Expected Salary ($)",
                     "description": "Description",
                     "phone_number": "Phone Number",
                     "email": "Email",
@@ -1557,7 +1557,7 @@
     "help_support": "Need help or want to change your subscription?",
     "contact_us": "Contact us at:",
     "phone": "📞 855-695-3235",
-    "email": "📧 customersupport@genialcareer.ca",
+    "email": "📧 customersupport@genialcareer.com",
     "availability": "Available 7 days a week:",
     "monday_friday": "Monday-Friday: 8 AM - 8 PM (CST)",
     "saturday": "Saturday: 8 AM - 5 PM (CST)",

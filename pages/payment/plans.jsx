@@ -100,12 +100,12 @@
 //     }
 
 //     if (plan.billingCycle === "single") {
-//       return `€${plan.price}`;
+//       return `$${plan.price}`;
 //     } else if (plan.billingCycle === "month") {
-//       return `€${plan.price}/${t("plans.mo")}`;
+//       return `$${plan.price}/${t("plans.mo")}`;
 //     }
 
-//     return `€${plan.price}`;
+//     return `$${plan.price}`;
 //   };
 
 //   // Get renewal period text
@@ -224,7 +224,7 @@
 //                 )}
 //               </ul>
 
-//               <div className="mt-6 bg-[#A810C7] text-white p-4 rounded-lg text-center text-lg font-semibold">
+//               <div className="mt-6 bg-emerald-500 text-white p-4 rounded-lg text-center text-lg font-semibold">
 //                 {t("plans.Total due today")} <br />
 //                 <span className="text-2xl">
 //                   {planDetails ? formatPrice(planDetails) : ""}
@@ -238,14 +238,14 @@
 //               {t("plans.below, you agree to our")}{" "}
 //               <Link
 //                 href="/TermsandConditions"
-//                 className="text-[#A810C7] underline"
+//                 className="text-emerald-500 underline"
 //               >
 //                 {t("plans.Terms of Use")}
 //               </Link>{" "}
 //               {t("plans.and")}{" "}
 //               <Link
 //                 href="/footers/PrivacyPolicy"
-//                 className="text-[#A810C7] underline"
+//                 className="text-emerald-500 underline"
 //               >
 //                 {t("plans.Privacy Policy")}
 //               </Link>
@@ -261,7 +261,7 @@
 //               className={`mt-6 w-full text-white text-lg font-semibold py-3 rounded-lg ${
 //                 selectedPlan === "freePlan"
 //                   ? "bg-gray-400 cursor-not-allowed"
-//                   : "bg-[#A810C7]"
+//                   : "bg-emerald-500"
 //               }`}
 //               disabled={selectedPlan === "freePlan"}
 //             >
@@ -345,14 +345,14 @@ export default function PaymentPage() {
     if (price === "0") return t("pricing.freeLabel");
 
     if (billingCycle === "single") {
-      return `€${price}`;
+      return `$${price}`;
     } else if (billingCycle === "month") {
-      return `€${price}/${t("plans.mo")}`;
+      return `$${price}/${t("plans.mo")}`;
     } else if (billingCycle === "year") {
-      return `€${price}/${t("plans.yr")}`;
+      return `$${price}/${t("plans.yr")}`;
     }
 
-    return `€${price}`;
+    return `$${price}`;
   };
 
   const getRenewalText = (planKey) => {
@@ -493,7 +493,7 @@ export default function PaymentPage() {
                 )}
               </ul>
 
-              <div className="mt-6 bg-[#A810C7] text-white p-4 rounded-lg text-center text-lg font-semibold">
+              <div className="mt-6 bg-emerald-500 text-white p-4 rounded-lg text-center text-lg font-semibold">
                 {t("plans.Total due today")} <br />
                 <span className="text-2xl">
                   {selectedPlan ? formatPrice(selectedPlan) : ""}
@@ -506,15 +506,15 @@ export default function PaymentPage() {
               <strong>&quot;{t("plans.Start applying")}&quot;</strong>{" "}
               {t("plans.below, you agree to our")}{" "}
               <Link
-                href="/TermsandConditions"
-                className="text-[#A810C7] underline"
+                href="/terms&conditions"
+                className="text-emerald-500 underline"
               >
                 {t("plans.Terms of Use")}
               </Link>{" "}
               {t("plans.and")}{" "}
               <Link
                 href="/footers/PrivacyPolicy"
-                className="text-[#A810C7] underline"
+                className="text-emerald-500 underline"
               >
                 {t("plans.Privacy Policy")}
               </Link>
@@ -530,7 +530,7 @@ export default function PaymentPage() {
               className={`mt-6 w-full text-white text-lg font-semibold py-3 rounded-lg ${
                 selectedPlan === "freePlan"
                   ? "bg-gray-400 cursor-not-allowed"
-                  : "bg-[#A810C7]"
+                  : "bg-emerald-500"
               }`}
               disabled={selectedPlan === "freePlan"}
             >

@@ -30,10 +30,10 @@ function Home_third() {
       <div className="bg-gray-100 py-10">
         <div className="flex justify-center">
           <div
-            className="md:w-[78%] rounded-xl py-5 px-4 bg-[#5a23b2]"
+            className="md:w-[78%] rounded-xl py-5 px-4 bg-gradient-to-r from-zinc-300  to-[#9e7fcf] "
             id="home_third"
           >
-            <div className="flex flex-col gap-2 justify-evenly md:flex-row rounded-xl px-5 text-white">
+            <div className="flex flex-col gap-2 justify-evenly md:flex-row rounded-xl px-5 text-black">
               <div>
                 <Image
                   src={image}
@@ -42,7 +42,7 @@ function Home_third() {
                 />
               </div>
               <div className="flex flex-col font-semibold px-3 gap-5">
-                <h2 className="text-center font-bold text-4xl py-2 text-white">
+                <h2 className="text-center font-bold text-4xl py-2 text-black">
                   {t("how_ai_works")}
                 </h2>
                 <div>
@@ -85,31 +85,31 @@ function Home_third() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-5  my-8 rounded-xl items-center justify-center px-5 py-10  md:mx-auto md:w-full ">
+        <div className="flex flex-col gap-5  my-8 rounded-xl items-center justify-center px-5 py-10  md:mx-auto md:w-full bg-zinc-300  ">
           <div className="flex flex-col items-center justify-center max-w-6xl">
-            <h2 className=" text-3xl md:text-5xl font-bold text-[#A810C7] text-center py-6">
+            <h2 className=" text-3xl md:text-5xl font-bold text-emerald-500 text-center py-6">
               {t("explore_templates")}
             </h2>
 
             <div className="flex flex-col md:flex-row gap-4 ">
               <div className="text-lg text-left flex flex-col gap-1">
                 <div className="flex gap-2">
-                  <AiOutlineCheck className="border-2 px-2 py-2 rounded-full text-white bg-[#A810C7]" />
+                  <AiOutlineCheck className="border-2 px-2 py-2 rounded-full text-white bg-emerald-500" />
                   {t("chosen_by_experts")}
                 </div>
                 <div className="flex gap-2">
-                  <AiOutlineCheck className="border-2 px-2 py-2 rounded-full text-white bg-[#A810C7]" />
+                  <AiOutlineCheck className="border-2 px-2 py-2 rounded-full text-white bg-emerald-500" />
                   {t("backed_by_technology")}
                 </div>
               </div>
 
               <div className="text-lg text-left flex flex-col gap-1">
                 <div className="flex gap-2">
-                  <AiOutlineCheck className="border-2 px-2 py-2 rounded-full text-white bg-[#A810C7]" />
+                  <AiOutlineCheck className="border-2 px-2 py-2 rounded-full text-white bg-emerald-500" />
                   {t("powered_by_ai")}
                 </div>
                 <div className="flex gap-2">
-                  <AiOutlineCheck className="border-2 px-2 py-2 rounded-full text-white bg-[#A810C7]" />
+                  <AiOutlineCheck className="border-2 px-2 py-2 rounded-full text-white bg-emerald-500" />
                   {t("ready_in_15_minutes")}
                 </div>
               </div>
@@ -166,7 +166,7 @@ function Home_third() {
         </div>
       </div>
       <div className="py-6 border-2 mb-3 bg-gray-100">
-        <div className="flex gap-2 justify-center bg-[#A810C7] text-white py-4 text-lg md:text-4xl align-middle items-center font-bold px-2">
+        <div className="flex gap-2 justify-center bg-emerald-500 text-white py-4 text-lg md:text-4xl align-middle items-center font-bold px-2">
           {t("certified_by_recruiters")}
         </div>
         <div className="flex justify-center items-center px-2 py-3">
@@ -186,7 +186,7 @@ function Home_third() {
       </div>
       <div className="flex flex-col gap-5 px-5 py-10 md:mx-auto md:w-[70%]">
         <div className="flex flex-col items-center">
-          <h2 className="text-5xl font-bold text-[#A810C7] rounded-xl text-center py-6">
+          <h2 className="text-5xl font-bold text-emerald-500 rounded-xl text-center py-6">
             {t("looking_cover_letter")}
           </h2>
           <p className=" text-lg">{t("explore_cover_letters")}</p>
@@ -224,7 +224,7 @@ function Home_third() {
                 {t(template.title)}
               </h2>
               <Link href="/dashboard/cv-builder">
-                <button className="absolute top-0 left-0 right-0 bottom-0 m-auto w-fit h-fit bg-[#A810C7] text-white font-bold py-2 px-4 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <button className="absolute top-0 left-0 right-0 bottom-0 m-auto w-fit h-fit bg-emerald-500 text-white font-bold py-2 px-4 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   {t("create_cv")}
                 </button>
               </Link>

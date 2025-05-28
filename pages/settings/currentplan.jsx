@@ -56,7 +56,7 @@ export default function CurrentPlan() {
           <p className="">
             Current Plan:{" "}
             {userData?.plan_id ? (
-              <span className="font-medium text-[#A810C7]">
+              <span className="font-medium text-emerald-500">
                 {userData.plan_id === 1 && "Free Plan"}
                 {userData.plan_id === 2 && "Single Pass"}
                 {userData.plan_id === 3 && "AI Pro Month"}

@@ -122,7 +122,7 @@ const Login2 = () => {
       <div className="flex justify-center items-center h-screen w-full">
         <div className="p-8 rounded-xl shadow-lg shadow-slate-700 w-full max-w-lg bg-white">
           <div className="flex justify-center mb-6">
-            <Image src={logo} className="w-40 h-10" alt="Logo" />
+            <Image src={logo} className="w-[150px] h-100" alt="Logo" />
           </div>
           <div className="text-2xl text-black text-center font-bold mb-4">
             {t("loginpage.welcome")}
@@ -152,7 +152,7 @@ const Login2 = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleInputChange}
-                className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#A810C7]"
+                className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
                 placeholder={t("loginpage.email_placeholder")}
                 required
                 disabled={isLoading}
@@ -169,7 +169,7 @@ const Login2 = () => {
                   name="password"
                   value={formData.password}
                   onChange={handleInputChange}
-                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#A810C7]"
+                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
                   placeholder={t("loginpage.password_placeholder")}
                   required
                   disabled={isLoading}
@@ -189,7 +189,7 @@ const Login2 = () => {
             {/* <div className="text-center py-2">
               <Link
                 href="/signup"
-                className="text-[#A810C7] hover:text-[#A810C7]"
+                className="text-emerald-500 hover:text-emerald-500"
                 // onClick={() => setThirdstepOpen(true)}
                 disabled={isLoading}
               >
@@ -210,7 +210,7 @@ const Login2 = () => {
                 name="terms"
                 // checked={isChecked}
                 // onChange={(e) => setIsChecked(e.target.checked)}
-                className="w-4 h-4 text-[#A810C7] border-gray-300 rounded focus:ring-[#A810C7]"
+                className="w-4 h-4 text-emerald-500 border-gray-300 rounded focus:ring-emerald-500"
               /> */}
               <input
                 type="checkbox"
@@ -218,14 +218,14 @@ const Login2 = () => {
                 name="terms"
                 checked={isChecked}
                 onChange={handleCheckboxChange}
-                className="w-4 h-4 text-[#A810C7] border-gray-300 rounded focus:ring-[#A810C7]"
+                className="w-4 h-4 text-emerald-500 border-gray-300 rounded focus:ring-emerald-500"
               />
 
               <label htmlFor="terms" className="text-gray-700 text-sm">
                 {t("loginpage.agree_terms")}{" "}
                 <Link
                   href="/terms&conditions"
-                  className="text-[#A810C7] underline"
+                  className="text-emerald-500 underline"
                 >
                   {t("loginpage.terms_conditions")}
                 </Link>
@@ -234,12 +234,12 @@ const Login2 = () => {
 
             <button
               type="submit"
-              // className="w-full bg-[#A810C7] text-white px-4 py-2 rounded-md hover:bg-[#A810C7] transition-colors duration-300 relative"
+              // className="w-full bg-emerald-500 text-white px-4 py-2 rounded-md hover:bg-emerald-500 transition-colors duration-300 relative"
               className={`w-full text-white px-4 py-2 rounded-md transition-colors duration-300 relative 
                 ${
                   !isChecked || isLoading
                     ? "bg-gray-400 cursor-not-allowed "
-                    : "bg-[#A810C7] hover:bg-[#5a23b2]"
+                    : "bg-emerald-500 hover:bg-[#5a23b2]"
                 }`}
               disabled={!isChecked || isLoading} // Disabled when terms are not checked or loading
             >
@@ -378,7 +378,7 @@ export default Login2;
 //                 name="email"
 //                 value={formData.email}
 //                 onChange={handleInputChange}
-//                 className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#A810C7]"
+//                 className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
 //                 placeholder="Enter your email ID"
 //                 required
 //                 disabled={isLoading}
@@ -392,13 +392,13 @@ export default Login2;
 //                 name="terms"
 //                 // checked={isChecked}
 //                 // onChange={(e) => setIsChecked(e.target.checked)}
-//                 className="w-4 h-4 text-[#A810C7] border-gray-300 rounded focus:ring-[#A810C7]"
+//                 className="w-4 h-4 text-emerald-500 border-gray-300 rounded focus:ring-emerald-500"
 //               />
 //               <label htmlFor="terms" className="text-gray-700 text-sm">
 //                 I agree to the{" "}
 //                 <Link
 //                   href="/TermsandConditions"
-//                   className="text-[#A810C7] underline"
+//                   className="text-emerald-500 underline"
 //                 >
 //                   Terms & Conditions
 //                 </Link>
@@ -407,7 +407,7 @@ export default Login2;
 
 //             <button
 //               type="submit"
-//               className="w-full bg-[#A810C7] text-white px-4 py-2 rounded-md hover:bg-[#A810C7] transition-colors duration-300 relative"
+//               className="w-full bg-emerald-500 text-white px-4 py-2 rounded-md hover:bg-emerald-500 transition-colors duration-300 relative"
 //               disabled={isLoading}
 //             >
 //               Send OTP
@@ -415,7 +415,7 @@ export default Login2;
 //           </form>
 //           {/* <button
 //             // type="submit"
-//             className="w-full bg-[#A810C7] text-white px-4 py-2 rounded-md hover:bg-[#A810C7] transition-colors duration-300 relative"
+//             className="w-full bg-emerald-500 text-white px-4 py-2 rounded-md hover:bg-emerald-500 transition-colors duration-300 relative"
 //             // disabled={isLoading}
 //           >
 //             Send OTP

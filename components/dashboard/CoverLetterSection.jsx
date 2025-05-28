@@ -19,7 +19,7 @@ const CoverLetterSection = ({ letterCount }) => {
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 w-full">
           <div className="p-2 bg-purple-100 rounded-lg">
             <svg
-              className="w-6 h-6 text-[#A810C7]"
+              className="w-6 h-6 text-emerald-500"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -41,7 +41,7 @@ const CoverLetterSection = ({ letterCount }) => {
         </div>
         <button
           onClick={handleClick}
-          className="px-6 py-2 border border-[#A810C7] text-[#A810C7] rounded-lg hover:bg-purple-50"
+          className="px-6 py-2 border border-emerald-500 text-emerald-500 rounded-lg hover:bg-purple-50"
         >
           {t("dashboard_cvletter.viewCoverLetters")}
         </button>

@@ -173,7 +173,7 @@ function Signup() {
                 name="password"
                 value={formData.password}
                 onChange={handleInputChange}
-                className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#A810C7]"
+                className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
                 placeholder={t("signuppage.password_placeholder")}
                 required
                 minLength={6}
@@ -200,7 +200,7 @@ function Signup() {
                 disabled={isLoading}
               />
               <Link
-                className="text-[#A810C7] underline"
+                className="text-emerald-500 underline"
                 href={"/terms&conditions"}
               >
                 {" "}
@@ -211,7 +211,7 @@ function Signup() {
           </div>
           <button
             type="submit"
-            className="w-full bg-[#A810C7] text-white px-4 py-2 rounded-md flex items-center justify-center gap-2 hover:bg-[#A810C7] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full bg-emerald-500 text-white px-4 py-2 rounded-md flex items-center justify-center gap-2 hover:bg-emerald-500 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             disabled={isLoading}
           >
             {isLoading ? (

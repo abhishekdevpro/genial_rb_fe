@@ -97,7 +97,7 @@ const Background = () => {
         <button
           className={`rounded-full p-2 px-10 text-lg font-bold text-black ${
             selectedSkills.length === 3
-              ? "bg-[#A810C7] cursor-pointer"
+              ? "bg-emerald-500 cursor-pointer"
               : "bg-gray-300"
           }`}
           disabled={selectedSkills.length !== 3}

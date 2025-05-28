@@ -43,7 +43,7 @@ const LoaderButton = ({
   return (
     <button
       onClick={onClick}
-      className={`relative flex items-center justify-center px-4 py-2 font-medium text-white bg-[[#A810C7]] rounded-lg hover:bg-[#5a23b2] disabled:bg-blue-300 ${className}`}
+      className={`relative flex items-center justify-center px-4 py-2 font-medium text-white bg-[emerald-500] rounded-lg hover:bg-[#5a23b2] disabled:bg-blue-300 ${className}`}
       disabled={isLoading}
       {...props}
     >

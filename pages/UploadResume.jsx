@@ -93,7 +93,7 @@ const UploadResume = () => {
 
             <button
               onClick={handleBrowseClick}
-              className="mt-4 w-full px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-[#A810C7]"
+              className="mt-4 w-full px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-emerald-500"
             >
               Browse
             </button>
@@ -129,7 +129,7 @@ const UploadResume = () => {
           Back
         </button>
         <button
-          className="w-1/3 px-6 py-2 bg-yellow-400 text-white rounded-lg hover:bg-[#A810C7]"
+          className="w-1/3 px-6 py-2 bg-yellow-400 text-white rounded-lg hover:bg-emerald-500"
           onClick={handleNextClick}
         >
           Next

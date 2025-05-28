@@ -58,7 +58,7 @@ const Template26 = () => {
     <div className="max-w-3xl mx-auto p-5 bg-white shadow-md mb-5">
       <div className="mb-8 pt-2.5">
         <h1
-          className="text-6xl text-black font-bold mb-2 text-[#A810C7]	"
+          className="text-6xl text-black font-bold mb-2 text-emerald-500	"
           style={{ color: headerColor }}
         >
           {resumeData.name}
@@ -85,7 +85,7 @@ const Template26 = () => {
       </div>
       <div className="mb-5">
         <h2
-          className="text-xl font-bold mb-4 text-[#A810C7] border-y-2 border-[#A810C7] p-2"
+          className="text-xl font-bold mb-4 text-emerald-500 border-y-2 border-emerald-500 p-2"
           style={{ color: headerColor }}
         >
           ABOUT ME
@@ -100,7 +100,7 @@ const Template26 = () => {
       </div>
       <div className="mb-8">
         <h2
-          className="text-xl font-bold text-[#A810C7] mb-2 border-y-2 border-[#A810C7] p-2"
+          className="text-xl font-bold text-emerald-500 mb-2 border-y-2 border-emerald-500 p-2"
           style={{ color: headerColor }}
         >
           SKILLS
@@ -136,7 +136,7 @@ const Template26 = () => {
       </div>
       <div class="mb-5">
         <h2
-          className="text-xl font-bold mb-4 text-[#A810C7] border-y-2 border-[#A810C7] p-2"
+          className="text-xl font-bold mb-4 text-emerald-500 border-y-2 border-emerald-500 p-2"
           style={{ color: headerColor }}
         >
           EXPERIENCE
@@ -346,7 +346,7 @@ const Template26 = () => {
       </div>
       <div className="mb-8 ">
         <h2
-          className="text-xl text-[#A810C7] font-bold mb-2 border-y-2 border-[#A810C7] p-2"
+          className="text-xl text-emerald-500 font-bold mb-2 border-y-2 border-emerald-500 p-2"
           style={{ color: headerColor }}
         >
           EDUCATION
@@ -379,7 +379,7 @@ const Template26 = () => {
       </div>
       <div className="mb-8">
         <h2
-          className="text-xl font-bold text-[#A810C7] border-y-2 border-[#A810C7] p-2"
+          className="text-xl font-bold text-emerald-500 border-y-2 border-emerald-500 p-2"
           style={{ color: headerColor }}
         >
           LANGUAGE

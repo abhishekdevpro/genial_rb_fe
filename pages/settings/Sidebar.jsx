@@ -15,8 +15,8 @@ const Sidebar = () => {
 
   const getLinkClassName = (path) => {
     return router.pathname === path
-      ? "flex items-center p-2 bg-[#A810C7] border-b-2 rounded font-semibold text-white"
-      : "flex items-center p-2 hover:bg-[#A810C7] border-b-2 rounded font-semibold";
+      ? "flex items-center p-2 bg-emerald-500 border-b-2 rounded font-semibold text-white"
+      : "flex items-center p-2 hover:bg-emerald-500 border-b-2 rounded font-semibold";
   };
 
   return (

@@ -148,7 +148,7 @@ export default function Home() {
         <button
           onClick={handleCreateCvLetter}
           className={`px-6 py-3 text-white font-semibold rounded-lg ${
-            loading ? "bg-gray-400" : "bg-[#A810C7] hover:bg-[#A810C7]"
+            loading ? "bg-gray-400" : "bg-emerald-500 hover:bg-emerald-500"
           }`}
           disabled={loading}
         >

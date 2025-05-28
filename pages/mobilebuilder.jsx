@@ -638,7 +638,7 @@ export default function MobileBuilder() {
         </span>
         <button
           onClick={handleNext}
-          className="px-4 py-2 bg-[#A810C7] text-black rounded-lg"
+          className="px-4 py-2 bg-emerald-500 text-black rounded-lg"
         >
           {currentSection === sections.length - 1
             ? t("buttons.finish")
@@ -821,7 +821,7 @@ export default function MobileBuilder() {
 
                 <button
                   onClick={downloadAsPDF}
-                  className=" bg-[#A810C7] text-black px-4 py-2 rounded-lg bottom-btns"
+                  className=" bg-emerald-500 text-black px-4 py-2 rounded-lg bottom-btns"
                 >
                   {loading === "download" ? (
                     <SaveLoader loadingText={t("buttons.downloading")} />
@@ -932,7 +932,7 @@ export default function MobileBuilder() {
                             <button
                               onClick={handleDownload}
                               type="submit"
-                              className="w-full bg-yellow-400 text-black font-bold  rounded-[50px] hover:bg-[#A810C7] transition duration-200 flex items-center justify-center"
+                              className="w-full bg-yellow-400 text-black font-bold  rounded-[50px] hover:bg-emerald-500 transition duration-200 flex items-center justify-center"
                             >
                               <Image
                                 src={paypal}

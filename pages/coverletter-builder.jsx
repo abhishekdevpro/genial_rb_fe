@@ -283,7 +283,7 @@ function CoverLetterBuilder() {
                   <select
                     value={selectedFont}
                     onChange={handleFontChange}
-                    className="w-40 h-10 rounded-lg border border-[#5a23b2] px-4 font-bold text-black bg-white focus:ring-2 focus:ring-[#A810C7]"
+                    className="w-40 h-10 rounded-lg border border-[#5a23b2] px-4 font-bold text-black bg-white focus:ring-2 focus:ring-emerald-500"
                   >
                     <option value="Ubuntu">Ubuntu</option>
                     <option value="Calibri">Calibri</option>
@@ -312,7 +312,7 @@ function CoverLetterBuilder() {
                   </button>
                   <button
                     onClick={downloadAsPDF}
-                    className="bg-[#A810C7] text-white px-6 py-2 rounded-lg"
+                    className="bg-emerald-500 text-white px-6 py-2 rounded-lg"
                   >
                     {t("cvBuilder.download")}
                   </button>

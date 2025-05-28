@@ -1,53 +1,163 @@
-import React from "react";
-import image1 from "./Images/homeimage1.jpg";
+// import React from "react";
+// import image1 from "./Images/homeimage1.jpg";
+
+// const Home_step = () => {
+//   const steps = [
+//     {
+//       title: "Open Canva",
+//       description:
+//         'Open up Canva and search for "Resume" to start designing your own.',
+//     },
+//     { title: "Find the right template" },
+//     { title: "Personalize your resume" },
+//     { title: "Get creative with more features" },
+//     { title: "Order your prints" },
+//   ];
+
+//   return (
+//     <div className="flex flex-col md:flex-row items-start gap-8 bg-gray-50 p-8">
+//       <div className="w-full md:w-1/2">
+//         <img
+//           src="https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+//           alt="Resume Builder Tutorial"
+//           className="w-full rounded-lg shadow-lg"
+//         />
+//       </div>
+
+//       <div className="w-full md:w-1/2">
+//         <h1 className="text-4xl font-bold text-gray-900 mb-8">
+//           How to make a resume
+//         </h1>
+
+//         <div className="space-y-4">
+//           {steps.map((step, index) => (
+//             <div
+//               key={index}
+//               className="border-l-4 border-[#5a23b2] bg-white p-4 rounded-lg shadow-sm"
+//             >
+//               <h3 className="font-semibold text-lg text-gray-900">
+//                 {step.title}
+//               </h3>
+//               {step.description && (
+//                 <p className="text-gray-600 mt-1">{step.description}</p>
+//               )}
+//             </div>
+//           ))}
+//         </div>
+
+//         <button className="mt-8 bg-[#5a23b2] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#a810c7] transition-colors">
+//           Build my resume
+//         </button>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Home_step;
+
+"use client";
+import React, { useEffect, useState } from "react";
+import Image from "next/image";
+import genialimg from "./Images/genial.png";
+import Link from "next/link";
 
 const Home_step = () => {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleStep = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  useEffect(() => {
+    // Check for the token (you can adjust based on where the token is stored)
+    const token = localStorage.getItem("token");
+    setIsAuthenticated(!!token);
+  }, []);
   const steps = [
     {
-      title: "Open Canva",
-      description:
-        'Open up Canva and search for "Resume" to start designing your own.',
+      title: "1. Choose a Template",
+      description: [
+        "Pick a professional resume template that suits your industry and role.",
+        "20+ ATS-compliant templates selected by experts.",
+      ],
     },
-    { title: "Find the right template" },
-    { title: "Personalize your resume" },
-    { title: "Get creative with more features" },
-    { title: "Order your prints" },
+    {
+      title: "2. Add Your Information",
+      description: [
+        "Contact details",
+        "Summary or objective",
+        "Work experience",
+        "Education",
+        "Skills and certifications",
+      ],
+    },
+    {
+      title: "3. Customize & Design",
+      description: [
+        "Adjust fonts, colors, and layout",
+        "Add photo and links where required",
+        "Highlight important achievements",
+      ],
+    },
+    {
+      title: "4. Review, Run AI & Export",
+      description: [
+        "Run AI Assist",
+        "Auto-check and fix using AI",
+        "Export as PDF",
+        "Create unlimited resumes & cover letters",
+      ],
+    },
   ];
 
   return (
     <div className="flex flex-col md:flex-row items-start gap-8 bg-gray-50 p-8">
       <div className="w-full md:w-1/2">
-        <img
-          src="https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+        <Image
+          src={genialimg}
           alt="Resume Builder Tutorial"
-          className="w-full rounded-lg shadow-lg"
+          className="w-full rounded-lg shadow-lg h-[500px]"
         />
       </div>
 
       <div className="w-full md:w-1/2">
         <h1 className="text-4xl font-bold text-gray-900 mb-8">
-          How to make a resume
+          How to Make a Resume — In 4 Simple Steps
         </h1>
 
         <div className="space-y-4">
           {steps.map((step, index) => (
             <div
               key={index}
-              className="border-l-4 border-[#5a23b2] bg-white p-4 rounded-lg shadow-sm"
+              className="border-l-4 border-[#5a23b2] bg-white p-4 rounded-lg shadow-sm cursor-pointer"
+              onClick={() => toggleStep(index)}
             >
-              <h3 className="font-semibold text-lg text-gray-900">
-                {step.title}
-              </h3>
-              {step.description && (
-                <p className="text-gray-600 mt-1">{step.description}</p>
+              <div className="flex justify-between items-center">
+                <h3 className="font-semibold text-lg text-gray-900">
+                  {step.title}
+                </h3>
+                <span className="text-xl text-gray-600">
+                  {openIndex === index ? "▲" : "▼"}
+                </span>
+              </div>
+
+              {openIndex === index && (
+                <ul className="text-gray-600 mt-2 list-disc list-inside space-y-1">
+                  {step.description.map((item, idx) => (
+                    <li key={idx}>{item}</li>
+                  ))}
+                </ul>
               )}
             </div>
           ))}
         </div>
-
-        <button className="mt-8 bg-[#5a23b2] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#a810c7] transition-colors">
-          Build my resume
-        </button>
+        <Link href={isAuthenticated ? "/dashboard/resume-builder" : "/login2"}>
+          <button className="mt-8 bg-[#5a23b2] text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-500 transition-colors">
+            Build my resume
+          </button>
+        </Link>
       </div>
     </div>
   );

@@ -73,7 +73,7 @@ const Index = () => {
                 </p>
                 <button
                   onClick={() => router.push("/dashboard/aibuilder")}
-                  className="sm:w-full lg:w-auto my-2 border rounded md py-4 px-8 text-center bg-[#A810C7] text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50"
+                  className="sm:w-full lg:w-auto my-2 border rounded md py-4 px-8 text-center bg-emerald-500 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50"
                 >
                   Take me there!
                 </button>

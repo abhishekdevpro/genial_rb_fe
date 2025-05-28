@@ -122,7 +122,7 @@ const WorkStyle = () => {
           // Continue button for job title input
           <button
             className={`rounded-full p-2 px-10 text-lg font-bold text-black ${
-              jobTitle ? "bg-[#A810C7] cursor-pointer" : "bg-gray-300"
+              jobTitle ? "bg-emerald-500 cursor-pointer" : "bg-gray-300"
             }`}
             disabled={!jobTitle}
             onClick={handleContinueAfterJobTitle}
@@ -133,7 +133,7 @@ const WorkStyle = () => {
           // Continue button after selecting a job option
           <button
             className={`rounded-full p-2 px-10 text-lg font-bold text-black ${
-              selectedBox ? "bg-[#A810C7] cursor-pointer" : "bg-gray-300"
+              selectedBox ? "bg-emerald-500 cursor-pointer" : "bg-gray-300"
             }`}
             disabled={!selectedBox}
             onClick={handleFinalContinue}

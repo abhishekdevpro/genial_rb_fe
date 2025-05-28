@@ -53,7 +53,7 @@ const Landingpage = () => {
 
         <button
           className={`rounded-full p-2 px-10 text-lg font-bold text-black ${
-            selectedOption ? "bg-[#A810C7] cursor-pointer" : "bg-gray-300"
+            selectedOption ? "bg-emerald-500 cursor-pointer" : "bg-gray-300"
           }`}
           disabled={!selectedOption}
           onClick={handleContinue}

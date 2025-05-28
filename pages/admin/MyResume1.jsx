@@ -49,7 +49,7 @@
 
 //   return (
 //     <div className="container mx-auto p-4 text-center">
-//       <div className="bg-gradient-to-r from-[#5a23b2] to-[#A810C7] p-6 rounded-lg shadow-lg mb-8">
+//       <div className="bg-gradient-to-r from-[#5a23b2] to-emerald-500 p-6 rounded-lg shadow-lg mb-8">
 //         <h2 className="text-start text-3xl text-white font-bold">
 //           All Customers
 //         </h2>
@@ -160,7 +160,7 @@ const MyResume1 = () => {
 
   return (
     <div className="container mx-auto p-4 text-center">
-      <div className="bg-gradient-to-r from-[#5a23b2] to-[#A810C7] p-6 rounded-lg shadow-lg mb-8">
+      <div className="bg-gradient-to-r from-[#5a23b2] to-emerald-500 p-6 rounded-lg shadow-lg mb-8">
         <h2 className="text-start text-3xl text-white font-bold">
           {t("admin.customers.title")}
         </h2>

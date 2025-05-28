@@ -48,7 +48,7 @@ const ContactUs = () => {
     <div className="bg-gray-100 py-12 lg:py-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <h2
-          className="text-3xl font-bold text-center mb-8 sm:mb-12 text-[#A810C7]"
+          className="text-3xl font-bold text-center mb-8 sm:mb-12 text-emerald-500"
           id="phone"
         >
           {t("getintouch")}
@@ -218,10 +218,10 @@ const ContactUs = () => {
             <div>
               <button className="border px-3 py-2 rounded-lg">
                 <a
-                  href="mailto:bonjour@genialcareer.ca"
+                  href="mailto:support@genialcareer.com"
                   className="text-slate-800 font-semibold text-sm hover:underline flex items-center"
                 >
-                  bonjour@genialcareer.ca
+                  support@genialcareer.com
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="ml-2 h-4 w-4"
@@ -337,7 +337,7 @@ const ContactUs = () => {
                   )}
                   <button
                     type="submit"
-                    className="bg-[#A810C7] text-white px-4 py-2 rounded-lg"
+                    className="bg-emerald-500 text-white px-4 py-2 rounded-lg"
                   >
                     {t("form.send")}
                   </button>

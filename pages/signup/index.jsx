@@ -259,7 +259,7 @@
 //                   name="password"
 //                   value={formData.password}
 //                   onChange={handleInputChange}
-//                   className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#A810C7]"
+//                   className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
 //                   placeholder={t("signuppage.password_placeholder")}
 //                   required
 //                   minLength={6}
@@ -294,7 +294,7 @@
 //             </div>
 //             <button
 //               type="submit"
-//               className="w-full bg-[#A810C7] text-white px-4 py-2 rounded-md flex items-center justify-center gap-2 hover:bg-[#A810C7] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+//               className="w-full bg-emerald-500 text-white px-4 py-2 rounded-md flex items-center justify-center gap-2 hover:bg-emerald-500 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
 //               disabled={isLoading}
 //             >
 //               {isLoading ? (
@@ -597,7 +597,7 @@ const Signup = () => {
                   name="password"
                   value={formData.password}
                   onChange={handleInputChange}
-                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#A810C7]"
+                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
                   placeholder={t("signuppage.password_placeholder")}
                   required
                   minLength={6}
@@ -627,7 +627,7 @@ const Signup = () => {
                   {t("loginpage.agree_terms")}{" "}
                   <Link
                     href="/terms&conditions"
-                    className="text-[#A810C7] underline"
+                    className="text-emerald-500 underline"
                   >
                     {t("loginpage.terms_conditions")}
                   </Link>
@@ -636,7 +636,7 @@ const Signup = () => {
             </div>
             <button
               type="submit"
-              className="w-full bg-[#A810C7] text-white px-4 py-2 rounded-md flex items-center justify-center gap-2 hover:bg-[#5a23b2] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full bg-emerald-500 text-white px-4 py-2 rounded-md flex items-center justify-center gap-2 hover:bg-[#5a23b2] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               disabled={isLoading}
             >
               {isLoading ? (

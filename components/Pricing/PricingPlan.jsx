@@ -36,7 +36,7 @@ const PricingSection = () => {
   }
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 ">
       <div className="max-w-7xl container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {planTypes.map((planType) => (
@@ -53,7 +53,7 @@ const PricingSection = () => {
                   <span className="text-3xl font-bold text-gray-900">
                     {Number(t(`pricing.${planType}.price`)) === 0
                       ? t("pricing.freeLabel")
-                      : `€${t(`pricing.${planType}.price`)}`}
+                      : `$${t(`pricing.${planType}.price`)}`}
                   </span>
                   {t(`pricing.${planType}.billingCycle`) && (
                     <span className="text-gray-500 ml-1 text-sm">
@@ -77,7 +77,7 @@ const PricingSection = () => {
                     }
                     return (
                       <li key={index} className="flex items-start">
-                        <Check className="h-5 w-5 text-[#A810C7] mr-2 mt-1 flex-shrink-0" />
+                        <Check className="h-5 w-5 text-emerald-500 mr-2 mt-1 flex-shrink-0" />
                         <span className="text-gray-600 text-sm">{feature}</span>
                       </li>
                     );
@@ -85,7 +85,7 @@ const PricingSection = () => {
                 </ul>
 
                 <button
-                  className="w-full mt-8 bg-[#5a23b2] hover:bg-[#A810C7] text-white font-medium py-3 px-4 rounded-lg transition duration-300"
+                  className="w-full mt-8 bg-[#5a23b2] hover:bg-emerald-500 text-white font-medium py-3 px-4 rounded-lg transition duration-300"
                   onClick={() => handleClick(planType)}
                 >
                   {t(`pricing.${planType}.buttonText`)}

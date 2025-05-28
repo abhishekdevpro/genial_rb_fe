@@ -186,7 +186,7 @@ const PayAndDownload = ({ resumeId, token, PayerID }) => {
       </div>
       <button
         onClick={downloadAsPDF}
-        className="bg-[#A810C7] text-black px-6 py-2 rounded-lg"
+        className="bg-emerald-500 text-black px-6 py-2 rounded-lg"
         disabled={isLoading}
       >
         {isLoading ? "Processing..." : "Download"}

@@ -73,7 +73,7 @@
 //                   </p>
 //                   <Link href="/payment">
 //                     <button
-//                       className="mt-3 md:mt-0 text-[#A810C7] font-medium underline"
+//                       className="mt-3 md:mt-0 text-emerald-500 font-medium underline"
 //                       // onClick={() => setStatus("Active")}
 //                     >
 //                       Subscribe
@@ -84,7 +84,7 @@
 //                 <p className="mt-4 text-gray-700">
 //                   For more information or changes to your subscription, contact
 //                   us at
-//                   <span className="text-[#A810C7] cursor-pointer">
+//                   <span className="text-emerald-500 cursor-pointer">
 //                     {" "}
 //                     customersupport@GenialCareer.fr
 //                   </span>
@@ -267,20 +267,22 @@ export default function Subscription() {
                     Status:{" "}
                     <span
                       className={`font-medium ${
-                        status === "Active" ? "text-[#A810C7]" : "text-red-600"
+                        status === "Active"
+                          ? "text-emerald-500"
+                          : "text-red-600"
                       }`}
                     >
                       {status}
                     </span>
                   </p>
                   {/* <Link href="/payment">
-                    <button className="mt-3 md:mt-0 text-[#A810C7] font-medium underline">
+                    <button className="mt-3 md:mt-0 text-emerald-500 font-medium underline">
                       {t("subscription.subscribe")}
                     </button>
                   </Link> */}
                   <div className="flex space-x-4">
                     <Link href="/payment">
-                      <button className="mt-3 md:mt-0 px-4 py-2 bg-[#A810C7] text-white rounded-md">
+                      <button className="mt-3 md:mt-0 px-4 py-2 bg-emerald-500 text-white rounded-md">
                         {t("subscription.upgrade")}
                       </button>
                     </Link>
@@ -358,7 +360,7 @@ export default function Subscription() {
                 <p className="mt-4 text-gray-700">
                   {t("subscription.more_info")}{" "}
                   <a href="mailto:customersupport@GenialCareer.fr.">
-                    <span className="text-[#A810C7] cursor-pointer">
+                    <span className="text-emerald-500 cursor-pointer">
                       {t("subscription.email")}
                     </span>
                   </a>

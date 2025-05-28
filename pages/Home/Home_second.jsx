@@ -424,7 +424,7 @@
 //                           <div className="flex justify-center mt-6">
 //                             <button
 //                               type="submit"
-//                               className="w-full bg-yellow-400 text-black font-bold  rounded-[50px] hover:bg-[#A810C7] transition duration-200"
+//                               className="w-full bg-yellow-400 text-black font-bold  rounded-[50px] hover:bg-emerald-500 transition duration-200"
 //                             >
 //                               {/* <Image
 //                                 src={paypal}
@@ -551,7 +551,7 @@
 //                           <div className="flex justify-center mt-6">
 //                             <button
 //                               type="submit"
-//                               className="w-full bg-yellow-400 text-black font-bold  rounded-[50px] hover:bg-[#A810C7] transition duration-200"
+//                               className="w-full bg-yellow-400 text-black font-bold  rounded-[50px] hover:bg-emerald-500 transition duration-200"
 //                             >
 //                               {/* <Image
 //                                 src={paypal}
@@ -765,7 +765,7 @@ function Home_Second() {
         </div>
         <div className="flex justify-center mt-4">
           <Link href="/dashboard/resume-builder">
-            <button className="px-5 py-3 rounded-full text-lg text-white bg-[#A810C7] font-bold hover:px-8 hover:shadow-2xl hover:bg-[#A810C7] hover:shadow-[#A810C7]">
+            <button className="px-5 py-3 rounded-full text-lg text-white bg-emerald-500 font-bold hover:px-8 hover:shadow-2xl hover:bg-emerald-500 hover:shadow-emerald-500">
               {t("create_resume")}
             </button>
           </Link>

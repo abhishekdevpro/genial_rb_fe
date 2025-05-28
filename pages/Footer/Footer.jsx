@@ -59,7 +59,7 @@
 //             </div> */}
 
 //             <div className="w-full md:w-auto mb-6 md:mb-0">
-//               <h2 className="text-lg font-semibold text-[#A810C7]">
+//               <h2 className="text-lg font-semibold text-emerald-500">
 //                 Get Our Weekly
 //               </h2>
 //               <form
@@ -87,7 +87,7 @@
 //           <br />
 //           <div className="flex flex-wrap justify-around">
 //             <div className="w-full md:w-auto mb-6 md:mb-0" id="footer">
-//               <h2 className="text-lg font-bold text-[#A810C7]">Genial Career </h2>
+//               <h2 className="text-lg font-bold text-emerald-500">Genial Career </h2>
 //               <ul>
 //                 <li>
 //                   <Link href="/footers/Aboutus">
@@ -112,7 +112,7 @@
 //               </ul>
 //             </div>
 //             <div className="w-full md:w-auto mb-6 md:mb-0">
-//               <h2 className="text-lg font-bold text-[#A810C7]">Support</h2>
+//               <h2 className="text-lg font-bold text-emerald-500">Support</h2>
 //               <ul>
 //                 <li>
 //                   <Link href="/footers/Salarytools">
@@ -132,7 +132,7 @@
 //               </ul>
 //             </div>
 //             <div className="w-full md:w-auto mb-6 md:mb-0">
-//               <h2 className="text-lg font-bold text-[#A810C7]">
+//               <h2 className="text-lg font-bold text-emerald-500">
 //                 Scope & Products
 //               </h2>
 //               <ul>
@@ -164,7 +164,7 @@
 //               </ul>
 //             </div>
 //             <div className="w-full md:w-auto mb-6 md:mb-0">
-//               <h2 className="text-lg font-bold text-[#A810C7]">Ai Resources</h2>
+//               <h2 className="text-lg font-bold text-emerald-500">Ai Resources</h2>
 //               <ul>
 //                 <li>
 //                   <Link href="/footers/AIEnhancedResumeAccuracy">
@@ -186,8 +186,8 @@
 //           </div>
 //         </div>
 //         <div className="container text-base md:mx-auto text-center border-t border-white pt-6 mt-6">
-//           <p className="text-[#A810C7] text-right">
-//             &copy; Copyright By GenialCareer.ca All Rights Reserved
+//           <p className="text-emerald-500 text-right">
+//             &copy; Copyright By genialcareer.com All Rights Reserved
 //           </p>
 //         </div>
 //       </footer>
@@ -246,7 +246,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="bg-gray-300 text-black py-8" id="footerbg">
+      <footer className="bg-zinc-300 text-black py-8" id="footerbg">
         <div className="container mx-auto flex flex-col gap-7 px-6">
           {/* Top Section */}
           <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-6 md:px-[65px]">
@@ -256,7 +256,7 @@ const Footer = () => {
                 <Image
                   src={logo}
                   alt="logo"
-                  className="h-12 w-[200px] mx-auto md:mx-0"
+                  className="h-100  w-[150px] mx-auto md:mx-0"
                 />
               </Link>
               <p className="text-lg font-bold mt-2">
@@ -266,7 +266,7 @@ const Footer = () => {
 
             {/* Subscribe */}
             <div className="text-center md:text-left w-full md:w-auto">
-              <h2 className="text-lg font-semibold text-[#A810C7]">
+              <h2 className="text-lg font-semibold text-emerald-500">
                 {t("footer.get_our_weekly")}
               </h2>
               <form
@@ -295,7 +295,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row flex-wrap justify-center md:justify-around text-center md:text-left gap-6">
             {/* Section 1 */}
             <div>
-              <h2 className="text-lg font-bold text-[#A810C7]">
+              <h2 className="text-lg font-bold text-emerald-500">
                 {t("footer.cibli_job")}
               </h2>
               <ul className="mt-2 space-y-1">
@@ -315,7 +315,7 @@ const Footer = () => {
 
             {/* Section 2 */}
             <div>
-              <h2 className="text-lg font-bold text-[#A810C7]">
+              <h2 className="text-lg font-bold text-emerald-500">
                 {t("footer.support")}
               </h2>
               <div>
@@ -356,7 +356,7 @@ const Footer = () => {
 
             {/* Section 3 */}
             <div>
-              <h2 className="text-lg font-bold text-[#A810C7]">
+              <h2 className="text-lg font-bold text-emerald-500">
                 {t("footer.scope_products")}
               </h2>
               <ul className="mt-2 space-y-1">
@@ -378,7 +378,7 @@ const Footer = () => {
 
             {/* Section 4 */}
             <div>
-              <h2 className="text-lg font-bold text-[#A810C7]">
+              <h2 className="text-lg font-bold text-emerald-500">
                 {t("footer.ai_resources")}
               </h2>
               <ul className="mt-2 space-y-1">
@@ -403,7 +403,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <div className="border-t border-white pt-6 mt-6 text-center">
-            <p className="text-[#A810C7]">{t("footer.copyright")}</p>
+            <p className="text-emerald-500">{t("footer.copyright")}</p>
           </div>
         </div>
       </footer>

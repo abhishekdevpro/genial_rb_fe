@@ -224,7 +224,7 @@ const TemplateSelector = ({
                             ${
                               template.key === templateId
                                 ? "bg-pink-500 text-white font-semibold"
-                                : "text-gray-600 group-hover:text-[#A810C7]"
+                                : "text-gray-600 group-hover:text-emerald-500"
                             }
                           `}
                           >
@@ -299,7 +299,7 @@ const TemplateSelector = ({
               ${
                 template.key === templateId
                   ? "bg-pink-500 text-white font-semibold"
-                  : "text-gray-600 group-hover:text-[#A810C7]"
+                  : "text-gray-600 group-hover:text-emerald-500"
               }
             `}
                             >

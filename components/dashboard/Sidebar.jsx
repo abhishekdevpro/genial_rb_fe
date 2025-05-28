@@ -106,7 +106,7 @@
 //         <h2 className="text-lg font-semibold">{resumeTitle}</h2>
 //         <Link
 //           href="/dashboard/resumelist"
-//           className="text-[#A810C7] hover:text-[#A810C7]"
+//           className="text-emerald-500 hover:text-emerald-500"
 //         >
 //           View All
 //         </Link>
@@ -159,7 +159,7 @@
 //             <span className="bg-teal-100 text-teal-800 px-2 py-1 rounded-full text-sm">
 //               {score}
 //             </span>
-//             <button className="text-[#A810C7] hover:text-blue-700 text-sm">
+//             <button className="text-emerald-500 hover:text-blue-700 text-sm">
 //               Improve
 //             </button>
 //           </div>
@@ -169,7 +169,7 @@
 //       {/* Create New Resume Button */}
 //       <button
 //         onClick={handleCreate}
-//         className="w-full flex items-center justify-center gap-2 px-4 py-2 bg-[#A810C7] text-white rounded-lg hover:bg-[#A810C7]"
+//         className="w-full flex items-center justify-center gap-2 px-4 py-2 bg-emerald-500 text-white rounded-lg hover:bg-emerald-500"
 //       >
 //         <svg
 //           className="w-5 h-5"
@@ -318,7 +318,7 @@ const Sidebar = ({ score, resumeId }) => {
           <h2 className="text-lg font-semibold">{resumeTitle}</h2>
           <Link
             href="/dashboard/resumelist"
-            className="text-[#A810C7] hover:text-[#A810C7]"
+            className="text-emerald-500 hover:text-emerald-500"
           >
             {t("dashboard_sidebar.viewAll")}
           </Link>
@@ -359,10 +359,10 @@ const Sidebar = ({ score, resumeId }) => {
               {t("dashboard_sidebar.resumeStrength")}
             </span>
             <div className="flex items-center gap-2">
-              <span className="bg-[#A810C7] text-white px-2 py-1 rounded-full text-sm">
+              <span className="bg-emerald-500 text-white px-2 py-1 rounded-full text-sm">
                 {score}
               </span>
-              <button className="text-[#A810C7] hover:text-[#5a23b2] text-sm">
+              <button className="text-emerald-500 hover:text-[#5a23b2] text-sm">
                 {t("dashboard_sidebar.improve")}
               </button>
             </div>
@@ -372,7 +372,7 @@ const Sidebar = ({ score, resumeId }) => {
         {/* Create New Resume Button */}
         <button
           onClick={handleCreate}
-          className="w-full flex items-center justify-center gap-2 px-4 py-2 bg-[#A810C7] text-white rounded-lg hover:bg-[#5a23b2]"
+          className="w-full flex items-center justify-center gap-2 px-4 py-2 bg-emerald-500 text-white rounded-lg hover:bg-[#5a23b2]"
         >
           <svg
             className="w-5 h-5"

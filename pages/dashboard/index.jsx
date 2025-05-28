@@ -92,13 +92,13 @@ export default function DashboardPage() {
       <div className="flex flex-col sm:flex-row justify-center items-center mb-8 gap-4 mt-4 p-4">
         <button
           onClick={handleCreateResume}
-          className="flex justify-center items-center px-4 py-2 w-full sm:w-auto bg-[#A810C7] text-white rounded-lg hover:bg-[#5a23b2] transition-colors duration-200 font-medium shadow-sm"
+          className="flex justify-center items-center px-4 py-2 w-full sm:w-auto bg-emerald-500 text-white rounded-lg hover:bg-[#5a23b2] transition-colors duration-200 font-medium shadow-sm"
         >
           <Plus className="w-5 h-5 mr-2" /> {t("dashboard_page.createResume")}
         </button>
         <button
           onClick={handleCreateCoverLetter}
-          className="flex justify-center items-center px-4 py-2 w-full sm:w-auto bg-[#5a23b2] text-white rounded-lg hover:bg-[#A810C7] transition-colors duration-200 font-medium shadow-sm"
+          className="flex justify-center items-center px-4 py-2 w-full sm:w-auto bg-[#5a23b2] text-white rounded-lg hover:bg-emerald-500 transition-colors duration-200 font-medium shadow-sm"
         >
           <Plus className="w-5 h-5 mr-2" />{" "}
           {t("dashboard_page.createCoverLetter")}

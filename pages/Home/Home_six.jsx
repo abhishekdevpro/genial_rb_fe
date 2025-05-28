@@ -8,9 +8,9 @@ const Home_six = () => {
   const { t } = useTranslation();
   const router = useRouter();
   return (
-    <div className="py-16 bg-gray-50">
+    <div className="py-16 bg-gradient-to-t from-zinc-300 via-emerald-500 to-[#5a23b2] ">
       <div className="mx-auto max-w-screen-lg text-center mb-12">
-        <h2 className="mb-6 text-4xl font-extrabold text-[#A810C7] tracking-tight border p-4 rounded-2xl border-gray-200">
+        <h2 className="mb-6 text-4xl font-extrabold text-emerald-500 tracking-tight border p-4 rounded-2xl border-gray-200">
           {t("choose_plan")}
         </h2>
       </div>
@@ -20,7 +20,7 @@ const Home_six = () => {
 
       <div className="text-center">
         <button
-          className="inline-block px-8 py-3 text-lg font-medium text-white bg-[#5a23b2] rounded-xl hover:bg-[#A810C7] transition duration-300 "
+          className="inline-block px-8 py-3 text-lg font-medium text-white bg-[#5a23b2] rounded-xl hover:bg-emerald-500 transition duration-300 "
           onClick={() => router.push("/pricing")}
         >
           View all plans
@@ -31,7 +31,7 @@ const Home_six = () => {
       {/* <div className="text-center mt-8">
         <Link 
           to="/pricing" 
-          className="inline-block px-8 py-3 text-lg font-medium text-white bg-[#A810C7] rounded-xl hover:bg-[#019b73] transition duration-300"
+          className="inline-block px-8 py-3 text-lg font-medium text-white bg-emerald-500 rounded-xl hover:bg-[#019b73] transition duration-300"
         >
           {t("view_all_plans")}
         </Link>

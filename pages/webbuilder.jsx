@@ -722,7 +722,7 @@ export default function WebBuilder() {
                     type="button"
                     onClick={handlePrevious}
                     disabled={currentSection === 0}
-                    className="w-40 h-10 rounded-lg bg-[#5a23b2] text-white font-medium transition hover:bg-[#A810C7] disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-40 h-10 rounded-lg bg-[#5a23b2] text-white font-medium transition hover:bg-emerald-500 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {t("buttons.previous")}
                   </button>
@@ -730,7 +730,7 @@ export default function WebBuilder() {
                   <button
                     type="button"
                     onClick={handleNext}
-                    className="w-40 h-10 rounded-lg bg-[#A810C7] text-white font-medium transition hover:bg-[#5a23b2]"
+                    className="w-40 h-10 rounded-lg bg-emerald-500 text-white font-medium transition hover:bg-[#5a23b2]"
                   >
                     {currentSection === sections.length - 1
                       ? t("buttons.finish")
@@ -840,7 +840,7 @@ export default function WebBuilder() {
               <div className="flex gap-4">
                 <button
                   onClick={handleClick}
-                  className="bg-[#5a23b2] hover:bg-[#A810C7] text-white px-6 py-2 rounded-lg"
+                  className="bg-[#5a23b2] hover:bg-emerald-500 text-white px-6 py-2 rounded-lg"
                 >
                   {loading === "save" ? (
                     <SaveLoader loadingText={t("buttons.saving")} />
@@ -851,7 +851,7 @@ export default function WebBuilder() {
 
                 <button
                   onClick={downloadAsPDF}
-                  className="bg-[#A810C7] hover:bg-[#5a23b2] text-white px-6 py-2 rounded-lg"
+                  className="bg-emerald-500 hover:bg-[#5a23b2] text-white px-6 py-2 rounded-lg"
                 >
                   {loading === "download" ? (
                     <SaveLoader loadingText={t("buttons.downloading")} />

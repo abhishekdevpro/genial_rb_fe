@@ -1,24 +1,35 @@
 import { File, FileText, Rocket } from "lucide-react";
+import Link from "next/link";
 import React from "react";
-
+import { useEffect, useState } from "react";
 const ATSResumeSection = () => {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  useEffect(() => {
+    // Check for the token (you can adjust based on where the token is stored)
+    const token = localStorage.getItem("token");
+    setIsAuthenticated(!!token);
+  }, []);
   return (
-    <div className="relative w-full min-h-[400px] bg-gradient-to-br from-[#5a23b2] to-[#a810c7] p-8">
+    <div className="relative w-full min-h-[400px] bg-gradient-to-b from-zinc-300 via-emerald-300 to-[#5a23b2] p-8">
       <div className="max-w-6xl mx-auto">
         {/* Main Content */}
         <div className="space-y-6 mb-12">
-          <h1 className="text-4xl font-bold text-white mb-4">
+          <h1 className="text-4xl font-bold text-black mb-4">
             Resumes optimized for applicant tracking systems (ATS)
           </h1>
 
-          <p className="text-gray-200 text-lg max-w-2xl">
+          <p className="text-black text-lg max-w-2xl">
             Enhancv resumes and cover letters are vigorously tested against
             major ATS systems to ensure complete parsability
           </p>
-
-          <button className="bg-[#a810c7] hover:bg-[#a810c7] text-white font-medium py-3 px-6 rounded-lg transition-colors">
-            Build an ATS-Friendly Resume
-          </button>
+          <Link
+            href={isAuthenticated ? "/dashboard/resume-builder" : "/login2"}
+          >
+            <button className="bg-[#a810c7] hover:bg-emerald-500 text-white font-medium py-3 px-6 rounded-lg transition-colors">
+              Build an ATS-Friendly Resume
+            </button>
+          </Link>
         </div>
 
         {/* Feature Cards */}

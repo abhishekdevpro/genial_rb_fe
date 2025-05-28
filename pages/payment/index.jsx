@@ -59,7 +59,7 @@ export default function Payment() {
                   key={planType}
                   className={`border rounded-lg p-4 flex flex-col w-full md:w-64 relative ${
                     selectedPlan === planType
-                      ? "border-[#A810C7] bg-green-50"
+                      ? "border-emerald-500 bg-green-50"
                       : "bg-white"
                   }`}
                   onClick={() => handlePlanSelection(planType)}
@@ -72,13 +72,13 @@ export default function Payment() {
                       type="checkbox"
                       checked={selectedPlan === planType}
                       onChange={() => {}}
-                      className="h-5 w-5 text-[#A810C7]"
+                      className="h-5 w-5 text-emerald-500"
                     />
                   </div>
                   <div className="text-2xl font-bold mb-1">
                     {Number(t(`pricing.${planType}.price`)) === 0
                       ? t("pricing.freeLabel")
-                      : `€${t(`pricing.${planType}.price`)}`}
+                      : `$${t(`pricing.${planType}.price`)}`}
 
                     {t(`pricing.${planType}.billingCycle`) && (
                       <span className="text-gray-500 ml-1 text-sm">
@@ -169,7 +169,7 @@ export default function Payment() {
               <div className="mt-6">
                 <button
                   onClick={goToNextPage}
-                  className="w-full bg-[#A810C7] text-white text-lg font-semibold py-3 rounded-lg"
+                  className="w-full bg-emerald-500 text-white text-lg font-semibold py-3 rounded-lg"
                 >
                   {t("paymentplans.Next")}
                 </button>

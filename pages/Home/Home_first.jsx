@@ -5,9 +5,10 @@ import "slick-carousel/slick/slick-theme.css";
 import image4 from "./Images/homeimage1.jpg";
 import image5 from "./Images/homeimage2.jpg";
 import image6 from "./Images/homeimage3.jpg";
-import image1 from "./Images/frenchresume1.jpg";
-import image2 from "./Images/frenchresume2.jpg";
-import image3 from "./Images/frenchresume3.jpg";
+// import image1 from "./Images/frenchresume1.jpg";
+// import image2 from "./Images/frenchresume2.jpg";
+// import image3 from "./Images/frenchresume3.jpg";
+import linkedin from "./Images/linkedin.png";
 import Image from "next/image";
 import Home_second from "./Home_second";
 import { useEffect, useState } from "react";
@@ -38,11 +39,11 @@ function Home_first() {
     autoplaySpeed: 3000,
   };
 
-  const images = [image1, image2, image3, image4, image5, image6];
+  const images = [image4, image5, image6];
 
   return (
     <>
-      <div className="bg-[#a770de36] pt-10 w-full overflow-hidden">
+      <div className="bg-gradient-to-b from-zinc-300 via-emerald-500 to-[#5a23b2]  pt-10 w-full overflow-hidden">
         <div className="container mx-auto">
           <div className="flex justify-center md:hidden">
             <Link
@@ -61,7 +62,7 @@ function Home_first() {
                   {t("resume_tool_live")}
                 </h1>
 
-                <div className="text-lg font-medium text-slate-700">
+                <div className="text-lg font-medium text-white">
                   {t("resume_features")}
                 </div>
                 <div className="flex flex-wrap gap-4">
@@ -70,24 +71,25 @@ function Home_first() {
                       isAuthenticated ? "/dashboard/resume-builder" : "/login2"
                     }
                   >
-                    <button className="text-white bg-[#5a23b2] text-lg px-6 py-2 rounded-full font-bold hover:shadow-2xl hover:shadow-slate-500 hover:bg-[#a810c7]">
+                    <button className="text-white bg-[#5a23b2] text-lg px-6 py-2 rounded-full font-bold hover:shadow-2xl hover:shadow-slate-500 hover:bg-emerald-500">
                       {t("build_resume")} {/* Use translation key */}
                     </button>
                   </Link>
                 </div>
                 <div className="font-bold text-base">
-                  <i className="fa-solid fa-star text-[#A810C7]"></i>{" "}
-                  <i className="fa-solid fa-star text-[#A810C7]"></i>{" "}
-                  <i className="fa-solid fa-star text-[#A810C7]"></i>{" "}
-                  <i className="fa-solid fa-star text-[#A810C7]"></i>{" "}
-                  <i className="fa-solid fa-star text-[#A810C7]"></i>{" "}
+                  <i className="fa-solid fa-star text-emerald-500"></i>{" "}
+                  <i className="fa-solid fa-star text-emerald-500"></i>{" "}
+                  <i className="fa-solid fa-star text-emerald-500"></i>{" "}
+                  <i className="fa-solid fa-star text-emerald-500"></i>{" "}
+                  <i className="fa-solid fa-star text-emerald-500"></i>{" "}
                   {t("reviews_certified")}
                 </div>
                 <div className="flex items-center align-middle">
                   <div className="text-lg font-bold">{t("featured_on")}</div>
                   <div>
-                    <img
-                      src="https://png.pngtree.com/png-clipart/20190613/original/pngtree-linked-in-icon-png-image_3584856.jpg"
+                    <Image
+                      // src="https://png.pngtree.com/png-clipart/20190613/original/pngtree-linked-in-icon-png-image_3584856.jpg"
+                      src={linkedin}
                       className="h-24 w-24"
                     />
                   </div>
@@ -113,9 +115,9 @@ function Home_first() {
                         height={240}
                         className="transition-transform transform hover:scale-105 md:h-auto md:w-96"
                       />
-                      <p className="mt-2 text-lg font-semibold text-gray-700">
+                      {/* <p className="mt-2 text-lg font-semibold text-gray-700">
                         {index < 3 ? t("french_resume") : t("english_resume")}
-                      </p>
+                      </p> */}
                     </div>
                   ))}
                 </Slider>

@@ -175,7 +175,7 @@ const MyResume = () => {
           {t("myresume.title")}
         </h1>
         <Link href={"/dashboard/resume-builder"}>
-          <button className="flex mt-4 items-center px-4 py-2 bg-[#A810C7] text-white rounded-lg hover:bg-[#5a23b2] transition-colors duration-200 font-medium shadow-sm">
+          <button className="flex mt-4 items-center px-4 py-2 bg-emerald-500 text-white rounded-lg hover:bg-[#5a23b2] transition-colors duration-200 font-medium shadow-sm">
             <Plus className="w-5 h-5 mr-2" />
             {t("myresume.create_new_resume")}
           </button>
@@ -222,7 +222,7 @@ const MyResume = () => {
                         </span>
                         <button
                           onClick={() => handleOpenEditModal(resume)}
-                          className="text-[#A810C7] hover:text-[#5a23b2]"
+                          className="text-emerald-500 hover:text-[#5a23b2]"
                         >
                           🖍
                         </button>
@@ -241,7 +241,7 @@ const MyResume = () => {
                             className={`px-3 py-1 rounded-full text-lg font-semibold ${
                               resume.resume_strenght_details.resume_strenght >
                               60
-                                ? "bg-purple-100 text-[#A810C7]"
+                                ? "bg-purple-100 text-emerald-500"
                                 : "bg-red-100 text-red-800"
                             }`}
                           >
@@ -256,7 +256,7 @@ const MyResume = () => {
                       <div className="flex items-center space-x-3">
                         <button
                           onClick={() => handleEdit(resume.id)}
-                          className="text-[#A810C7] hover:text-[#5a23b2] transition-colors duration-200"
+                          className="text-emerald-500 hover:text-[#5a23b2] transition-colors duration-200"
                         >
                           <Edit className="w-5 h-5" />
                         </button>
@@ -331,7 +331,7 @@ const MyResume = () => {
               </button>
               <button
                 onClick={handleUpdateResumeTitle}
-                className="px-4 py-2 text-sm font-medium text-white bg-[#A810C7] rounded-md hover:bg-[#5a23b2] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
+                className="px-4 py-2 text-sm font-medium text-white bg-emerald-500 rounded-md hover:bg-[#5a23b2] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
               >
                 {t("myresume.save")}
               </button>

@@ -201,7 +201,7 @@ function Home_five() {
         <section className=" ">
           <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
             <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-              <h2 className="mb-4 text-4xl tracking-tight font-extrabold  rounded-2xl text-[#A810C7] border p-3 border-gray">
+              <h2 className="mb-4 text-4xl tracking-tight font-extrabold  rounded-2xl text-emerald-500 border p-3 border-gray">
                 {t("choose_plan")}
               </h2>
             </div>
@@ -349,7 +349,7 @@ function Home_five() {
                       <div className="md:w-1/2 w-full p-4 ">
                         <div className="text-left mb-6">
                           <h2 className="text-2xl font-bold text-gray-900">
-                            €19
+                            $19
                           </h2>
                           <p className="text-sm text-gray-500">Total Amount</p>
                         </div>
@@ -396,7 +396,7 @@ function Home_five() {
                           <div className="flex justify-center mt-6">
                             <button
                               type="submit"
-                              className="w-full bg-yellow-400 text-black font-bold  rounded-[50px] hover:bg-[#A810C7] transition duration-200"
+                              className="w-full bg-yellow-400 text-black font-bold  rounded-[50px] hover:bg-emerald-500 transition duration-200"
                             >
                               {/* <Image
                                 src={paypal}
@@ -476,7 +476,7 @@ function Home_five() {
                       <div className="md:w-1/2 w-full p-4 ">
                         <div className="text-left mb-6">
                           <h2 className="text-2xl font-bold text-gray-900">
-                            €29
+                            $29
                           </h2>
                           <p className="text-sm text-gray-500">Total Amount</p>
                         </div>
@@ -523,7 +523,7 @@ function Home_five() {
                           <div className="flex justify-center mt-6">
                             <button
                               type="submit"
-                              className="w-full bg-yellow-400 text-black font-bold  rounded-[50px] hover:bg-[#A810C7] transition duration-200"
+                              className="w-full bg-yellow-400 text-black font-bold  rounded-[50px] hover:bg-emerald-500 transition duration-200"
                             >
                               {/* <Image
                                 src={paypal}
